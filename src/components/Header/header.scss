@@ -1,0 +1,15 @@
+@use "src/Styles/variables.scss" as var;
+
+#header {
+  color: var.$rouge;
+  padding: 0.5rem;
+
+  & ul {
+    display: flex;
+    justify-content: flex-end;
+
+    & li {
+      margin: 0 var.$gap-small;
+    }
+  }
+}
