@@ -3,7 +3,6 @@ import "./header.scss";
 import { SpeedDial } from "primereact/speeddial";
 
 const Header = () => {
-  console.log(window.innerWidth);
   const [mobileWidth, setMobileWidth] = useState();
 
   useEffect(() => {
