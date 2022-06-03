@@ -1,15 +1,22 @@
 @use "src/Styles/variables.scss" as var;
 
 #header {
-  color: var.$rouge;
-  padding: 0.5rem;
+  padding: 1rem 10rem;
+  background-color: var.$rouge;
 
   & ul {
     display: flex;
     justify-content: flex-end;
+    & a {
+      text-decoration: none;
+      color: var.$blanc;
+      font-size: 1.2rem;
+      transition: all 0.2s ease-in-out;
+      margin: 0 var.$gap-xlarge;
 
-    & li {
-      margin: 0 var.$gap-small;
+      &:hover {
+        color: var.$noir;
+      }
     }
   }
 }

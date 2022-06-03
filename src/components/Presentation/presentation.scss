@@ -1,25 +1,30 @@
 @use "src/Styles/variables.scss" as var;
 
 .presentation {
-  &__container__title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: rgba(0, 0, 0, 0.2);
-    background-image: url("https://vapeandbeyond.com/wp-content/uploads/2019/07/abstract_polygonal_colorful_background-wallpaper-1920x1080-768x432.jpg");
+  background-color: rgb(97, 234, 131);
+  padding: var.$gap-large var.$gap-xlarge;
+  &__clipPath {
+    background-color: rgb(97, 234, 131);
+    height: 100px;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+    width: 100%;
+  }
 
+  &__container__title {
+    text-align: start;
     h1 {
       font-size: 15rem;
     }
   }
 
   &__container__text {
-    background-color: var.$rouge;
-    padding: 2rem 5rem;
-
+    margin: var.$gap-medium auto;
     & p {
       color: var.$rouge;
       background-color: var.$blanc;
-      padding: var.$gap-small;
+      padding: var.$gap-small 10rem;
+      font-size: 1.2rem;
+      text-align: start;
     }
   }
 }
