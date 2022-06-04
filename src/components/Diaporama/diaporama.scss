@@ -5,10 +5,70 @@
   margin: 0 auto;
   min-height: 15rem;
   text-align: center;
+  position: relative;
 
   .carousel__container {
+    position: relative;
     img {
       height: 30rem;
+      border-radius: var.$gap-small;
+    }
+
+    &__text {
+      position: absolute;
+      background-color: rgba($color: var.$blanc, $alpha: 0.85);
+      padding: var.$gap-small var.$gap-medium;
+      width: 20rem;
+      border-radius: var.$gap-small/2;
+      bottom: 5%;
+      left: calc(50% - 12rem);
+      font-size: 1.2rem;
+      color: var.$rouge;
+      & h2 {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .container__pagination {
+    display: flex;
+    justify-content: center;
+    &__item {
+      height: 0.5rem;
+      width: 3rem;
+      background-color: var.$blanc;
+      border-radius: var.$gap-small;
+      margin: 0 0.5rem;
+
+      &.actif {
+        background-color: blue;
+      }
+    }
+  }
+
+  .buttonDiapo {
+    position: absolute;
+    padding: var.$gap-small;
+    border-radius: var.$gap-small;
+    color: var.$noir;
+    background-color: var.$background;
+    top: 50%;
+    border: 0.1rem solid var.$noir;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+      border: 0.1rem solid var.$blanc;
+      background-color: var.$noir;
+      color: var.$blanc;
+    }
+
+    &--left {
+      left: 10%;
+    }
+    &--right {
+      right: 10%;
     }
   }
 }

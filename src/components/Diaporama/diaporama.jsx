@@ -30,6 +30,13 @@ const Diaporama = () => {
       lieu: "Nancy",
       description: "Troisième chantier",
     },
+    {
+      id: 3,
+      imageSrc: "sea",
+      lieu: "Paris",
+      description:
+        "Dernier chantier avec une description un peu plus longue pour voir si ça rentre bien dans le container",
+    },
   ];
 
   return (
@@ -40,18 +47,44 @@ const Diaporama = () => {
           <div className="carousel__container" key={index}>
             <img
               src={require("../../assets/images/" + item.imageSrc + ".jpg")}
-              className="img-fluid"
+              className=""
               alt={item.imageSrc}
             />
-            <h2>{item.lieu}</h2>
-            <h3>{item.description}</h3>
+            <div className="carousel__container__text">
+              <h2>
+                <i className="pi pi-map"></i> {item.lieu}
+              </h2>
+              <h3>
+                <i className="pi pi-book"></i> {item.description}
+              </h3>
+            </div>
           </div>
         ))}
-      <button type="button" onClick={() => handleSelect("prec")}>
-        Précèdent
+      <div className="container__pagination">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className={
+              index === indexDiaporama
+                ? "container__pagination__item actif"
+                : "container__pagination__item"
+            }
+          ></div>
+        ))}
+      </div>
+      <button
+        type="button"
+        onClick={() => handleSelect("prec")}
+        className="buttonDiapo buttonDiapo--left"
+      >
+        <i className="pi pi-chevron-left"></i>
       </button>
-      <button type="button" onClick={() => handleSelect("suiv")}>
-        Suivant
+      <button
+        type="button"
+        onClick={() => handleSelect("suiv")}
+        className="buttonDiapo buttonDiapo--right"
+      >
+        <i className="pi pi-chevron-right"></i>
       </button>
     </div>
   );
