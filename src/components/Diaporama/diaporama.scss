@@ -3,4 +3,12 @@
 #carousel {
   width: 70%;
   margin: 0 auto;
+  min-height: 15rem;
+  text-align: center;
+
+  .carousel__container {
+    img {
+      height: 30rem;
+    }
+  }
 }
