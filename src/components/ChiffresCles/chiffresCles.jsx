@@ -6,7 +6,15 @@ const ChiffresCles = () => {
   console.log(data);
   return (
     <section id="chiffresCles">
-      <p>Chiffres cles</p>
+      <p>
+        <span>15</span>Salariés
+      </p>
+      <p>
+        <span>153</span>Chantiers
+      </p>
+      <p>
+        <span>30</span>Entreprises nous ont fait confiance
+      </p>
     </section>
   );
 };

@@ -1,0 +1,22 @@
+@use "src/Styles/variables.scss" as var;
+
+#chiffresCles {
+  background-color: var.$rouge;
+  padding: var.$gap-small;
+  display: flex;
+  margin: var.$gap-small var.$gap-small/2;
+  border-radius: var.$gap-small/2;
+
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    text-align: center;
+    width: 33%;
+  }
+
+  & span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+  }
+}
