@@ -4,8 +4,8 @@
   background-color: var.$rouge;
   padding: var.$gap-small;
   display: flex;
-  margin: var.$gap-small var.$gap-small/2;
-  border-radius: var.$gap-small/2;
+  margin: var.$gap-medium 0;
+  color: var.$blanc;
 
   & p {
     font-size: 1.2rem;
@@ -15,8 +15,9 @@
   }
 
   & span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     display: block;
+    margin-bottom: calc(var.$gap-small/2);
   }
 }

@@ -12,18 +12,32 @@
     img {
       height: 30rem;
       border-radius: var.$gap-small;
+      width: 100%;
+
+      &.actif {
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
+        -moz-animation: fadeIn 2s;
+        -o-animation: fadeIn 2s;
+        -ms-animation: fadeIn 2s;
+      }
     }
 
     &__text {
       position: absolute;
       background-color: rgba($color: var.$blanc, $alpha: 0.85);
       padding: var.$gap-small var.$gap-medium;
-      width: 20rem;
-      border-radius: var.$gap-small/2;
+      width: 70%;
+      border-radius: calc(var.$gap-small/2);
       bottom: 5%;
-      left: calc(50% - 12rem);
+      left: 12%;
       font-size: 1.2rem;
       color: var.$rouge;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: rgba($color: var.$blanc, $alpha: 1);
+      }
       & h2 {
         font-weight: bold;
       }
@@ -33,12 +47,17 @@
   .container__pagination {
     display: flex;
     justify-content: center;
+    margin-top: var.$gap-small;
     &__item {
       height: 0.5rem;
       width: 3rem;
       background-color: var.$blanc;
       border-radius: var.$gap-small;
       margin: 0 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       &.actif {
         background-color: blue;
@@ -53,22 +72,66 @@
     color: var.$noir;
     background-color: var.$background;
     top: 50%;
-    border: 0.1rem solid var.$noir;
+    border: 0.1rem solid transparent;
     transition: all 0.2s ease-in-out;
     font-size: 1.2rem;
 
     &:hover {
       cursor: pointer;
-      border: 0.1rem solid var.$blanc;
       background-color: var.$noir;
       color: var.$blanc;
     }
 
     &--left {
-      left: 10%;
+      left: 5%;
     }
     &--right {
-      right: 10%;
+      right: 5%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

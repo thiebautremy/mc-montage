@@ -47,7 +47,6 @@ const Diaporama = () => {
           <div className="carousel__container" key={index}>
             <img
               src={require("../../assets/images/" + item.imageSrc + ".jpg")}
-              className=""
               alt={item.imageSrc}
             />
             <div className="carousel__container__text">
@@ -69,6 +68,7 @@ const Diaporama = () => {
                 ? "container__pagination__item actif"
                 : "container__pagination__item"
             }
+            onClick={(e) => setIndexDiaporama(index)}
           ></div>
         ))}
       </div>

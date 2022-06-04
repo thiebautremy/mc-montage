@@ -26,7 +26,7 @@ const Avis = (props) => {
           )
         )}
       <p className="avis__text">{`"${props.avis.quote}"`}</p>
-      <p className="avis__from">{`"${props.avis.from}"`}</p>
+      <p className="avis__from">{`${props.avis.from}`}</p>
     </div>
   );
 };
