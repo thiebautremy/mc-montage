@@ -6,9 +6,17 @@ const Diaporama = () => {
 
   const handleSelect = (action) => {
     let newIndex = indexDiaporama;
-    action === "prec"
-      ? setIndexDiaporama(newIndex === 0 ? data.length - 1 : newIndex - 1)
-      : setIndexDiaporama(newIndex === data.length - 1 ? 0 : newIndex + 1);
+    const currentImage = document.querySelector(".carousel__container img");
+
+    if (currentImage.classList.contains("actif"))
+      currentImage.classList.remove("actif");
+
+    setTimeout(() => {
+      currentImage.classList.add("actif");
+      action === "prec"
+        ? setIndexDiaporama(newIndex === 0 ? data.length - 1 : newIndex - 1)
+        : setIndexDiaporama(newIndex === data.length - 1 ? 0 : newIndex + 1);
+    }, [100]);
   };
 
   const data = [

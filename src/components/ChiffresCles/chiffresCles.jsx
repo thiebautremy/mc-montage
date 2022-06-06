@@ -1,9 +1,8 @@
 import "./chiffresCles.scss";
-import useCounterAnimation from "../../Services/counterAnimation";
+// import useCounterAnimation from "../../Services/counterAnimation";
 
 const ChiffresCles = () => {
-  const data = useCounterAnimation(100, 1);
-  console.log(data);
+  // const data = useCounterAnimation(100, 1);
   return (
     <section id="chiffresCles">
       <p>

@@ -13,6 +13,11 @@
       height: 30rem;
       border-radius: var.$gap-small;
       width: 100%;
+      animation: fadeOut 2s;
+      -webkit-animation: fadeOut 2s;
+      -moz-animation: fadeOut 2s;
+      -o-animation: fadeOut 2s;
+      -ms-animation: fadeOut 2s;
 
       &.actif {
         animation: fadeIn 2s;
@@ -51,7 +56,7 @@
     &__item {
       height: 0.5rem;
       width: 3rem;
-      background-color: var.$blanc;
+      background-color: rgb(175, 170, 170);
       border-radius: var.$gap-small;
       margin: 0 0.5rem;
 
@@ -92,7 +97,7 @@
 
   @keyframes fadeIn {
     0% {
-      opacity: 0;
+      opacity: 0.5;
     }
     100% {
       opacity: 1;
@@ -101,7 +106,7 @@
 
   @-moz-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opacity: 0.5;
     }
     100% {
       opacity: 1;
@@ -110,7 +115,7 @@
 
   @-webkit-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opacity: 0.5;
     }
     100% {
       opacity: 1;
@@ -119,7 +124,7 @@
 
   @-o-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opacity: 0.5;
     }
     100% {
       opacity: 1;
@@ -128,10 +133,55 @@
 
   @-ms-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opacity: 0.5;
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @-o-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
     }
   }
 }

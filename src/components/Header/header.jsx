@@ -1,6 +1,22 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect } from "react";
 import "./header.scss";
 
 const Header = () => {
+  const liArray = document.querySelectorAll("#header ul a");
+  console.log(liArray);
+
+  function handleClickOnLi() {
+    liArray.forEach((item, index) =>
+      item.addEventListener("click", () => {
+        liArray[index].classList("actifLink");
+      })
+    );
+  }
+
+  useEffect(() => {
+    handleClickOnLi();
+  }, []);
   return (
     <header id="header">
       <nav>
