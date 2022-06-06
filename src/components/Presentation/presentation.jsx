@@ -1,21 +1,11 @@
 import "./presentation.scss";
-import TypeWriterEffect from "react-typewriter-effect";
 
 const Presentation = () => {
-  const myRef = document.querySelector("#presentation");
   return (
     <>
-      <main className="presentation" id="presentation">
+      <main className="presentation section" id="presentation">
         <div className="presentation__container__title">
-          <TypeWriterEffect
-            textStyle={{ fontFamily: "Red Hat Display" }}
-            startDelay={100}
-            cursorColor="red"
-            text="MC Montage"
-            typeSpeed={200}
-            scrollArea={myRef}
-          />
-          {/* <h1>MC</h1> <h1>Montage</h1> */}
+          <h1>MC</h1> <h1>Montage</h1>
         </div>
         <div className="presentation__container__text">
           <p>

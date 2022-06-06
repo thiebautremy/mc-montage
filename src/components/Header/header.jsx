@@ -1,35 +1,42 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect } from "react";
+import { useState } from "react";
+
 import "./header.scss";
 
 const Header = () => {
-  const liArray = document.querySelectorAll("#header ul a");
-  console.log(liArray);
+  const [activeLink, setActiveLink] = useState(0);
+  const links = [
+    {
+      id: 1,
+      href: "#presentation",
+      title: "Présentation",
+    },
+    {
+      id: 2,
+      href: "#chiffresCles",
+      title: "Chiffres Clés",
+    },
+    {
+      id: 3,
+      href: "#contact",
+      title: "Contact",
+    },
+  ];
 
-  function handleClickOnLi() {
-    liArray.forEach((item, index) =>
-      item.addEventListener("click", () => {
-        liArray[index].classList("actifLink");
-      })
-    );
-  }
-
-  useEffect(() => {
-    handleClickOnLi();
-  }, []);
   return (
     <header id="header">
       <nav>
         <ul>
-          <a href="#presentation">
-            <li>Présentation</li>
-          </a>
-          <a href="#chiffresCles">
-            <li>Chiffres Clés</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          {links.map((item, index) => (
+            <a
+              href={item.href}
+              key={item.id}
+              onClick={(e) => setActiveLink(item.id)}
+              className={activeLink === item.id ? "actif" : ""}
+            >
+              <li>{item.title}</li>
+            </a>
+          ))}
         </ul>
       </nav>
     </header>

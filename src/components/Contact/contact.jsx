@@ -2,7 +2,7 @@ import "./contact.scss";
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="section">
       <p>contact</p>
     </section>
   );

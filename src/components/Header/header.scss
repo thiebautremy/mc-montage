@@ -1,8 +1,11 @@
 @use "src/Styles/variables.scss" as var;
 
 #header {
-  padding: 1rem 10rem;
+  padding: 1rem 0;
   background-color: var.$rouge;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   & ul {
     display: flex;
@@ -15,6 +18,15 @@
       transition: all 0.2s ease-in-out;
       margin: 0 var.$gap-xlarge;
       padding: 0.2rem 0.5rem;
+
+      &.actif::after {
+        content: "";
+        display: block;
+        height: 0.15rem;
+        background-color: yellow;
+        margin-top: 0.2rem;
+        border-radius: 0.2rem;
+      }
 
       &:hover {
         color: var.$noir;

@@ -4,7 +4,7 @@ import "./chiffresCles.scss";
 const ChiffresCles = () => {
   // const data = useCounterAnimation(100, 1);
   return (
-    <section id="chiffresCles">
+    <section id="chiffresCles" className="section">
       <p>
         <span>15</span>Salariés
       </p>
