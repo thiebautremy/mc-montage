@@ -1,5 +1,4 @@
 import Header from "../Header/header";
-import Presentation from "../Presentation/presentation";
 import ChiffresCles from "../ChiffresCles/chiffresCles";
 import Contact from "../Contact/contact";
 import Footer from "../Footer/footer";
@@ -11,7 +10,6 @@ function App() {
   return (
     <div className="App" id="App">
       <Header />
-      <Presentation />
       <Diaporama />
       <ChiffresCles />
       <AvisClient />

@@ -1,11 +1,24 @@
 @use "src/Styles/variables.scss" as var;
 
 #header {
-  padding: 1rem 0;
-  background-color: var.$rouge;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+  background-image: linear-gradient(
+      rgba(240, 234, 234, 0.6),
+      rgba(232, 219, 219, 0.8)
+    ),
+    url("../../assets/images/books.jpg");
+  margin-bottom: var.$gap-xlarge;
+
+  & nav {
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(var.$noir, $alpha: 0.6);
+    transition: all 0.2s ease-in-out;
+  }
+  & nav.scrolled {
+    background-color: rgba(var.$noir, $alpha: 1);
+  }
 
   & ul {
     display: flex;
@@ -26,10 +39,33 @@
         background-color: yellow;
         margin-top: 0.2rem;
         border-radius: 0.2rem;
+        transition: all 0.2s ease-in-out;
       }
 
       &:hover {
-        color: var.$noir;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .presentation {
+    padding: var.$gap-xlarge;
+
+    &__container__title {
+      text-align: start;
+      h1 {
+        font-size: 10rem;
+      }
+    }
+
+    &__container__text {
+      margin: var.$gap-medium auto;
+      & p {
+        border-radius: 0.5rem;
+        color: var.$blanc;
+        padding: var.$gap-small 10rem;
+        font-size: 1.2rem;
+        text-align: start;
       }
     }
   }

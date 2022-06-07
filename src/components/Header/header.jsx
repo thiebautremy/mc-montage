@@ -1,10 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Presentation from "../Presentation/presentation";
 
 import "./header.scss";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(0);
+  const [scrollUnderHeader, setScrollUnderHeader] = useState(false);
+
   const links = [
     {
       id: 1,
@@ -23,9 +26,25 @@ const Header = () => {
     },
   ];
 
+  function changeOpacityNavBar() {
+    const positionHeaderBottom = document.querySelector("#header").scrollHeight;
+    const navBarHeight = document.querySelector("#header nav").clientHeight;
+    console.log(navBarHeight);
+    console.log(document.querySelector("#header"));
+    window.addEventListener("scroll", () => {
+      // console.log(window.scrollY);
+      if (window.scrollY > positionHeaderBottom - navBarHeight)
+        setScrollUnderHeader(true);
+      else setScrollUnderHeader(false);
+    });
+  }
+
+  useEffect(() => {
+    changeOpacityNavBar();
+  });
   return (
     <header id="header">
-      <nav>
+      <nav className={scrollUnderHeader ? "scrolled" : ""}>
         <ul>
           {links.map((item, index) => (
             <a
@@ -39,6 +58,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+      <Presentation />
     </header>
   );
 };
