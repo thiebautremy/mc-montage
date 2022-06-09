@@ -1,12 +1,8 @@
 @use "src/Styles/variables.scss" as var;
 
 #header {
-  background-image: linear-gradient(
-      rgba(240, 234, 234, 0.6),
-      rgba(232, 219, 219, 0.8)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(34, 33, 33, 0.9)),
     url("../../assets/images/books.jpg");
-  margin-bottom: var.$gap-xlarge;
 
   & nav {
     padding: 1rem 0;
@@ -43,7 +39,7 @@
       }
 
       &:hover {
-        transform: scale(1.05);
+        color: yellow;
       }
     }
   }

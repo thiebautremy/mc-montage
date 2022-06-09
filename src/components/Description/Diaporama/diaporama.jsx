@@ -49,13 +49,12 @@ const Diaporama = () => {
 
   return (
     <div id="carousel">
-      <h2>Quelques unes de nos réalisations</h2>
       {data
         .filter((item) => item.id === indexDiaporama)
         .map((item, index) => (
           <div className="carousel__container" key={index}>
             <img
-              src={require("../../assets/images/" + item.imageSrc + ".jpg")}
+              src={require("../../../assets/images/" + item.imageSrc + ".jpg")}
               alt={item.imageSrc}
             />
             <div className="carousel__container__text">

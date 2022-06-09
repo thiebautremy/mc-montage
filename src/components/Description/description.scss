@@ -1,0 +1,21 @@
+@use "src/Styles/variables.scss" as var;
+
+.description {
+  background-color: rgba(var.$noir, $alpha: 0.9);
+  color: var.$blanc;
+  padding: var.$gap-small;
+
+  &__services__items {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      padding: var.$gap-medium;
+      max-width: 15rem;
+
+      & h3 {
+        margin-bottom: var.$gap-small;
+      }
+    }
+  }
+}
