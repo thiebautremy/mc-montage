@@ -2,12 +2,12 @@
 
 #avisClient {
   background-color: var.$blanc;
-  display: flex;
-  justify-content: space-evenly;
   padding: var.$gap-small 0;
 }
 
-#avis {
+#avisClientList {
+  display: flex;
+  justify-content: space-evenly;
   display: flex;
   align-items: center;
   .avis__text {

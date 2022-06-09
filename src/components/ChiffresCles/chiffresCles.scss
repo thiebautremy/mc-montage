@@ -1,23 +1,26 @@
 @use "src/Styles/variables.scss" as var;
 
-#chiffresCles {
+.chiffresCles {
   background-color: var.$rouge;
-  padding: var.$gap-small;
-  display: flex;
   margin: var.$gap-medium 0;
-  color: var.$blanc;
 
-  & p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    text-align: center;
-    width: 33%;
-  }
+  &__chiffres {
+    padding: var.$gap-small;
+    display: flex;
+    color: var.$blanc;
 
-  & span {
-    font-size: 1.8rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: calc(var.$gap-small/2);
+    & p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      text-align: center;
+      width: 33%;
+    }
+
+    & span {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: block;
+      margin-bottom: calc(var.$gap-small/2);
+    }
   }
 }

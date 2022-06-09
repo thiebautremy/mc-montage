@@ -49,6 +49,7 @@ const Diaporama = () => {
 
   return (
     <div id="carousel">
+      <h2>Quelques unes de nos réalisations</h2>
       {data
         .filter((item) => item.id === indexDiaporama)
         .map((item, index) => (
@@ -58,12 +59,12 @@ const Diaporama = () => {
               alt={item.imageSrc}
             />
             <div className="carousel__container__text">
-              <h2>
+              <p>
                 <i className="pi pi-map"></i> {item.lieu}
-              </h2>
-              <h3>
+              </p>
+              <p>
                 <i className="pi pi-book"></i> {item.description}
-              </h3>
+              </p>
             </div>
           </div>
         ))}

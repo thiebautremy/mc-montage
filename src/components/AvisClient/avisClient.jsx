@@ -20,11 +20,12 @@ const AvisClient = () => {
   ];
   return (
     <section id="avisClient">
-      {avis.map((item, index) => (
-        <Avis key={item.quote} avis={item} />
-      ))}
-      {/* <Avis nbrStar={5} avis={"Travail très pro, je recommande!"} />
-      <Avis nbrStar={0} avis={"Mick lache des caisses tout le temps..."} /> */}
+      <h2>Avis et recommandation</h2>
+      <div id="avisClientList">
+        {avis.map((item, index) => (
+          <Avis key={item.quote} avis={item} />
+        ))}
+      </div>
     </section>
   );
 };
