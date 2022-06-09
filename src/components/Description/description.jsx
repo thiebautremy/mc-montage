@@ -3,7 +3,7 @@ import Diaporama from "./Diaporama/diaporama";
 
 const Description = () => {
   return (
-    <div className="description">
+    <div className="description" id="description">
       <h2>Nos services et nos réalisations</h2>
       <section className="description__services">
         <p>Nous proposons une large gamme de service</p>

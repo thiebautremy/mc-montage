@@ -29,7 +29,6 @@ const Header = () => {
   function changeOpacityNavBar() {
     const positionHeaderBottom = document.querySelector("#header").scrollHeight;
     const navBarHeight = navBar.current.offsetHeight;
-    console.log(document.querySelector("#header"));
     window.addEventListener("scroll", () => {
       if (window.scrollY > positionHeaderBottom - navBarHeight)
         setScrollUnderHeader(true);

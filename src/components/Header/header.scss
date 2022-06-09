@@ -32,14 +32,14 @@
         content: "";
         display: block;
         height: 0.15rem;
-        background-color: yellow;
+        background-color: var.$rouge;
         margin-top: 0.2rem;
         border-radius: 0.2rem;
         transition: all 0.2s ease-in-out;
       }
 
       &:hover {
-        color: yellow;
+        color: var.$rouge;
       }
     }
   }

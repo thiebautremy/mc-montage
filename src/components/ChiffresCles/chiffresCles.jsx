@@ -1,10 +1,25 @@
+import { useState, useRef, useEffect } from "react";
+import useIntersection from "../../Services/useIntersection";
 import "./chiffresCles.scss";
 // import useCounterAnimation from "../../Services/counterAnimation";
 
 const ChiffresCles = () => {
-  // const data = useCounterAnimation(100, 1);
+  const chiffresClesDOM = useRef();
+  const inViewPort = useIntersection(chiffresClesDOM, "0px");
+  useEffect(() => {
+    ScrollToElement();
+  });
+  function ScrollToElement() {
+    window.addEventListener("scroll", () => {
+      if (inViewPort) {
+        console.log("in viewport:", chiffresClesDOM.current);
+      } else {
+        console.log("pas dans viewport");
+      }
+    });
+  }
   return (
-    <section id="chiffresCles" className="chiffresCles">
+    <section id="chiffresCles" className="chiffresCles" ref={chiffresClesDOM}>
       <h2>Chiffres clés</h2>
       <div className="chiffresCles__chiffres">
         <p>
