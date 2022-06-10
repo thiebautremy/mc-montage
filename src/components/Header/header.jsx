@@ -25,6 +25,13 @@ const Header = () => {
       title: "Contact",
     },
   ];
+
+  //!TODO Comportement smooth on scroll
+  //   element.addEventListener('click', function(){
+  //     document.querySelector('#les_associations_title').scrollIntoView({
+  //     behavior: 'smooth'
+  //  });
+  // });
   const navBar = useRef();
   function changeOpacityNavBar() {
     const positionHeaderBottom = document.querySelector("#header").scrollHeight;
