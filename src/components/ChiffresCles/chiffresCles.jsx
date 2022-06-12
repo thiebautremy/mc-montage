@@ -6,20 +6,22 @@ import "./chiffresCles.scss";
 const ChiffresCles = () => {
   const chiffresClesDOM = useRef();
   const inViewPort = useIntersection(chiffresClesDOM, "0px");
+  const [isInViewPort, setIsInViewPort] = useState(false);
   useEffect(() => {
-    ScrollToElement();
-  });
-  function ScrollToElement() {
     window.addEventListener("scroll", () => {
-      if (inViewPort) {
-        console.log("in viewport:", chiffresClesDOM.current);
-      } else {
-        console.log("pas dans viewport");
-      }
+      inViewPort ? setIsInViewPort(true) : setIsInViewPort(false);
     });
-  }
+  });
   return (
-    <section id="chiffresCles" className="chiffresCles" ref={chiffresClesDOM}>
+    <section
+      id="chiffresCles"
+      className={
+        isInViewPort
+          ? "chiffresCles inViewPortOpacity"
+          : "chiffresCles notInViewPortOpacity"
+      }
+      ref={chiffresClesDOM}
+    >
       <h2>Chiffres clés</h2>
       <div className="chiffresCles__chiffres">
         <p>
