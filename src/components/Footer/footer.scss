@@ -1,0 +1,9 @@
+@use "src/Styles/variables.scss" as var;
+
+.footer {
+  background-color: var.$background-dark;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
