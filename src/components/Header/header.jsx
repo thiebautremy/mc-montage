@@ -24,11 +24,6 @@ const Header = () => {
       title: "Contact",
     },
   ];
-  function smoothBehavior(itemHref) {
-    document.querySelector(itemHref).scrollIntoView({
-      behavior: "smooth",
-    });
-  }
   const navBar = useRef();
   function changeOpacityNavBar() {
     const positionHeaderBottom = document.querySelector("#header").scrollHeight;
@@ -48,16 +43,14 @@ const Header = () => {
       <nav className={scrollUnderHeader ? "scrolled" : ""} ref={navBar}>
         <ul>
           {links.map((item, index) => (
-            <button
+            <a
               key={item.id}
-              onClick={(e) => {
-                setActiveLink(item.id);
-                smoothBehavior(item.href);
-              }}
+              href={item.href}
+              onClick={(e) => setActiveLink(item.id)}
               className={activeLink === item.id ? "actif" : ""}
             >
               <li>{item.title}</li>
-            </button>
+            </a>
           ))}
         </ul>
       </nav>
