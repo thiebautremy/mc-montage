@@ -2,7 +2,10 @@
 
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(34, 33, 33, 0.9)),
-    url("../../assets/images/books.jpg");
+    url("../../assets/images/1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   & nav {
     padding: 1rem 0;

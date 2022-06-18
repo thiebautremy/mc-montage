@@ -25,13 +25,13 @@ const ChiffresCles = () => {
       <h2>Chiffres clés</h2>
       <div className="chiffresCles__chiffres">
         <p>
-          <span>15</span>Salariés
+          <span>4</span>Salariés
         </p>
         <p>
-          <span>153</span>Chantiers
+          <span>1530</span>Chantiers
         </p>
         <p>
-          <span>30</span>Entreprises nous ont fait confiance
+          <span>plus de 30</span>Entreprises nous ont fait confiance
         </p>
       </div>
     </section>

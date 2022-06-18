@@ -1,17 +1,20 @@
 import "./presentation.scss";
+import logo from "../../assets/images/logo.png";
 
 const Presentation = () => {
   return (
     <main className="presentation" id="presentation">
       <div className="presentation__container__title">
-        <h1>MC</h1> <h1>Montage</h1>
+        {/* <h1>MC</h1> <h1>Montage</h1> */}
+        <img src={logo} alt="" />
       </div>
       <div className="presentation__container__text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam
-          nihil dicta iste earum molestias magnam, et perferendis quasi
-          voluptatibus, sapiente similique eaque. Eaque recusandae sint vero
-          amet, nulla laborum?
+          MC Montage est une société spécialisée dans le montage de rayonnages,
+          pose de cloison, de mezzanine, de faux plafond et d'agencement de
+          bureau depuis plus de 14 ans. Les chantiers sont principalement dans
+          la région du Grand EST mais également dans toute la France et même
+          l'étranger.
         </p>
       </div>
     </main>
