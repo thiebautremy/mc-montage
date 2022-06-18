@@ -50,7 +50,7 @@
   }
 
   .presentation {
-    padding: var.$gap-xlarge;
+    padding: var.$gap-xlarge var.$gap-medium var.$gap-small;
 
     &__container__title {
       text-align: start;

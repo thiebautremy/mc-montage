@@ -9,19 +9,18 @@ const Description = () => {
         <p>Nous proposons une large gamme de service</p>
         <div className="description__services__items">
           <div className="description__services__items__item">
-            <h3>Montage</h3>
-            <p>Nous pouvons monter plusieurs types de rayonnage.</p>
+            <h3>Rayonnages</h3>
+            <p>Montage</p>
+            <p>Démontage</p>
+            <p>Stockage palettes et archives</p>
+            <p>SAV</p>
           </div>
           <div className="description__services__items__item">
             <h3>Optimisation</h3>
-            <p>
-              Nous optimisons l'espace pour garantir à nos clients un potentiel
-              de rangement optimal.
-            </p>
-          </div>
-          <div className="description__services__items__item">
-            <h3>SAV</h3>
-            <p>Notre pose est garantie 10 ans.</p>
+            <p>Pose de cloison amovible en aluminium</p>
+            <p>Agencement bureau</p>
+            <p>Mezzanine</p>
+            <p>Faux plafond</p>
           </div>
         </div>
       </section>

@@ -4,18 +4,4 @@
   background-color: var.$background-dark;
   color: var.$blanc;
   padding: var.$gap-medium;
-
-  &__infos {
-    display: flex;
-    justify-content: space-around;
-
-    &__adresse,
-    &__mailEtNumero {
-      padding: var.$gap-small;
-
-      p {
-        margin: calc(var.$gap-small);
-      }
-    }
-  }
 }
