@@ -2,10 +2,16 @@
 
 #App {
   background-color: var.$background;
+  font-family: font-regular;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color: var.$blanc;
+  text-align: center;
+  border-bottom: 0.1rem solid var.$noir;
+  padding: var.$gap-small 0;
+  font-weight: bold;
 }
 
 .inViewPortOpacity {
@@ -22,6 +28,29 @@ h2 {
   -moz-animation: fadeOut 1.5s;
   -o-animation: fadeOut 1.5s;
   -ms-animation: fadeOut 1.5s;
+}
+
+.divider--vertical {
+  height: auto;
+  width: 0.1rem;
+  background-color: var.$noir;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var.$noir;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.2rem;
+  }
+
+  &::after {
+    bottom: 0;
+  }
 }
 
 @keyframes fadeIn {

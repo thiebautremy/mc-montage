@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Description />
       <ChiffresCles />
-      <AvisClient />
+      {/* <AvisClient /> */}
       <Contact />
       <Footer />
     </div>

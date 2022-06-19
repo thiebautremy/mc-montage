@@ -8,3 +8,8 @@ $gap-small: 1rem;
 $gap-medium: 2rem;
 $gap-large: 3rem;
 $gap-xlarge: 5rem;
+
+@font-face {
+  font-family: "font-regular";
+  src: url(../assets/font/Lato/Lato-Regular.ttf);
+}
