@@ -1,7 +1,8 @@
 @use "src/Styles/variables.scss" as var;
 
 .chiffresCles {
-  background-color: var.$rouge;
+  background-color: var.$noir;
+  padding-top: var.$gap-medium;
 
   &__chiffres {
     padding: var.$gap-small;

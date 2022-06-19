@@ -1,7 +1,7 @@
 @use "src/Styles/variables.scss" as var;
 
 .footer {
-  background-color: var.$background-dark;
+  background-color: var.$noir;
   color: var.$blanc;
   &__container {
     display: flex;
