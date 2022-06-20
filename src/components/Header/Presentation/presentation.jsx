@@ -10,8 +10,8 @@ const Presentation = () => {
       <div className="presentation__container__text">
         <p>
           MC Montage est une société spécialisée dans le montage de rayonnages,
-          pose de cloison, de mezzanine, de faux plafond et d'agencement de
-          bureau depuis plus de 14 ans.
+          pose de cloison, mezzanine, faux plafond et d'agencement de bureau
+          depuis plus de 14 ans.
         </p>
         <p>
           Les chantiers sont principalement dans la région du Grand EST mais

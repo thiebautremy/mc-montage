@@ -29,6 +29,7 @@
           margin-bottom: var.$gap-small;
           font-weight: bold;
           text-align: center;
+          font-size: 1.3rem;
         }
 
         & ul {
@@ -38,6 +39,7 @@
         & li {
           padding: calc(var.$gap-small / 2);
           display: flex;
+          font-size: 1.1rem;
 
           &::before {
             content: "\2022";

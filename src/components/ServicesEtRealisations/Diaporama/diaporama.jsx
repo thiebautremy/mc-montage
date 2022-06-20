@@ -22,28 +22,19 @@ const Diaporama = () => {
   const data = [
     {
       id: 0,
-      imageSrc: "moutains",
-      lieu: "Metz",
-      description: "Premier chantier",
+      imageSrc: "1",
     },
     {
       id: 1,
-      imageSrc: "sea",
-      lieu: "Lunéville",
-      description: "Deuxième chantier",
+      imageSrc: "2",
     },
     {
       id: 2,
-      imageSrc: "tree",
-      lieu: "Nancy",
-      description: "Troisième chantier",
+      imageSrc: "3",
     },
     {
       id: 3,
-      imageSrc: "sea",
-      lieu: "Paris",
-      description:
-        "Dernier chantier avec une description un peu plus longue pour voir si ça rentre bien dans le container",
+      imageSrc: "4",
     },
   ];
 
@@ -54,17 +45,9 @@ const Diaporama = () => {
         .map((item, index) => (
           <div className="carousel__container" key={index}>
             <img
-              src={require("../../../assets/images/" + item.imageSrc + ".jpg")}
+              src={require("../../../assets/images/" + item.imageSrc + ".jpeg")}
               alt={item.imageSrc}
             />
-            <div className="carousel__container__text">
-              <p>
-                <i className="pi pi-map"></i> {item.lieu}
-              </p>
-              <p>
-                <i className="pi pi-book"></i> {item.description}
-              </p>
-            </div>
           </div>
         ))}
       <div className="container__pagination">

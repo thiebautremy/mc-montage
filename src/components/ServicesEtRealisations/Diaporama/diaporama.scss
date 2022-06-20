@@ -27,23 +27,6 @@
         -ms-animation: fadeIn 2s;
       }
     }
-
-    &__text {
-      position: absolute;
-      background-color: rgba($color: var.$blanc, $alpha: 0.85);
-      padding: var.$gap-small var.$gap-medium;
-      width: 70%;
-      border-radius: calc(var.$gap-small/2);
-      bottom: 5%;
-      left: 12%;
-      font-size: 1.2rem;
-      color: var.$rouge;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        background-color: rgba($color: var.$blanc, $alpha: 1);
-      }
-    }
   }
 
   .container__pagination {
