@@ -1,14 +1,14 @@
-import "./description.scss";
+import "./servicesEtRealisations.scss";
 import Diaporama from "./Diaporama/diaporama";
 
-const Description = () => {
+const ServicesEtRealisations = () => {
   return (
-    <div className="description" id="description">
+    <div className="servicesEtRealisations" id="servicesEtRealisations">
       <h2>Services et réalisations</h2>
-      <section className="description__services">
+      <section className="servicesEtRealisations__services">
         <p>Nous proposons une large gamme de service</p>
-        <div className="description__services__items">
-          <div className="description__services__items__item">
+        <div className="servicesEtRealisations__services__items">
+          <div className="servicesEtRealisations__services__items__item">
             <h3>Rayonnages</h3>
             <ul>
               <li>Montage</li>
@@ -18,7 +18,7 @@ const Description = () => {
             </ul>
           </div>
           <div className="divider--vertical"></div>
-          <div className="description__services__items__item">
+          <div className="servicesEtRealisations__services__items__item">
             <h3>Optimisation</h3>
             <ul>
               <li>Pose de cloison amovible en aluminium</li>
@@ -34,4 +34,4 @@ const Description = () => {
   );
 };
 
-export default Description;
+export default ServicesEtRealisations;

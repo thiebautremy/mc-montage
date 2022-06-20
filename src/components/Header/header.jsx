@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useRef } from "react";
-import Presentation from "../Presentation/presentation";
+import Presentation from "./Presentation/presentation";
 
 import "./header.scss";
 

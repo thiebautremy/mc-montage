@@ -5,6 +5,10 @@
 
   &__container__title {
     text-align: start;
+
+    img {
+      width: 40%;
+    }
     h1 {
       font-size: 10rem;
       color: var.$blanc;
