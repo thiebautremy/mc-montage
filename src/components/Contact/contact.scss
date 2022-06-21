@@ -4,4 +4,14 @@
   background-color: var.$background-dark;
   color: var.$blanc;
   padding: var.$gap-medium;
+  text-align: center;
+
+  form {
+    padding: var.$gap-small;
+
+    input,
+    textarea {
+      margin-left: var.$gap-medium;
+    }
+  }
 }

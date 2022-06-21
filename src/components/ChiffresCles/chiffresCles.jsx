@@ -12,7 +12,7 @@ const ChiffresCles = () => {
           <span>1530</span>Chantiers
         </p>
         <p>
-          <span>plus de 30</span>Entreprises nous ont fait confiance
+          <span>Plus de 30</span>Entreprises nous ont fait confiance
         </p>
       </div>
     </section>

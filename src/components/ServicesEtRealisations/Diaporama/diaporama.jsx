@@ -22,19 +22,48 @@ const Diaporama = () => {
   const data = [
     {
       id: 0,
-      imageSrc: "1",
+      imageSrc: "15",
+      title: "Rayonnage alu",
     },
     {
       id: 1,
       imageSrc: "2",
+      title: "Rayonnage alu",
     },
     {
       id: 2,
       imageSrc: "3",
+      title: "Mezzanine",
     },
     {
       id: 3,
       imageSrc: "4",
+      title: "Agencement bureau",
+    },
+    {
+      id: 4,
+      imageSrc: "6",
+      title: "Cloison amovible en aluminium",
+    },
+    {
+      id: 5,
+      imageSrc: "7",
+      title: "Camionnette MC Montage",
+    },
+    {
+      id: 6,
+      imageSrc: "8",
+      title: "Stockage palettes",
+    },
+    {
+      id: 7,
+      imageSrc: "9",
+      title: "Stockage palettes",
+    },
+    {
+      id: 8,
+      imageSrc: "10",
+      title: "Agencement bureau",
     },
   ];
 
@@ -46,7 +75,8 @@ const Diaporama = () => {
           <div className="carousel__container" key={index}>
             <img
               src={require("../../../assets/images/" + item.imageSrc + ".jpeg")}
-              alt={item.imageSrc}
+              alt={item.title}
+              title={item.title}
             />
           </div>
         ))}

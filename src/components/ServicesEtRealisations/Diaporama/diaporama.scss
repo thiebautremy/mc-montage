@@ -3,6 +3,7 @@
 #carousel {
   width: 70%;
   margin: 0 auto;
+  padding-bottom: var.$gap-medium;
   min-height: 15rem;
   text-align: center;
   position: relative;
@@ -11,8 +12,6 @@
     position: relative;
     img {
       height: 30rem;
-      border-radius: var.$gap-small;
-      width: 100%;
       animation: fadeOut 2s;
       -webkit-animation: fadeOut 2s;
       -moz-animation: fadeOut 2s;
@@ -56,7 +55,7 @@
     border-radius: var.$gap-small;
     color: var.$noir;
     background-color: var.$background;
-    top: 50%;
+    top: 45%;
     border: 0.1rem solid transparent;
     transition: all 0.2s ease-in-out;
     font-size: 1.2rem;
