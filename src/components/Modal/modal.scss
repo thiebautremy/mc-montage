@@ -1,0 +1,30 @@
+@use "src/Styles/variables.scss" as var;
+
+.modal {
+  background-color: var.$blanc;
+  color: var.$noir;
+  width: 30%;
+  border-radius: 0.5rem;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  min-height: 10rem;
+
+  &__header {
+    position: relative;
+    height: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    span {
+      position: absolute;
+      padding: 0.5rem;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  p {
+    padding: var.$gap-medium;
+  }
+}

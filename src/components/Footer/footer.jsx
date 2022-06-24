@@ -10,6 +10,7 @@ const Footer = () => {
           <p>5 bis rue de lorraine</p>
           <p>54300 Croismare</p>
         </div>
+        <div className="divider--vertical"></div>
         <div className="footer__container__mailEtNumero">
           <p>Mr GERL Mickael (gérant)</p>
           <p>
@@ -17,10 +18,6 @@ const Footer = () => {
           </p>
           <p>
             <span>@</span> mc.montage@orange.fr
-          </p>
-          <p>
-            <i className="pi pi-linkedin"></i>{" "}
-            <a href="https://google.com">Lien linkedin</a>
           </p>
         </div>
       </div>
