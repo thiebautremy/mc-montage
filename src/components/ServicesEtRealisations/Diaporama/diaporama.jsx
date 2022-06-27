@@ -74,7 +74,7 @@ const Diaporama = () => {
         .map((item, index) => (
           <div className="carousel__container" key={index}>
             <img
-              src={require("../../../assets/images/" + item.imageSrc + ".jpeg")}
+              src={require("../../../assets/images/" + item.imageSrc + ".webp")}
               alt={item.title}
               title={item.title}
             />

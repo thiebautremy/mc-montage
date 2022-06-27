@@ -17,6 +17,7 @@ h2 {
 input,
 textarea {
   min-width: 20rem;
+  padding: 0.2rem;
 
   &::placeholder {
     font-family: font-regular;
@@ -31,10 +32,12 @@ input[type="submit"] {
   color: var.$blanc;
   transition: all 0.2s ease-in-out;
   padding: 0.5rem 1rem;
+  font-size: 1.1rem;
 
   &:hover {
     background-color: var.$blanc;
     color: var.$noir;
+    cursor: pointer;
   }
 }
 
