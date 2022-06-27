@@ -4,15 +4,23 @@
   background-color: var.$background-dark;
   color: var.$blanc;
   padding: var.$gap-medium;
-  text-align: center;
   position: relative;
 
+  &__formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto var.$gap-medium;
+    }
+  }
   form {
     padding: var.$gap-small;
 
-    input,
-    textarea {
-      margin-left: var.$gap-medium;
+    & label {
+      margin-right: 1rem;
     }
   }
 }

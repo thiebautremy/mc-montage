@@ -14,6 +14,30 @@ h2 {
   font-weight: bold;
 }
 
+input,
+textarea {
+  min-width: 20rem;
+
+  &::placeholder {
+    font-family: font-regular;
+    color: var.$noir;
+  }
+}
+
+input[type="submit"] {
+  background-color: var.$noir;
+  border: none;
+  border-radius: var.$gap-small;
+  color: var.$blanc;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: var.$blanc;
+    color: var.$noir;
+  }
+}
+
 .divider--vertical {
   height: auto;
   width: 0.1rem;

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect, useRef } from "react";
 import Presentation from "./Presentation/presentation";
-
+import logo from "../../assets/images/logoPhotoshop.png";
 import "./header.scss";
 
 const Header = () => {
@@ -39,20 +39,28 @@ const Header = () => {
     changeOpacityNavBar();
   });
   return (
-    <header id="header">
+    <header id="header" className="header">
       <nav className={scrollUnderHeader ? "scrolled" : ""} ref={navBar}>
-        <ul>
-          {links.map((item, index) => (
-            <a
-              key={item.id}
-              href={item.href}
-              onClick={(e) => setActiveLink(item.id)}
-              className={activeLink === item.id ? "actif" : ""}
-            >
-              <li>{item.title}</li>
-            </a>
-          ))}
-        </ul>
+        <div className="header__leftContainer">
+          <img
+            src={logo}
+            alt="logo-mc-montage"
+            title="logo MC Montage"
+            className="header__img"
+          />
+          <ul>
+            {links.map((item, index) => (
+              <a
+                key={item.id}
+                href={item.href}
+                onClick={(e) => setActiveLink(item.id)}
+                className={activeLink === item.id ? "actif" : ""}
+              >
+                <li>{item.title}</li>
+              </a>
+            ))}
+          </ul>
+        </div>
       </nav>
       <Presentation />
     </header>

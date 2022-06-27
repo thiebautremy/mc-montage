@@ -5,7 +5,7 @@ const Presentation = () => {
   return (
     <div className="presentation" id="presentation">
       <div className="presentation__container__title">
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo MC Montage" title="Logo MC Montage" />
       </div>
       <div className="presentation__container__text">
         <p>

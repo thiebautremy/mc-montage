@@ -1,12 +1,12 @@
 @use "src/Styles/variables.scss" as var;
 
 .presentation {
-  padding: var.$gap-large var.$gap-xlarge;
+  padding: 6rem 5rem 2rem;
 
   &__container__title {
     text-align: start;
 
-    img {
+    & > img {
       width: 40%;
     }
     h1 {

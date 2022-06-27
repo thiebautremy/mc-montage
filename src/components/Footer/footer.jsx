@@ -1,9 +1,13 @@
 import "./footer.scss";
+import logo from "../../assets/images/logoPhotoshop.png";
 
 const Footer = () => {
   return (
     <footer id="footer" className="footer">
-      <div className="footer__container">
+      <div className="footer__container__left">
+        <img src={logo} alt="logo MC Montage" title="Logo MC Montage" />
+      </div>
+      <div className="footer__container__right">
         <div className="footer__container__adresse">
           <p>Notre adresse :</p>
           <p>SARL MC MONTAGE</p>
