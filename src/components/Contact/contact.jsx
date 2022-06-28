@@ -9,6 +9,10 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [messageModal, setMessageModal] = useState("");
   const [isVisibleModal, setIsVisibleModal] = useState(false);
+  console.log(process.env.REACT_APP_EMAIL_JS_SERVICE_ID);
+  console.log(process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID);
+  console.log(process.env.REACT_APP_EMAIL_JS_PRIVATE_KEY);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
