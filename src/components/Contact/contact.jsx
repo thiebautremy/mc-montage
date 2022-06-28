@@ -13,16 +13,15 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_5h5mqn9",
-        "template_3mv0xzc",
+        process.env.REACT_APP_EMAIL_JS_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID,
         form.current,
-        "iH8qeDu1HKlAzYYko"
+        process.env.REACT_APP_EMAIL_JS_PRIVATE_KEY
       )
       .then(
         (res) => {
           console.log("success : ", res);
           if (res.status === 200) {
-            //TODO faire une pop up
             setMessageModal("Message correctement envoyé");
             setIsVisibleModal(true);
             setMessage("");
@@ -52,6 +51,17 @@ const Contact = () => {
               placeholder="Votre Email"
             />
           </div>
+          {/* TODO Faire un select avec value object pour intégrer en tant qu'objet de mail */}
+          {/* <div>
+            <label>Email</label>
+            <input
+              type="email"
+              name="user_email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Votre Email"
+            />
+          </div> */}
           <div>
             <label>Message</label>
             <textarea
