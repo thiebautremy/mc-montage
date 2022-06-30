@@ -10,17 +10,17 @@ const Header = () => {
   const links = [
     {
       id: 1,
-      href: "#presentation",
+      href: "presentation",
       title: "Présentation",
     },
     {
       id: 2,
-      href: "#chiffresCles",
+      href: "chiffresCles",
       title: "Chiffres Clés",
     },
     {
       id: 3,
-      href: "#contact",
+      href: "contact",
       title: "Contact",
     },
   ];
@@ -47,17 +47,25 @@ const Header = () => {
             alt="logo-mc-montage"
             title="logo MC Montage"
             className="header__img"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scroll(0, 0);
+            }}
           />
           <ul>
             {links.map((item, index) => (
-              <a
+              <li
                 key={item.id}
-                href={item.href}
-                onClick={(e) => setActiveLink(item.id)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  console.log(e);
+                  setActiveLink(item.id);
+                  document.querySelector(`#${item.href}`).scrollIntoView();
+                }}
                 className={activeLink === item.id ? "actif" : ""}
               >
-                <li>{item.title}</li>
-              </a>
+                {item.title}
+              </li>
             ))}
           </ul>
         </div>

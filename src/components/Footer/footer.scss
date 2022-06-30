@@ -1,7 +1,7 @@
 @use "src/Styles/variables.scss" as var;
 
 .footer {
-  background-color: var.$background-dark-medium;
+  background-color: var.$background-footer;
   color: var.$blanc;
   padding: var.$gap-medium;
   display: flex;
@@ -20,6 +20,15 @@
 
     p {
       padding: 0.5rem;
+    }
+
+    .divider--vertical {
+      background-color: var.$rouge;
+
+      &::before,
+      &::after {
+        background-color: var.$rouge;
+      }
     }
   }
 }
