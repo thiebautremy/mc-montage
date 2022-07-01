@@ -32,3 +32,10 @@
     padding: var.$gap-medium;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .modal {
+    width: 80%;
+    left: unset;
+  }
+}

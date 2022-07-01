@@ -24,3 +24,16 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .chiffresCles {
+    &__chiffres {
+      & p {
+        font-size: 1rem;
+      }
+      & span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

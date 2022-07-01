@@ -25,6 +25,13 @@ textarea {
   }
 }
 
+@media screen and (max-width: 700px) {
+  input,
+  textarea {
+    min-width: 15rem;
+  }
+}
+
 input[type="submit"] {
   background-color: var.$noir;
   border: none;

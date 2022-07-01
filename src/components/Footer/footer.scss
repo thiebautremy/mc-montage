@@ -32,3 +32,30 @@
     }
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    &__container__right {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+
+    &__container__left {
+      width: 80%;
+      margin-bottom: var.$gap-small;
+      & img {
+        width: 50%;
+      }
+    }
+
+    &__container__right {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}

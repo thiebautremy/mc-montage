@@ -55,3 +55,16 @@
     }
   }
 }
+
+@media screen and (max-width: 700px) {
+  .servicesEtRealisations {
+    &__services {
+      .divider--vertical {
+        display: none;
+      }
+      &__items {
+        flex-direction: column;
+      }
+    }
+  }
+}
