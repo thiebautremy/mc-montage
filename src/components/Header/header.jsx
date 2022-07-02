@@ -50,6 +50,7 @@ const Header = () => {
             onClick={(e) => {
               e.preventDefault();
               window.scroll(0, 0);
+              setActiveLink(0);
             }}
           />
           <ul>
