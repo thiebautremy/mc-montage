@@ -65,6 +65,11 @@ const Diaporama = () => {
       imageSrc: "10",
       title: "Agencement bureau",
     },
+    {
+      id: 9,
+      imageSrc: "11",
+      title: "Agence bureau avec mezzanine et escalier",
+    },
   ];
 
   return (
