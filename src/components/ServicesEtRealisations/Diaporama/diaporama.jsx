@@ -102,15 +102,17 @@ const Diaporama = () => {
         type="button"
         onClick={() => handleSelect("prec")}
         className="buttonDiapo buttonDiapo--left"
+        aria-label="Bouton précèdent"
       >
-        <i className="pi pi-chevron-left"></i>
+        <i className="pi pi-chevron-left" aria-hidden="true"></i>
       </button>
       <button
         type="button"
         onClick={() => handleSelect("suiv")}
         className="buttonDiapo buttonDiapo--right"
+        aria-label="Bouton suivant"
       >
-        <i className="pi pi-chevron-right"></i>
+        <i className="pi pi-chevron-right" aria-hidden="true"></i>
       </button>
     </div>
   );
