@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer__container__adresse">
           <p>Notre adresse :</p>
           <p>SARL MC MONTAGE</p>
-          <p>5 bis rue de lorraine</p>
-          <p>54300 Croismare</p>
+          <p>16 rue de Chenevières</p>
+          <p>54450 Bénaménil</p>
         </div>
         <div className="divider--vertical"></div>
         <div className="footer__container__mailEtNumero">
