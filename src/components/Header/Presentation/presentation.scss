@@ -2,6 +2,9 @@
 
 .presentation {
   padding: 6rem 5rem 2rem;
+  animation-name: slideFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 
   &__container__title {
     text-align: start;
@@ -40,5 +43,15 @@
         padding: calc(var.$gap-small/2);
       }
     }
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
   }
 }

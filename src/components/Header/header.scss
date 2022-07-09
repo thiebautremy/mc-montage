@@ -15,6 +15,9 @@
     background-color: rgba(var.$noir, $alpha: 0.6);
     transition: all 0.2s ease-in-out;
     font-weight: bold;
+    animation-name: slideFromUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
   }
   & nav.scrolled {
     background-color: rgba(var.$noir, $alpha: 1);
@@ -85,5 +88,15 @@
         display: none;
       }
     }
+  }
+}
+
+@keyframes slideFromUp {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 0%;
   }
 }

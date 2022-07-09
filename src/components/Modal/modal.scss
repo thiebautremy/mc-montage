@@ -10,6 +10,9 @@
   top: 30%;
   left: 35%;
   min-height: 10rem;
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 
   &__header {
     position: relative;
@@ -37,5 +40,15 @@
   .modal {
     width: 80%;
     left: unset;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
