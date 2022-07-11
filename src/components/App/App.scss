@@ -1,7 +1,7 @@
 @use "src/Styles/variables.scss" as var;
 
 #App {
-  background-color: var.$background;
+  background-color: var.$background-dark;
   font-family: font-regular;
 }
 
@@ -37,7 +37,7 @@ input[type="submit"] {
   border: none;
   border-radius: var.$gap-small;
   color: var.$blanc;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
 
@@ -69,4 +69,17 @@ input[type="submit"] {
   &::after {
     bottom: 0;
   }
+}
+
+.visible {
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
 }

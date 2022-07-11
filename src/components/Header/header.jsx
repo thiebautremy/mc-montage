@@ -40,7 +40,7 @@ const Header = () => {
   });
   return (
     <header id="header" className="header">
-      <nav className={scrollUnderHeader ? "scrolled" : ""} ref={navBar}>
+      <nav className={scrollUnderHeader && "scrolled"} ref={navBar}>
         <div className="header__leftContainer">
           <img
             src={logo}
@@ -59,7 +59,6 @@ const Header = () => {
                 key={item.id}
                 onClick={(e) => {
                   e.preventDefault();
-                  console.log(e);
                   setActiveLink(item.id);
                   document.querySelector(`#${item.href}`).scrollIntoView();
                 }}

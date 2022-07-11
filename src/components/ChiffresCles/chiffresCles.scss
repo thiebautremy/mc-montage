@@ -3,6 +3,7 @@
 .chiffresCles {
   background-color: var.$background-dark-medium;
   padding: var.$gap-medium 0;
+  animation: hideAnimation 0.8s ease-in-out both;
 
   &__chiffres {
     padding: var.$gap-small;
@@ -22,6 +23,15 @@
       display: block;
       margin-bottom: calc(var.$gap-small/2);
     }
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

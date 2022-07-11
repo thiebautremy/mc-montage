@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "../Modal/modal";
 import "./contact.scss";
+import VisibilitySensor from "react-visibility-sensor";
 
 const Contact = () => {
   const form = useRef();
@@ -9,6 +10,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [messageModal, setMessageModal] = useState("");
   const [isVisibleModal, setIsVisibleModal] = useState(false);
+  const [visible, setIsVisible] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,24 +38,27 @@ const Contact = () => {
         }
       );
   };
-
   return (
-    <section className="contact" id="contact">
-      <h2>Nous contacter</h2>
-      <div className="contact__formContainer">
-        <form ref={form} onSubmit={sendEmail}>
-          <div>
-            <label>Email</label>
-            <input
-              type="email"
-              name="user_email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Votre Email"
-            />
-          </div>
-          {/* TODO Faire un select avec value object pour intégrer en tant qu'objet de mail */}
-          {/* <div>
+    <VisibilitySensor partialVisibility onChange={() => setIsVisible(!visible)}>
+      <section
+        className={visible ? "contact" : "contact visible"}
+        id="contact"
+      >
+        <h2>Nous contacter</h2>
+        <div className="contact__formContainer">
+          <form ref={form} onSubmit={sendEmail}>
+            <div>
+              <label>Email</label>
+              <input
+                type="email"
+                name="user_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Votre Email"
+              />
+            </div>
+            {/* TODO Faire un select avec value object pour intégrer en tant qu'objet de mail */}
+            {/* <div>
             <label>Email</label>
             <input
               type="email"
@@ -63,22 +68,23 @@ const Contact = () => {
               placeholder="Votre Email"
             />
           </div> */}
-          <div>
-            <label>Message</label>
-            <textarea
-              name="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Votre message"
-            />
-          </div>
-          <input type="submit" value="Envoyer" />
-        </form>
-      </div>
-      {isVisibleModal && (
-        <Modal message={messageModal} action={() => setIsVisibleModal()} />
-      )}
-    </section>
+            <div>
+              <label>Message</label>
+              <textarea
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Votre message"
+              />
+            </div>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+        {isVisibleModal && (
+          <Modal message={messageModal} action={() => setIsVisibleModal()} />
+        )}
+      </section>
+    </VisibilitySensor>
   );
 };
 

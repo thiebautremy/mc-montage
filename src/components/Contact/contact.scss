@@ -5,6 +5,7 @@
   color: var.$blanc;
   padding: var.$gap-medium;
   position: relative;
+  animation: hideAnimation 0.8s ease-in-out;
 
   &__formContainer {
     display: flex;
@@ -22,5 +23,14 @@
     & label {
       margin-right: 1rem;
     }
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

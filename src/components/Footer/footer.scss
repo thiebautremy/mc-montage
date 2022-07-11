@@ -5,6 +5,7 @@
   color: var.$blanc;
   padding: var.$gap-medium;
   display: flex;
+  animation: hideAnimation 0.8s ease-in-out both;
 
   &__container__left {
     width: 30%;
@@ -57,5 +58,14 @@
       width: 100%;
       margin: auto;
     }
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
