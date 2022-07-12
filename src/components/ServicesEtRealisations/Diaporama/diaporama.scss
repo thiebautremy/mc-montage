@@ -16,12 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;
-
-    transition: all 0.5s ease;
-    -webkit-animation: fadeIn 0.5s ease-in-out;
-    -moz-animation: fadeIn 0.5s ease-in-out;
-    -o-animation: fadeIn 0.5s ease-in-out;
-    animation: fadeIn 0.5s ease-in-out;
   }
 
   .container__pagination {
@@ -69,106 +63,17 @@
       right: 5%;
     }
   }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-moz-keyframes fadeIn {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-o-keyframes fadeIn {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-  }
-
-  @-moz-keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-  }
-
-  @-webkit-keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-  }
-
-  @-o-keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-  }
-
-  @-ms-keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.5;
-    }
-  }
 }
-
 @media screen and (max-width: 700px) {
   #carousel {
     width: 100%;
+
+    .carousel__container {
+      height: 25rem;
+      width: 100%;
+    }
     .buttonDiapo {
       padding: calc(var.$gap-small/2);
     }
   }
-}
-
-.carousel__container {
 }

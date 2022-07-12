@@ -15,7 +15,8 @@ h2 {
 }
 
 input,
-textarea {
+textarea,
+select {
   min-width: 20rem;
   padding: 0.2rem;
 
@@ -25,9 +26,15 @@ textarea {
   }
 }
 
+select {
+  border: none;
+  background-color: var.$blanc;
+}
+
 @media screen and (max-width: 700px) {
   input,
-  textarea {
+  textarea,
+  select {
     min-width: 15rem;
   }
 }
@@ -76,10 +83,10 @@ input[type="submit"] {
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity: 0.2;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }

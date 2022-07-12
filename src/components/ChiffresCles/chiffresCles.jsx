@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./chiffresCles.scss";
-// import addClassOnScroll from "../../Services/revealScroll.js";
 import VisibilitySensor from "react-visibility-sensor";
 
 const ChiffresCles = () => {

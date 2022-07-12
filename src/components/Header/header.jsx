@@ -40,7 +40,7 @@ const Header = () => {
   });
   return (
     <header id="header" className="header">
-      <nav className={scrollUnderHeader && "scrolled"} ref={navBar}>
+      <nav className={scrollUnderHeader ? "scrolled" : ""} ref={navBar}>
         <div className="header__leftContainer">
           <img
             src={logo}
