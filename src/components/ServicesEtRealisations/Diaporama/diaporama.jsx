@@ -1,100 +1,95 @@
 import { useState } from "react";
 import "./diaporama.scss";
+import bg1 from "../../../assets/images/1.webp";
+import bg2 from "../../../assets/images/2.webp";
+import bg3 from "../../../assets/images/3.webp";
+import bg4 from "../../../assets/images/4.webp";
+import bg5 from "../../../assets/images/5.webp";
+import bg6 from "../../../assets/images/6.webp";
+import bg7 from "../../../assets/images/7.webp";
+import bg8 from "../../../assets/images/8.webp";
+import bg9 from "../../../assets/images/9.webp";
+import bg10 from "../../../assets/images/10.webp";
+import bg11 from "../../../assets/images/11.webp";
 
 const Diaporama = () => {
-  const [indexDiaporama, setIndexDiaporama] = useState(0);
+  let [activeBackgroundId, setActiveBackgroundId] = useState(0);
 
   const handleSelect = (action) => {
-    let newIndex = indexDiaporama;
-    const currentImage = document.querySelector(".carousel__container img");
-
-    if (currentImage.classList.contains("actif"))
-      currentImage.classList.remove("actif");
-
-    setTimeout(() => {
-      currentImage.classList.add("actif");
-      action === "prec"
-        ? setIndexDiaporama(newIndex === 0 ? data.length - 1 : newIndex - 1)
-        : setIndexDiaporama(newIndex === data.length - 1 ? 0 : newIndex + 1);
-    }, [100]);
+    let newIndex = activeBackgroundId;
+    action === "prec"
+      ? setActiveBackgroundId(
+          newIndex === 0 ? backgrounds.length - 1 : newIndex - 1
+        )
+      : setActiveBackgroundId(
+          newIndex === backgrounds.length - 1 ? 0 : newIndex + 1
+        );
   };
 
-  const data = [
+  const backgrounds = [
     {
       id: 0,
-      imageSrc: "15",
-      title: "Rayonnage alu",
+      bg: bg1,
     },
     {
       id: 1,
-      imageSrc: "2",
-      title: "Rayonnage alu",
+      bg: bg2,
     },
     {
       id: 2,
-      imageSrc: "3",
-      title: "Mezzanine",
+      bg: bg3,
     },
     {
       id: 3,
-      imageSrc: "4",
-      title: "Agencement bureau",
+      bg: bg4,
     },
     {
       id: 4,
-      imageSrc: "6",
-      title: "Cloison amovible en aluminium",
+      bg: bg5,
     },
     {
       id: 5,
-      imageSrc: "7",
-      title: "Camionnette MC Montage",
+      bg: bg6,
     },
     {
       id: 6,
-      imageSrc: "8",
-      title: "Stockage palettes",
+      bg: bg7,
     },
     {
       id: 7,
-      imageSrc: "9",
-      title: "Stockage palettes",
+      bg: bg8,
     },
     {
       id: 8,
-      imageSrc: "10",
-      title: "Agencement bureau",
+      bg: bg9,
     },
     {
       id: 9,
-      imageSrc: "11",
-      title: "Agence bureau avec mezzanine et escalier",
+      bg: bg10,
+    },
+    {
+      id: 10,
+      bg: bg11,
     },
   ];
-
   return (
     <div id="carousel">
-      {data
-        .filter((item) => item.id === indexDiaporama)
-        .map((item, index) => (
-          <div className="carousel__container" key={index}>
-            <img
-              src={require("../../../assets/images/" + item.imageSrc + ".webp")}
-              alt={item.title}
-              title={item.title}
-            />
-          </div>
-        ))}
+      <div
+        className="carousel__container"
+        style={{
+          backgroundImage: `url(${backgrounds[activeBackgroundId].bg})`,
+        }}
+      ></div>
       <div className="container__pagination">
-        {data.map((item, index) => (
+        {backgrounds.map((item, index) => (
           <div
             key={index}
             className={
-              index === indexDiaporama
+              index === activeBackgroundId
                 ? "container__pagination__item actif"
                 : "container__pagination__item"
             }
-            onClick={(e) => setIndexDiaporama(index)}
+            onClick={(e) => setActiveBackgroundId(index)}
           ></div>
         ))}
       </div>
