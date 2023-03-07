@@ -1,0 +1,35 @@
+@use "/styles/_variables.scss" as var;
+
+.presentation {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8rem 5rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__text {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  padding: var.$gap-medium;
+  border-radius: var.$radius;
+}
+.container__text__first,
+.container__text__second {
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: var.$blanc;
+  margin: var.$gap-small auto;
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.container__text__second {
+  margin: var.$gap-small auto var.$gap-medium;
+}
+
+@media screen and (max-width: 900px) {
+  .presentation {
+    padding: 8rem 1rem 2rem;
+  }
+}

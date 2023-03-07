@@ -1,0 +1,9 @@
+@use "/styles/_variables.scss" as var;
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("../../assets/images/1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
