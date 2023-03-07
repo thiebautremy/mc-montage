@@ -1,11 +1,11 @@
-import styles from "./presentation.module.scss";
+import styles from "./callToAction.module.scss";
 import logo from "../../../assets/images/logoPhotoshop.png";
 import Image from "next/image";
 import ContactBtn from "../../Buttons/contactBtn";
 
-const Presentation = () => {
+const CallToAction = () => {
   return (
-    <div className={styles.presentation} id="presentation">
+    <div className={styles.callToAction}>
       <div className={styles.container__logo}>
         <Image
           src={logo}
@@ -16,9 +16,11 @@ const Presentation = () => {
         />
       </div>
       <div className={styles.container__text}>
-        <p className={styles.container__text__first}>Expertise de 15 années.</p>
+        <p className={styles.container__text__first}>
+          Une expertise de plus de 15 années.
+        </p>
         <p className={styles.container__text__second}>
-          Contactez-nous pour réaliser votre projet !
+          <strong>Contactez-nous</strong> pour réaliser votre projet !
         </p>
         <ContactBtn />
       </div>
@@ -26,4 +28,4 @@ const Presentation = () => {
   );
 };
 
-export default Presentation;
+export default CallToAction;
