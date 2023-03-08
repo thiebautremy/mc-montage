@@ -49,12 +49,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(45deg, #141313, #080809);
 }
 
 a {
@@ -68,6 +63,77 @@ a {
   }
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  color: var.$blanc;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small;
+  display: inline-block;
+  letter-spacing: 0.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.4rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small var.$gap-xlarge;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+p {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+//? ==== NAVBAR PRIME REACT ==== \\
 .p-menubar {
   justify-content: space-around;
   background: rgba(var.$noir, $alpha: 0.9) !important;

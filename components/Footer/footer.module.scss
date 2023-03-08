@@ -1,0 +1,100 @@
+@use "styles/_variables.scss" as var;
+
+.footer {
+  background-color: var.$background-footer;
+  color: var.$blanc;
+  padding: var.$gap-medium;
+  display: flex;
+
+  &__container__left {
+    width: 30%;
+  }
+
+  &__container__right {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      padding: 0.5rem;
+    }
+
+    .divider__vertical {
+      background-color: var.$blanc;
+      width: 0.1rem;
+      height: 100%;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var.$rouge;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.2rem;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+
+  &__container__mailEtNumero {
+    &__mail {
+      color: var.$rouge;
+    }
+  }
+
+  .underline {
+    text-decoration: underline;
+    margin: 0.5rem 0;
+  }
+}
+
+.mapContainer {
+  width: 100%;
+  .map {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    &__container__right {
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+
+    &__container__left {
+      width: 80%;
+      margin-bottom: var.$gap-small;
+      & img {
+        width: 50%;
+      }
+    }
+
+    &__container__right {
+      width: 100%;
+      margin: auto;
+      flex-direction: column;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .divider--vertical {
+    display: none;
+  }
+}

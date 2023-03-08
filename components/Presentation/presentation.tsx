@@ -1,52 +1,72 @@
 import Image from "next/image";
 import styles from "./presentation.module.scss";
-import camion from "../../assets/images/camion.webp";
+import camion from "../../assets/images/camion-transformed.png";
+import DividerVertical from "../Dividers/dividerVertical";
+import DividerHorizontal from "../Dividers/dividerHorizontal";
 
 const Presentation = () => {
   return (
-    <div className={styles.presentation}>
-      <div className={styles.text}>
-        <p>
-          MC Montage est une société spécialisée dans le montage de rayonnages,
-          pose de cloison, mezzanine, faux plafond et d&apos;agencement de
-          bureau depuis plus de 15 ans.
-        </p>
-        <p>
-          Les chantiers sont principalement dans la région du Grand EST mais
-          également dans toute la France et même à l&apos;étranger.
-        </p>
-        <p>Nous proposons une large gamme de service</p>
-        <div className={styles.services}>
-          <div className={styles.service}>
-            <h3>Rayonnages</h3>
-            <ul>
-              <li>Montage</li>
-              <li>Démontage</li>
-              <li>Stockage palettes et archives</li>
-              <li>SAV</li>
-            </ul>
+    <>
+      <div className={styles.presentation}>
+        <div className={styles.text}>
+          <h1>MC Montage</h1>
+          <div className={styles.subtitle}>
+            <p>
+              MC Montage est une société spécialisée dans le montage de
+              rayonnages, pose de cloison, mezzanine, faux plafond et
+              d&apos;agencement de bureau depuis plus de 15 ans.
+            </p>
+            <p>
+              Les chantiers sont principalement dans la région du Grand EST mais
+              également dans toute la France et même à l&apos;étranger.
+            </p>
           </div>
-          <div className={styles.divider__vertical}></div>
-          <div className={styles.service}>
-            <h3>Optimisation</h3>
-            <ul>
-              <li>Pose de cloison amovible en aluminium</li>
-              <li>Agencement bureau</li>
-              <li>Mezzanine</li>
-              <li>Faux plafond</li>
-            </ul>
+          <div className={styles.servicesContainer}>
+            <p className={styles.servicesContainer__title}>
+              Nous proposons une large gamme de service
+            </p>
+            <div className={styles.services}>
+              <div className={styles.service}>
+                <h3>Magasinage</h3>
+                <ul>
+                  <li>Rayonnage industriel</li>
+                  <li>Rayonnage d&apos;archive</li>
+                  <li>Rayonnage métallique</li>
+                </ul>
+              </div>
+              <DividerVertical />
+              <div className={styles.service}>
+                <h3>Agencement</h3>
+                <ul>
+                  <li>Pose de cloison amovible en aluminium</li>
+                  <li>Agencement bureau</li>
+                  <li>Mezzanine</li>
+                  <li>Faux plafond</li>
+                  <li>Plateforme</li>
+                </ul>
+              </div>
+              <DividerVertical />
+              <div className={styles.service}>
+                <h3>Stockage</h3>
+                <ul>
+                  <li>Pose de rack à palettes</li>
+                  <li>Pose d&apos;étagères sur rail</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+        <Image
+          src={camion}
+          alt="Camion MC Montage garé devant un bâtiment"
+          title="Camion MC Montage"
+          width={450}
+          height={280}
+          className={styles.image}
+        />
       </div>
-      <Image
-        src={camion}
-        alt="Camion MC Montage garé devant un bâtiment"
-        title="Camion MC Montage"
-        width={550}
-        height={500}
-        className={styles.image}
-      />
-    </div>
+      <DividerHorizontal />
+    </>
   );
 };
 

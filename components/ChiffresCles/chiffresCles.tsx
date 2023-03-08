@@ -2,11 +2,11 @@ import styles from "./chiffresCles.module.scss";
 
 const ChiffresCles = () => {
   return (
-    <section id="chiffresCles" className={styles.chiffresCles}>
-      <h2>Chiffres clés</h2>
+    <section className={styles.chiffresCles}>
+      <h2 className={styles.chiffresClesTitle}>Chiffres clés</h2>
       <div className={styles.chiffres}>
         <p>
-          <span>4</span>Salariés
+          <span>5</span>Salariés
         </p>
         <p>
           <span>1530</span>Chantiers

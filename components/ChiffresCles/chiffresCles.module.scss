@@ -1,23 +1,27 @@
 @use "styles/_variables.scss" as var;
 
 .chiffresCles {
-  background-color: var.$background-dark-medium;
   padding: var.$gap-medium 0;
 
   .chiffres {
     padding: var.$gap-small;
     display: flex;
     color: var.$blanc;
+    justify-content: space-evenly;
 
     & p {
       font-size: 1.2rem;
       margin-bottom: 0;
       text-align: center;
-      width: 33%;
+      border-radius: var.$radius;
+      padding: var.$gap-small;
+      box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.75);
     }
 
     & span {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       font-weight: bold;
       display: block;
       margin-bottom: calc(var.$gap-small/2);
