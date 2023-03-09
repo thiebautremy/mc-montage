@@ -3,6 +3,8 @@ import styles from "./footer.module.scss";
 import logo from "../../assets/images/logoPhotoshop.png";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import Image from "next/image";
+import Link from "next/link";
+import { MdOutlineMarkEmailRead, MdPhoneInTalk } from "react-icons/md";
 
 const Footer = () => {
   const position = [48.5662876, 6.6714822];
@@ -44,23 +46,26 @@ const Footer = () => {
           <div className={styles.footer__container__mailEtNumero}>
             <p className={styles.underline}>Nos coordonnées :</p>
             <p>Mr GERL Mickael (gérant)</p>
-            <p>
-              <i className="pi pi-phone"></i> 06 81 21 38 73
+            <p className={styles.footer__container__mailEtNumero__numero}>
+              <MdPhoneInTalk /> 06 81 21 38 73
             </p>
-            <p>
-              <span>@</span>{" "}
-              <a
-                href="mailto: mcmontage54450@gmail.com"
-                className={styles.footer__container__mailEtNumero__mail}
-              >
+            <p className={styles.footer__container__mailEtNumero__mail}>
+              <MdOutlineMarkEmailRead />
+              <a href="mailto: mcmontage54450@gmail.com">
                 mcmontage54450@gmail.com
               </a>
             </p>
           </div>
         </div>
       </footer>
-      <div>
-        <p>Mentions légales</p>
+      <div className={styles.subFooter}>
+        <Link href="/mentions-legales">
+          <p>Mentions légales</p>
+        </Link>
+        <p className={styles.subFooter__mail}>
+          Site internet réalisé par <MdOutlineMarkEmailRead />
+          <a href="mailto: remythiebaut52@gmail.com">Rémy THIEBAUT</a>
+        </p>
       </div>
     </div>
   );

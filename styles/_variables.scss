@@ -12,6 +12,45 @@ $gap-medium: 2rem;
 $gap-large: 3rem;
 $gap-xlarge: 5rem;
 
+$screen-phone: 599px;
+$screen-tablet-portrait: 800px;
+$screen-tablet-landscape: 1024px;
+$screen-desktop: 1200px;
+
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+// usage
+// .my-box {
+//   padding: 10px;
+
+//   @include for-desktop-up {
+//     padding: 20px;
+//   }
+// }
+
 @font-face {
   font-family: "font-regular";
   src: url(../assets/font/Lato/Lato-Regular.ttf);

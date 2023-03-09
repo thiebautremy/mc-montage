@@ -21,6 +21,10 @@
   &::after {
     bottom: 0;
   }
+
+  @media screen and (max-width: var.$screen-tablet-portrait) {
+    display: none;
+  }
 }
 
 .divider__horizontal {
@@ -47,5 +51,9 @@
   }
   &::before {
     left: -0.1rem;
+  }
+
+  @media screen and (max-width: var.$screen-tablet-portrait) {
+    margin: var.$gap-small auto;
   }
 }

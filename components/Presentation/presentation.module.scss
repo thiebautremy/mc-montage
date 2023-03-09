@@ -8,6 +8,17 @@
 
   .image {
     border-radius: var.$radius;
+    @media screen and (max-width: 1300px) {
+      width: 337.5px;
+      height: 210px;
+    }
+    @media screen and (max-width: var.$screen-desktop) {
+      width: 225px;
+      height: 140px;
+    }
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      display: none;
+    }
   }
 
   .subtitle {
@@ -25,6 +36,10 @@
       margin-top: var.$gap-medium;
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width: var.$screen-tablet-portrait) {
+        flex-direction: column;
+      }
     }
     .service {
       padding: var.$gap-medium;
@@ -51,14 +66,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .services {
-    flex-direction: column;
-  }
-  .divider__vertical {
-    display: none;
   }
 }

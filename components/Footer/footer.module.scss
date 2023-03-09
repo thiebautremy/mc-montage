@@ -40,10 +40,20 @@
       &::after {
         bottom: 0;
       }
+
+      @media screen and (max-width: var.$screen-desktop) {
+        display: none;
+      }
     }
   }
 
   &__container__mailEtNumero {
+    &__mail,
+    &__numero {
+      display: flex;
+      align-items: center;
+    }
+
     &__mail {
       color: var.$rouge;
     }
@@ -52,6 +62,11 @@
   .underline {
     text-decoration: underline;
     margin: 0.5rem 0;
+  }
+
+  svg {
+    margin-right: var.$gap-small;
+    font-size: 1.2rem;
   }
 }
 
@@ -78,9 +93,6 @@
     &__container__left {
       width: 80%;
       margin-bottom: var.$gap-small;
-      & img {
-        width: 50%;
-      }
     }
 
     &__container__right {
@@ -96,5 +108,36 @@
 
   .divider--vertical {
     display: none;
+  }
+}
+
+.subFooter {
+  background-color: var.$background-footer;
+  color: var.$blanc;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 var.$gap-medium;
+
+  @media screen and (max-width: var.$screen-tablet-portrait) {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: var.$rouge;
+    }
+  }
+
+  svg {
+    color: var.$rouge;
+    margin: 0 calc(var.$gap-small/2) 0 var.$gap-small;
+    font-size: 1.2rem;
   }
 }

@@ -21,7 +21,7 @@ const ContactBanner = () => {
         </p>
         <p className={styles.contactInfo}>
           <BsClockHistory />
-          Ouvert du lundi au vendredi de 07:30 à 20h00
+          Ouvert du lundi au vendredi de 07h30 à 20h
         </p>
       </div>
     </div>

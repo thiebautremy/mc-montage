@@ -3,7 +3,6 @@ import styles from "@/styles/Home.module.scss";
 import Header from "@/components/Header/header";
 import ChiffresCles from "@/components/ChiffresCles/chiffresCles";
 import Presentation from "@/components/Presentation/presentation";
-import Footer from "@/components/Footer/footer.jsx";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import dynamic from "next/dynamic";
 
