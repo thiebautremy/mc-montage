@@ -13,7 +13,7 @@ const Footer = () => {
         <MapContainer
           className={styles.map}
           center={position}
-          zoom={11}
+          zoom={10}
           scrollWheelZoom={false}
         >
           <TileLayer
@@ -59,6 +59,9 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      <div>
+        <p>Mentions légales</p>
+      </div>
     </div>
   );
 };
