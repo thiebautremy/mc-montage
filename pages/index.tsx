@@ -1,11 +1,19 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.scss";
 import Header from "@/components/Header/header";
-import "primereact/resources/themes/lara-light-indigo/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
+import ChiffresCles from "@/components/ChiffresCles/chiffresCles";
+import Presentation from "@/components/Presentation/presentation";
+import Footer from "@/components/Footer/footer.jsx";
+import ContactBanner from "@/components/ContactBanner/contactBanner";
+import dynamic from "next/dynamic";
 
 export default function Home() {
+  const DynamicFooter = dynamic(
+    () => import("@/components/Footer/footer.jsx"),
+    {
+      ssr: false,
+    }
+  );
   return (
     <>
       <Head>
@@ -16,17 +24,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header />
-        <div className={styles.container__text}>
-          <p>
-            MC Montage est une société spécialisée dans le montage de
-            rayonnages, pose de cloison, mezzanine, faux plafond et
-            d&apos;agencement de bureau depuis plus de 14 ans.
-          </p>
-          <p>
-            Les chantiers sont principalement dans la région du Grand EST mais
-            également dans toute la France et même à l&apos;étranger.
-          </p>
-        </div>
+        <Presentation />
+        <ChiffresCles />
+        <ContactBanner />
+        <DynamicFooter />
       </main>
     </>
   );

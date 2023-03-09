@@ -1,0 +1,21 @@
+@use "styles/_variables.scss" as var;
+
+.contactBanner {
+  background-color: var.$rouge;
+  padding: calc(var.$gap-large / 2) 0;
+  color: var.$noir;
+
+  .contactInfos {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: var.$gap-small;
+      font-size: 1.5rem;
+    }
+  }
+}

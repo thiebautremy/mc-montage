@@ -1,0 +1,51 @@
+@use "styles/_variables.scss" as var;
+
+.divider__vertical {
+  height: auto;
+  width: 0.15rem;
+  background-color: var.$noir;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var.$rouge;
+    border-radius: 50%;
+    position: absolute;
+    left: -0.15rem;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.divider__horizontal {
+  height: 0.15rem;
+  width: 80%;
+  background-color: var.$blanc;
+  position: relative;
+  margin: var.$gap-large auto;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var.$rouge;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.2rem;
+  }
+
+  &::after {
+    right: -0.1rem;
+  }
+  &::before {
+    left: -0.1rem;
+  }
+}

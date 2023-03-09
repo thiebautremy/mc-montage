@@ -25,12 +25,46 @@ const NavBar = () => {
       ],
     },
     {
-      url: "/agencement",
       label: "Agencement",
+      items: [
+        {
+          label: "Bureau",
+          url: "/agencement/bureau",
+        },
+        {
+          label: "Mezzanine",
+          url: "/agencement/mezzanine",
+        },
+        { label: "Pose de cloison", url: "/agencement/pose-de-cloison" },
+        { label: "Faux plafond", url: "/agencement/faux-plafond" },
+        { label: "Plateforme", url: "/agencement/plateforme" },
+      ],
     },
     {
-      url: "/services",
+      label: "Stockage",
+      items: [
+        {
+          label: "Rack à palettes",
+          url: "/stockage/rack-a-palettes",
+        },
+        {
+          label: "Etagères sur rail",
+          url: "/stockage/etageres-sur-rail",
+        },
+      ],
+    },
+    {
       label: "Services",
+      items: [
+        {
+          label: "Montage / Démontage",
+          url: "/services/montage-demontage",
+        },
+        {
+          label: "SAV / Maintenance",
+          url: "/services/sav-maintenance",
+        },
+      ],
     },
     {
       url: "/contact",

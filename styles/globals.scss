@@ -1,47 +1,7 @@
 @use "/styles/_variables.scss" as var;
-
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  font-family: font-regular, Courier, monospace;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -89,12 +49,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(45deg, #141313, #080809);
 }
 
 a {
@@ -108,6 +63,77 @@ a {
   }
 }
 
+h1 {
+  font-size: 3.5rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  color: var.$blanc;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small;
+  display: inline-block;
+  letter-spacing: 0.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.4rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small var.$gap-xlarge;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: font-bold, Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-left: 1rem;
+  margin: var.$gap-small;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: var.$rouge;
+    border-top-left-radius: var.$radius;
+  }
+}
+
+p {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+//? ==== NAVBAR PRIME REACT ==== \\
 .p-menubar {
   justify-content: space-around;
   background: rgba(var.$noir, $alpha: 0.9) !important;
