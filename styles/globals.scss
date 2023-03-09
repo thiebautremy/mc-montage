@@ -1,4 +1,5 @@
 @use "/styles/_variables.scss" as var;
+
 :root {
   font-family: font-regular, Courier, monospace;
 }
@@ -70,7 +71,6 @@ h1 {
   position: relative;
   padding-left: 1rem;
   margin: var.$gap-small;
-  display: inline-block;
   letter-spacing: 0.5rem;
 
   &::before {
@@ -82,6 +82,10 @@ h1 {
     height: 100%;
     background-color: var.$rouge;
     border-top-left-radius: var.$radius;
+  }
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 2rem;
   }
 }
 
@@ -104,6 +108,11 @@ h2 {
     background-color: var.$rouge;
     border-top-left-radius: var.$radius;
   }
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 1.5rem;
+    margin: var.$gap-small var.$gap-medium;
+  }
 }
 
 h3 {
@@ -125,12 +134,21 @@ h3 {
     background-color: var.$rouge;
     border-top-left-radius: var.$radius;
   }
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 1.2rem;
+    margin: var.$gap-small 0;
+  }
 }
 
 p {
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
   line-height: 1.5rem;
+
+  @media screen and (max-width: var.$screen-phone) {
+    font-size: 1rem;
+  }
 }
 
 //? ==== NAVBAR PRIME REACT ==== \\

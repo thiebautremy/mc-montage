@@ -5,36 +5,58 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (max-width: var.$screen-desktop) {
+    padding: 8rem 2rem 5rem;
+  }
+
+  @media screen and (max-width: var.$screen-phone) {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .container__logo {
+    @media screen and (max-width: var.$screen-phone) {
+      display: none;
+    }
+    img {
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        width: 400px;
+        height: 200px;
+      }
+      @media screen and (max-width: var.$screen-tablet-portrait) {
+        width: 300px;
+        height: 150px;
+      }
+    }
+  }
 }
 .container__text {
   width: 50%;
   padding: var.$gap-medium;
   border-radius: var.$radius;
 
-  p {
-    font-size: 2rem;
+  @media screen and (max-width: var.$screen-phone) {
+    width: 100%;
   }
 }
 .container__text__first,
 .container__text__second {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 0.5rem;
   color: var.$blanc;
   margin: var.$gap-small auto;
   line-height: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+
+  @media screen and (max-width: var.$screen-desktop) {
+    font-size: 1.5rem;
+  }
 }
 .container__text__second {
   margin: var.$gap-small auto var.$gap-medium;
   strong {
     font-family: font-bold, Courier, monospace;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .callToAction {
-    padding: 8rem 1rem 2rem;
   }
 }

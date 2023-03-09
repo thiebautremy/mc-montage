@@ -5,14 +5,27 @@
   padding: calc(var.$gap-large / 2) 0;
   color: var.$noir;
 
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    text-align: center;
+    padding: var.$gap-small;
+  }
+
   .contactInfos {
     display: flex;
     justify-content: space-evenly;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .contactInfo {
     display: flex;
     align-items: center;
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      margin-bottom: var.$gap-small;
+    }
     svg {
       margin-right: var.$gap-small;
       font-size: 1.5rem;
