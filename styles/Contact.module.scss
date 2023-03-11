@@ -1,0 +1,25 @@
+@use "styles/_variables.scss" as var;
+
+.contact {
+  color: var.$blanc;
+  padding: var.$gap-medium;
+  position: relative;
+
+  &__formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto var.$gap-medium;
+    }
+  }
+  form {
+    padding: var.$gap-small;
+
+    & label {
+      margin-right: 1rem;
+    }
+  }
+}

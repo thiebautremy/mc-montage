@@ -1,0 +1,54 @@
+@use "styles/_variables.scss" as var;
+
+.modal {
+  background-color: var.$blanc;
+  color: var.$noir;
+  width: 30%;
+  border-radius: 0.5rem;
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  min-height: 10rem;
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+  &__header {
+    position: relative;
+    height: 2rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    span {
+      position: absolute;
+      padding: 0.5rem;
+      top: 0;
+      right: 0;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  p {
+    padding: var.$gap-medium;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    width: 80%;
+    left: unset;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
