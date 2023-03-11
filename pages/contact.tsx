@@ -3,9 +3,11 @@ import Layout from "@/components/Layout/layout";
 import emailjs from "@emailjs/browser";
 import styles from "../styles/Contact.module.scss";
 import Modal from "@/components/Modal/modal";
+import { MdOutlineMarkEmailRead, MdPhoneInTalk } from "react-icons/md";
+import { BsClockHistory } from "react-icons/bs";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(null);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   // const [demande, setDemande] = useState("");
@@ -13,40 +15,54 @@ const Contact = () => {
   const [isVisibleModal, setIsVisibleModal] = useState(false);
   //! TODO Check si l'id du template correspond bien au nouveau avec l'ajout de l'objet
   //! Bloquer l'envoi si pas d'objet choisis
-  //TODO Corriger les erreurs typescript
-  const sendEmail = (e) => {
+  const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_5h5mqn9",
-        "template_6h1vw1m",
-        form.current,
-        "iH8qeDu1HKlAzYYko"
-      )
-      .then(
-        (res) => {
-          if (res.status === 200) {
-            setMessageModal("Message correctement envoyé");
+    form.current &&
+      emailjs
+        .sendForm(
+          "service_5h5mqn9",
+          "template_6h1vw1m",
+          form.current,
+          "iH8qeDu1HKlAzYYko"
+        )
+        .then(
+          (res) => {
+            if (res.status === 200) {
+              setMessageModal("Message correctement envoyé");
+              setIsVisibleModal(true);
+              setMessage("");
+              setEmail("");
+              // setDemande("Choisissez une demande...");
+            }
+          },
+          (err) => {
+            setMessageModal("Problème lors de l'envoi du message");
             setIsVisibleModal(true);
-            setMessage("");
-            setEmail("");
-            // setDemande("Choisissez une demande...");
           }
-        },
-        (err) => {
-          setMessageModal("Problème lors de l'envoi du message");
-          setIsVisibleModal(true);
-        }
-      );
+        );
   };
   return (
     <Layout>
       <div className={styles.contact}>
         <h2>Nous contacter</h2>
-        <p>
-          TODO Rajouter les infos essentielles de contact (tel, email, horaire
-          ouverture etc...)
-        </p>
+        <div className={styles.contact__infos}>
+          <p className={styles.contact__infos__info}>
+            <MdOutlineMarkEmailRead />
+            <a
+              href="mailto: mcmontage54450@gmail.com"
+              className={styles.footer__container__mailEtNumero__mail}
+            >
+              mcmontage54450@gmail.com
+            </a>
+          </p>
+          <p className={styles.contact__infos__info}>
+            <MdPhoneInTalk /> 06 81 21 38 73
+          </p>
+          <p className={styles.contact__infos__info}>
+            <BsClockHistory />
+            Ouvert du lundi au vendredi de 07h30 à 20h
+          </p>
+        </div>
         <div className={styles.contact__formContainer}>
           <form ref={form} onSubmit={sendEmail}>
             {/* <div>
@@ -91,7 +107,10 @@ const Contact = () => {
           </form>
         </div>
         {isVisibleModal && (
-          <Modal message={messageModal} action={() => setIsVisibleModal()} />
+          <Modal
+            message={messageModal}
+            action={() => setIsVisibleModal(false)}
+          />
         )}
       </div>
     </Layout>

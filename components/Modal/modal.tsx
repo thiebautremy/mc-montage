@@ -1,6 +1,17 @@
+import { ReactFragment, ReactElement, JSXElementConstructor } from "react";
 import styles from "./modal.module.scss";
 
-const Modal = (props) => {
+const Modal = (props: {
+  action: (arg0: boolean) => void;
+  message:
+    | string
+    | number
+    | boolean
+    | ReactFragment
+    | ReactElement<any, string | JSXElementConstructor<any>>
+    | null
+    | undefined;
+}) => {
   console.log(props);
   const closeModal = () => {
     props.action(false);
