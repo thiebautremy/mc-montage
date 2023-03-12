@@ -2,8 +2,32 @@
 
 .contact {
   color: var.$blanc;
-  padding: var.$gap-medium;
-  position: relative;
+  padding: calc(var.$gap-xlarge * 2) var.$gap-medium var.$gap-medium;
+
+  .contact__infos {
+    padding: calc(var.$gap-large / 2) var.$gap-xlarge;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: var.$gap-small;
+      svg {
+        margin-right: var.$gap-small;
+        font-size: 1.5rem;
+      }
+
+      &__mail {
+        margin-left: calc(var.$gap-small/2);
+        color: var.$rouge;
+      }
+    }
+  }
 
   &__formContainer {
     display: flex;
@@ -20,28 +44,6 @@
 
     & label {
       margin-right: 1rem;
-    }
-  }
-
-  .contact__infos {
-    padding: calc(var.$gap-large / 2) 0;
-    justify-content: space-evenly;
-
-    @media screen and (max-width: var.$screen-tablet-landscape) {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__info {
-      display: flex;
-      align-items: center;
-      @media screen and (max-width: var.$screen-tablet-landscape) {
-        margin-bottom: var.$gap-small;
-      }
-      svg {
-        margin-right: var.$gap-small;
-        font-size: 1.5rem;
-      }
     }
   }
 }
