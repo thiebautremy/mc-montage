@@ -1,0 +1,49 @@
+@use "styles/_variables.scss" as var;
+
+.contact {
+  color: var.$blanc;
+  padding: calc(var.$gap-xlarge * 2) var.$gap-medium var.$gap-medium;
+
+  .contact__infos {
+    padding: calc(var.$gap-large / 2) var.$gap-xlarge;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: var.$gap-small;
+      svg {
+        margin-right: var.$gap-small;
+        font-size: 1.5rem;
+      }
+
+      &__mail {
+        margin-left: calc(var.$gap-small/2);
+        color: var.$rouge;
+      }
+    }
+  }
+
+  &__formContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto var.$gap-medium;
+    }
+  }
+  form {
+    padding: var.$gap-small;
+
+    & label {
+      margin-right: 1rem;
+    }
+  }
+}

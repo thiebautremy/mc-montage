@@ -1,5 +1,6 @@
 import NavBar from "@/components/NavBar/navbar";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import styles from "../styles/MentionsLegales.module.scss";
 
 const MentionsLegales = () => {
@@ -11,6 +12,9 @@ const MentionsLegales = () => {
   );
   return (
     <>
+      <Head>
+        <title>Mc Montage - Mentions légales</title>
+      </Head>
       <NavBar />
       <div className={styles.mentionsLegales}>
         <h1>Mentions légales</h1>
