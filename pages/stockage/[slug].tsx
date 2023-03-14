@@ -25,7 +25,7 @@ const Stockage = () => {
           imgSrc={rayonnageMobile1}
           imgAlt="Rayonnage mobile"
           imgTitle="Rayonnage mobile manuel"
-          isInverted={false}
+          isInverted
         />
       </Layout>
     </>

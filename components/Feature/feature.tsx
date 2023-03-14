@@ -23,12 +23,7 @@ const Feature: React.FC<FeatureProps> = ({
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
-      <div className={styles.feature}>
-        <style jsx>{`
-          .feature {
-            flex-direction: ${isInverted ? "row-reverse" : "row"};
-          }
-        `}</style>
+      <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
         <div className={styles.description}>
           <p>{text.toString()}</p>
         </div>
