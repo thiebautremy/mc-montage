@@ -3,6 +3,7 @@ import styles from "./presentation.module.scss";
 import camion from "../../assets/images/camion-transformed.png";
 import DividerVertical from "../Dividers/dividerVertical";
 import DividerHorizontal from "../Dividers/dividerHorizontal";
+import { motion } from "framer-motion";
 
 const Presentation = () => {
   return (
@@ -56,14 +57,22 @@ const Presentation = () => {
             </div>
           </div>
         </div>
-        <Image
-          src={camion}
-          alt="Camion MC Montage garé devant un bâtiment"
-          title="Camion MC Montage"
-          width={450}
-          height={280}
-          className={styles.image}
-        />
+        <motion.div
+          animate={{ x: [250, -10] }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <Image
+            src={camion}
+            alt="Camion MC Montage garé devant un bâtiment"
+            title="Camion MC Montage"
+            width={450}
+            height={280}
+            className={styles.image}
+          />
+        </motion.div>
       </div>
       <DividerHorizontal />
     </>
