@@ -65,7 +65,7 @@ const Contact = () => {
         <h1>Nous contacter</h1>
         <div className={styles.contact__infosAndform}>
           <motion.div
-            animate={{ x: 300 }}
+            animate={{ x: [-350, 300] }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
@@ -93,7 +93,7 @@ const Contact = () => {
             </div>
           </motion.div>
           <motion.div
-            animate={{ x: -350 }}
+            animate={{ x: [350, -300] }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
