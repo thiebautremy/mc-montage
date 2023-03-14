@@ -1,26 +1,16 @@
 const urls = [
   { label: "home", urls: ["/"] },
   {
-    label: "magasinage",
-    urls: ["rayonnage-metallique", "rayonnage-industriel", "rayonnage-archive"],
-  },
-  {
     label: "agencement",
-    urls: [
-      "bureau",
-      "mezzanine",
-      "pose-de-cloison",
-      "faux-plafond",
-      "plateforme",
-    ],
+    urls: ["bureau", "mezzanine-plateforme", "cloison-faux-plafond"],
   },
   {
     label: "stockage",
-    urls: ["rack-a-palettes", "etageres-sur-rail"],
+    urls: ["rayonnage-mobile-archives", "rayonnage-metallique-industriel"],
   },
   {
     label: "services",
-    urls: ["montage-demontage", "sav-maintenance"],
+    urls: ["montage-demontage", "sav-maintenance", "devis"],
   },
   {
     label: "contact",

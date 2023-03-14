@@ -11,17 +11,16 @@ const NavBar = () => {
       label: "Accueil",
     },
     {
-      label: "Magasinage",
+      label: "Stockage",
       items: [
         {
-          label: "Rayonnage métallique",
-          url: "/magasinage/rayonnage-metallique",
+          label: "Rayonnage mobile archives",
+          url: "/stockage/rayonnage-mobile-archives",
         },
         {
-          label: "Rayonnage industriel",
-          url: "/magasinage/rayonnage-industriel",
+          label: "Rayonnage métallique industriel",
+          url: "/stockage/rayonnage-metallique-industriel",
         },
-        { label: "Rayonnage d'archive", url: "/magasinage/rayonnage-archive" },
       ],
     },
     {
@@ -32,24 +31,12 @@ const NavBar = () => {
           url: "/agencement/bureau",
         },
         {
-          label: "Mezzanine",
-          url: "/agencement/mezzanine",
-        },
-        { label: "Pose de cloison", url: "/agencement/pose-de-cloison" },
-        { label: "Faux plafond", url: "/agencement/faux-plafond" },
-        { label: "Plateforme", url: "/agencement/plateforme" },
-      ],
-    },
-    {
-      label: "Stockage",
-      items: [
-        {
-          label: "Rack à palettes",
-          url: "/stockage/rack-a-palettes",
+          label: "Mezzanine et Plateforme",
+          url: "/agencement/mezzanine-plateforme",
         },
         {
-          label: "Etagères sur rail",
-          url: "/stockage/etageres-sur-rail",
+          label: "Pose de cloison et faux plafond",
+          url: "/agencement/cloison-faux-plafond",
         },
       ],
     },
@@ -63,6 +50,10 @@ const NavBar = () => {
         {
           label: "SAV / Maintenance",
           url: "/services/sav-maintenance",
+        },
+        {
+          label: "Devis",
+          url: "/services/devis",
         },
       ],
     },

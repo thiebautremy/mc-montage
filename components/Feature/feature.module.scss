@@ -1,0 +1,17 @@
+@use "styles/_variables.scss" as var;
+
+.feature {
+  display: flex;
+  padding: var.$gap-xlarge var.$gap-medium;
+  align-items: center;
+  .description {
+    width: 60%;
+  }
+  .imageWrapper {
+    position: relative;
+    height: 20rem;
+    width: 40%;
+    border-radius: var.$radius;
+    overflow: hidden;
+  }
+}

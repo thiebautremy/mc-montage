@@ -1,14 +1,23 @@
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
-import { findUrlsAndCreateParams } from "@/helper/helper";
+import Head from "next/head";
+import {
+  findUrlsAndCreateParams,
+  urlWithFirstLetterCapitalize,
+} from "@/helper/helper";
 
 const Services = () => {
   const router = useRouter();
   const { slug } = router.query;
   return (
-    <Layout>
-      <p>services: {slug}</p>
-    </Layout>
+    <>
+      <Head>
+        <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
+      </Head>
+      <Layout>
+        <p>services: {slug}</p>
+      </Layout>
+    </>
   );
 };
 export default Services;
