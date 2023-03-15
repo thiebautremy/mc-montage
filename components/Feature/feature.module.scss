@@ -2,11 +2,14 @@
 
 .feature {
   display: flex;
-  padding: var.$gap-xlarge var.$gap-medium;
+  padding: var.$gap-medium;
   align-items: center;
   .description {
     width: 60%;
     padding: var.$gap-small var.$gap-medium;
+    p {
+      line-height: 2rem;
+    }
 
     strong {
       font-weight: 700;
@@ -18,7 +21,7 @@
   }
   .imageWrapper {
     position: relative;
-    height: 20rem;
+    height: 25rem;
     width: 40%;
     border-radius: var.$radius;
     overflow: hidden;

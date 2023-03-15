@@ -1,34 +1,56 @@
+import { SetStateAction, useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import styles from "../../styles/Feature.module.scss";
 import Layout from "@/components/Layout/layout";
 import Head from "next/head";
 import {
   findUrlsAndCreateParams,
   urlWithFirstLetterCapitalize,
   findDataFromSlug,
+  findFeatureIntroFromSlug,
 } from "@/helper/helper";
 import Feature from "@/components/Feature/feature";
+import ContactBanner from "@/components/ContactBanner/contactBanner";
+import parse from "html-react-parser";
 
 const Stockage = () => {
+  const [featuresData, setFeaturesData] = useState<
+    | {
+        id: number;
+        slug: string;
+        text: string;
+        imgSrc: string;
+        imgAlt: string;
+        imgTitle: string;
+      }[]
+    | undefined
+  >();
+  const [featureIntro, setFeatureInto] = useState<
+    { slug: string; title: string; description: string }[] | undefined
+  >();
   const router = useRouter();
   const { slug } = router.query;
-  const featuresData = findDataFromSlug("stockage", slug);
+  useEffect(() => {
+    setFeaturesData(findDataFromSlug("stockage", slug));
+    setFeatureInto(findFeatureIntroFromSlug("stockage", slug));
+  }, [slug]);
+
   return (
     <>
       <Head>
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
       </Head>
       <Layout>
-        <h1>
-          {featuresData && featuresData[0]?.title
-            ? featuresData[0]?.title
-            : urlWithFirstLetterCapitalize(slug)}
-        </h1>
-        <p>
-          Prévu pour différents domaines : rayonnage de bibliothèque ,
-          rayonnages pour commerces , rayonnage pour les soins de santé et
-          fournitures médicales , rayonnage d’entrepôt , rayonnage de musée et
-          conservation , rayonnage d’archives en tout genre …
-        </p>
+        <div className={styles.headerFeature}>
+          <h1>
+            {featureIntro
+              ? featureIntro[0].title
+              : urlWithFirstLetterCapitalize(slug)}
+          </h1>
+          <p className={styles.headerFeature__description}>
+            {featureIntro && parse(featureIntro[0].description)}
+          </p>
+        </div>
         {featuresData?.map((feature) => (
           <Feature
             key={feature.id}
@@ -39,6 +61,7 @@ const Stockage = () => {
             isInverted={feature.id % 2 === 0}
           />
         ))}
+        <ContactBanner />
       </Layout>
     </>
   );

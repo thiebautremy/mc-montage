@@ -22,6 +22,18 @@ export const findDataFromSlug = (
   );
 };
 
+export const findFeatureIntroFromSlug = (
+  slug: string,
+  featureLabel: string | string[] | undefined
+) => {
+  const categorie = urlsAndFeaturesData.find(
+    (url: { label: string }) => url.label === slug
+  );
+  return categorie?.featureIntro?.filter(
+    (feature) => feature.slug === featureLabel
+  );
+};
+
 export const urlWithFirstLetterCapitalize = (
   url: string | string[] | undefined
 ) => {
