@@ -1,0 +1,17 @@
+@use "styles/_variables.scss" as var;
+
+.headerFeature {
+  padding: var.$gap-medium;
+
+  &__description {
+    padding: var.$gap-small var.$gap-large;
+
+    strong {
+      font-weight: 700;
+    }
+
+    span {
+      color: var.$rouge;
+    }
+  }
+}

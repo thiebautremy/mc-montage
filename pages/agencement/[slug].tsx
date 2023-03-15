@@ -1,14 +1,23 @@
 import { useRouter } from "next/router";
 import Layout from "@/components/Layout/layout";
-import { findUrlsAndCreateParams } from "@/helper/helper";
+import Head from "next/head";
+import {
+  findUrlsAndCreateParams,
+  urlWithFirstLetterCapitalize,
+} from "@/helper/helper";
 
 const Agencement = () => {
   const router = useRouter();
   const { slug } = router.query;
   return (
-    <Layout>
-      <p>Post: {slug}</p>
-    </Layout>
+    <>
+      <Head>
+        <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
+      </Head>
+      <Layout>
+        <p>Post: {slug}</p>
+      </Layout>
+    </>
   );
 };
 export default Agencement;

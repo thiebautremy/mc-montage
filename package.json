@@ -16,6 +16,7 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "framer-motion": "^10.3.1",
+    "html-react-parser": "^3.0.12",
     "leaflet": "^1.9.3",
     "next": "13.2.3",
     "primeicons": "^6.0.1",

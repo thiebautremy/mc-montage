@@ -10,30 +10,6 @@
 		</url>
 		<url>
 			<loc>
-				http://mcmontage.fr/magasinage/rayonnage-metallique
-			</loc>
-			<lastmod>
-				2023-03-09
-			</lastmod>
-		</url>
-		<url>
-			<loc>
-				http://mcmontage.fr/magasinage/rayonnage-industriel
-			</loc>
-			<lastmod>
-				2023-03-09
-			</lastmod>
-		</url>
-		<url>
-			<loc>
-				http://mcmontage.fr/magasinage/rayonnage-archive
-			</loc>
-			<lastmod>
-				2023-03-09
-			</lastmod>
-		</url>
-		<url>
-			<loc>
 				http://mcmontage.fr/agencement/bureau
 			</loc>
 			<lastmod>
@@ -42,7 +18,7 @@
 		</url>
 		<url>
 			<loc>
-				http://mcmontage.fr/agencement/mezzanine
+				http://mcmontage.fr/agencement/mezzanine-plateforme
 			</loc>
 			<lastmod>
 				2023-03-09
@@ -50,7 +26,7 @@
 		</url>
 		<url>
 			<loc>
-				http://mcmontage.fr/agencement/pose-de-cloison
+				http://mcmontage.fr/agencement/cloison-faux-plafond
 			</loc>
 			<lastmod>
 				2023-03-09
@@ -58,7 +34,7 @@
 		</url>
 		<url>
 			<loc>
-				http://mcmontage.fr/agencement/faux-plafond
+				http://mcmontage.fr/stockage/rayonnage-mobile-archives
 			</loc>
 			<lastmod>
 				2023-03-09
@@ -66,23 +42,7 @@
 		</url>
 		<url>
 			<loc>
-				http://mcmontage.fr/agencement/plateforme
-			</loc>
-			<lastmod>
-				2023-03-09
-			</lastmod>
-		</url>
-		<url>
-			<loc>
-				http://mcmontage.fr/stockage/rack-a-palettes
-			</loc>
-			<lastmod>
-				2023-03-09
-			</lastmod>
-		</url>
-		<url>
-			<loc>
-				http://mcmontage.fr/stockage/etageres-sur-rail
+				http://mcmontage.fr/stockage/rayonnage-metallique-industriel
 			</loc>
 			<lastmod>
 				2023-03-09
@@ -99,6 +59,14 @@
 		<url>
 			<loc>
 				http://mcmontage.fr/services/sav-maintenance
+			</loc>
+			<lastmod>
+				2023-03-09
+			</lastmod>
+		</url>
+		<url>
+			<loc>
+				http://mcmontage.fr/services/devis
 			</loc>
 			<lastmod>
 				2023-03-09

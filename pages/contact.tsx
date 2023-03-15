@@ -60,17 +60,15 @@ const Contact = () => {
         <title>Mc Montage - Contact</title>
       </Head>
       <NavBar />
-
       <div className={styles.contact}>
         <h1>Nous contacter</h1>
-        <div className={styles.contact__infosAndform}>
-          <motion.div
-            animate={{ x: [-350, 300] }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        >
+          <div className={styles.contact__infosAndform}>
             <div className={styles.contact__infos}>
               <p className={styles.contact__infos__info}>
                 <MdOutlineMarkEmailRead />
@@ -91,15 +89,8 @@ const Contact = () => {
                 Ouvert du lundi au vendredi de 07h30 à 20h
               </p>
             </div>
-          </motion.div>
-          <motion.div
-            animate={{ x: [350, -300] }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 1, ease: "easeInOut" }}
-          >
             <div className={styles.contact__formContainer}>
+              <h2>Formulaire de contact</h2>
               <form ref={form} onSubmit={sendEmail}>
                 {/* <div>
                 <label htmlFor="demande">Objet</label>
@@ -127,6 +118,7 @@ const Contact = () => {
                     name="user_email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    className={styles.input}
                     placeholder="Votre Email..."
                   />
                 </div>
@@ -134,6 +126,7 @@ const Contact = () => {
                   <label>Message</label>
                   <textarea
                     name="message"
+                    className={styles.input}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder="Votre message..."
@@ -146,8 +139,8 @@ const Contact = () => {
                 />
               </form>
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
         {isVisibleModal && (
           <Modal
             message={messageModal}
