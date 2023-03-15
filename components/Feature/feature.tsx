@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./feature.module.scss";
 import { motion } from "framer-motion";
+import parse from "html-react-parser";
 
 type FeatureProps = {
   text: string;
@@ -25,7 +26,7 @@ const Feature: React.FC<FeatureProps> = ({
     >
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
         <div className={styles.description}>
-          <p>{text.toString()}</p>
+          <p>{parse(text)}</p>
         </div>
         <div className={styles.imageWrapper}>
           <Image

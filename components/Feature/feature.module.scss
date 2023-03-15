@@ -7,6 +7,14 @@
   .description {
     width: 60%;
     padding: var.$gap-small var.$gap-medium;
+
+    strong {
+      font-weight: 700;
+    }
+
+    span {
+      color: var.$rouge;
+    }
   }
   .imageWrapper {
     position: relative;

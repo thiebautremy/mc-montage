@@ -1,11 +1,25 @@
-import urls from "@/data/url";
+import urlsAndFeaturesData from "@/data/urlsAndFeaturesData";
 
 export const findUrlsAndCreateParams = (slug: string) => {
-  const currentUrls = urls.find((url) => url.label === slug);
+  const currentUrls = urlsAndFeaturesData.find(
+    (url: { label: string }) => url.label === slug
+  );
   const currentParams = currentUrls?.urls;
   const params: { params: { slug: string } }[] = [];
-  currentParams?.map((url) => params.push({ params: { slug: url } }));
+  currentParams?.map((url: any) => params.push({ params: { slug: url } }));
   return params;
+};
+
+export const findDataFromSlug = (
+  slug: string,
+  featureLabel: string | string[] | undefined
+) => {
+  const categorie = urlsAndFeaturesData.find(
+    (url: { label: string }) => url.label === slug
+  );
+  return categorie?.features?.filter(
+    (feature) => feature.slug === featureLabel
+  );
 };
 
 export const urlWithFirstLetterCapitalize = (
