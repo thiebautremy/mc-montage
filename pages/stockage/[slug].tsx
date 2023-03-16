@@ -1,4 +1,4 @@
-import { SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/Feature.module.scss";
 import Layout from "@/components/Layout/layout";
@@ -14,6 +14,11 @@ import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
 
 const Stockage = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+  const [featureIntro, setFeatureInto] = useState<
+    { slug: string; title: string; description: string }[] | undefined
+  >();
   const [featuresData, setFeaturesData] = useState<
     | {
         id: number;
@@ -25,11 +30,7 @@ const Stockage = () => {
       }[]
     | undefined
   >();
-  const [featureIntro, setFeatureInto] = useState<
-    { slug: string; title: string; description: string }[] | undefined
-  >();
-  const router = useRouter();
-  const { slug } = router.query;
+
   useEffect(() => {
     setFeaturesData(findDataFromSlug("stockage", slug));
     setFeatureInto(findFeatureIntroFromSlug("stockage", slug));
