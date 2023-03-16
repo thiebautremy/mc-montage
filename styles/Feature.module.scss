@@ -13,5 +13,9 @@
     span {
       color: var.$rouge;
     }
+
+    li {
+      margin-bottom: var.$gap-small;
+    }
   }
 }
