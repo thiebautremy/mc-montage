@@ -16,11 +16,9 @@ const Contact = () => {
   const form = useRef(null);
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  // const [demande, setDemande] = useState("");
   const [messageModal, setMessageModal] = useState("");
-  const [isVisibleModal, setIsVisibleModal] = useState(false);
-  //! TODO Check si l'id du template correspond bien au nouveau avec l'ajout de l'objet
-  //! Bloquer l'envoi si pas d'objet choisis
+  const [isVisibleModal, setIsVisibleModal] = useState(true);
+
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     form.current &&
@@ -38,7 +36,6 @@ const Contact = () => {
               setIsVisibleModal(true);
               setMessage("");
               setEmail("");
-              // setDemande("Choisissez une demande...");
             }
           },
           (err) => {
@@ -65,7 +62,7 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           <div className={styles.contact__infosAndform}>
@@ -92,25 +89,6 @@ const Contact = () => {
             <div className={styles.contact__formContainer}>
               <h2>Formulaire de contact</h2>
               <form ref={form} onSubmit={sendEmail}>
-                {/* <div>
-                <label htmlFor="demande">Objet</label>
-                <select
-                  name="demande"
-                  id="demande"
-                  onChange={(e) => setDemande(e.target.value)}
-                  value={demande}
-                >
-                  <option value="Choisissez une demande...">
-                    Choisissez une demande...
-                  </option>
-                  <option value="Demande d'informations">
-                    Demande d'informations
-                  </option>
-                  <option value="Demande de devis">Demande de devis</option>
-                  <option value="S.A.V.">S.A.V.</option>
-                  <option value="Autres">Autres</option>
-                </select>
-              </div> */}
                 <div>
                   <label>Email</label>
                   <input
@@ -141,12 +119,12 @@ const Contact = () => {
             </div>
           </div>
         </motion.div>
-        {isVisibleModal && (
-          <Modal
-            message={messageModal}
-            action={() => setIsVisibleModal(false)}
-          />
-        )}
+        <Modal
+          message={messageModal}
+          setMessageModal={setMessageModal}
+          isVisibleModal={isVisibleModal}
+          action={() => setIsVisibleModal(false)}
+        />
       </div>
       <DynamicFooter />
     </>

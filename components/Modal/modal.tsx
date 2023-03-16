@@ -1,8 +1,17 @@
-import { ReactFragment, ReactElement, JSXElementConstructor } from "react";
-import styles from "./modal.module.scss";
+import {
+  ReactFragment,
+  ReactElement,
+  JSXElementConstructor,
+  useRef,
+  useCallback,
+} from "react";
+import { Toast } from "primereact/toast";
+import { useEffect } from "react";
 
 const Modal = (props: {
   action: (arg0: boolean) => void;
+  setMessageModal: (arg0: string) => void;
+  isVisibleModal: boolean;
   message:
     | string
     | number
@@ -12,26 +21,26 @@ const Modal = (props: {
     | null
     | undefined;
 }) => {
-  console.log(props);
-  const closeModal = () => {
+  const toast = useRef<Toast>(null);
+  const handleShow = useCallback(() => {
+    toast.current?.show({
+      severity:
+        props.message === "Message correctement envoyé" ? "success" : "error",
+      summary:
+        props.message === "Message correctement envoyé" ? "Succès" : "Erreur",
+      detail: props.message,
+    });
+  }, [props.message]);
+  const handleOnHide = () => {
     props.action(false);
+    props.setMessageModal("");
   };
-  return (
-    <div className={styles.modal}>
-      <div
-        className={styles.modal__header}
-        style={{
-          backgroundColor:
-            props.message === "Message correctement envoyé" ? "green" : "red",
-        }}
-      >
-        <span>
-          <i className="pi pi-times" onClick={() => closeModal()}></i>
-        </span>
-      </div>
-      <p className={styles.modal__message}>{props.message}</p>
-    </div>
-  );
+
+  useEffect(() => {
+    props.message !== "" && handleShow();
+  }, [handleShow, props.message]);
+
+  return <Toast ref={toast} onHide={() => handleOnHide()} />;
 };
 
 export default Modal;

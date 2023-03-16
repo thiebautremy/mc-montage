@@ -1,0 +1,6 @@
+User-agent: *,
+Disallow: /*_buildManifest.js$,
+Disallow: /*_ssgManifest.js$,
+Sitemap: https://mcmontage.fr/sitemap.xml,
+
+

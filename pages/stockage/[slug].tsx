@@ -40,6 +40,12 @@ const Stockage = () => {
     <>
       <Head>
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
+        <meta name="description" content="" />
+        <meta
+          name="og:image"
+          property="og:image"
+          content="../../assets/images/logoPhotoshop.png"
+        ></meta>
       </Head>
       <Layout>
         <div className={styles.headerFeature}>

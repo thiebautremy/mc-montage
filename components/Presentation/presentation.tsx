@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Presentation = () => {
   return (
     <>
-      <div className={styles.presentation}>
+      <section className={styles.presentation}>
         <div className={styles.text}>
           <h1>MC Montage</h1>
           <div className={styles.subtitle}>
@@ -73,7 +73,7 @@ const Presentation = () => {
             className={styles.image}
           />
         </motion.div>
-      </div>
+      </section>
       <DividerHorizontal />
     </>
   );

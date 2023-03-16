@@ -1,0 +1,30 @@
+@use "styles/_variables.scss" as var;
+
+.fourOhFour {
+  width: 80%;
+  margin: auto;
+  padding: var.$gap-xlarge;
+  .goBackBtn {
+    border: 1px solid var.$rouge;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    background-color: var.$noir;
+    font-weight: 700;
+    font-size: 15px;
+    color: var.$blanc;
+    border-radius: var.$radius;
+    padding: 17px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: var.$noir;
+      background: var.$rouge;
+    }
+  }
+}
