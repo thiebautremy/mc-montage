@@ -21,7 +21,7 @@ const Feature: React.FC<FeatureProps> = ({
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
