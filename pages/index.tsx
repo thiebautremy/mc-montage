@@ -3,7 +3,6 @@ import Layout from "@/components/Layout/layout";
 import ChiffresCles from "@/components/ChiffresCles/chiffresCles";
 import Presentation from "@/components/Presentation/presentation";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
-import logo from "../assets/images/logoPhotoshop.png";
 
 export default function Home() {
   return (
@@ -18,7 +17,11 @@ export default function Home() {
           name="og:image"
           property="og:image"
           content="../assets/images/logoPhotoshop.png"
-        ></meta>
+        />
+        <meta
+          name="keywords"
+          content="rayonnage industriel, agencement bureau, mezzanine, plateforme, pose de cloison, rayonnage archive"
+        />
       </Head>
       <Layout>
         <Presentation />

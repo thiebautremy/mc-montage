@@ -1,0 +1,91 @@
+@use "styles/_variables.scss" as var;
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &__infosAndform {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: calc(var.$gap-xlarge * 2) auto var.$gap-xlarge;
+  }
+  &__infos {
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      margin-bottom: var.$gap-small;
+      svg {
+        margin-right: var.$gap-small;
+        font-size: 1.5rem;
+      }
+
+      &__mail {
+        margin-left: calc(var.$gap-small/2);
+        color: var.$rouge;
+      }
+    }
+  }
+
+  &__formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+      padding: var.$gap-small;
+
+      & label {
+        margin-right: 1rem;
+        min-width: 5rem;
+      }
+    }
+  }
+}
+
+.inputAndLabel {
+  display: flex;
+  align-items: center;
+  margin-bottom: var.$gap-small;
+  .input,
+  .textarea {
+    min-width: 20rem;
+    padding: 0.2rem;
+
+    &::placeholder {
+      color: var.$noir;
+    }
+    @media screen and (max-width: 700px) {
+      min-width: 15rem;
+    }
+  }
+}
+
+.submitBtn {
+  border: 1px solid var.$rouge;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  background-color: var.$noir;
+  font-weight: 700;
+  font-size: 15px;
+  color: var.$blanc;
+  border-radius: var.$radius;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: var.$noir;
+    background: var.$rouge;
+  }
+}
