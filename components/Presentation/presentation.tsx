@@ -68,7 +68,7 @@ const Presentation = () => {
             src={camion}
             alt="Camion MC Montage garé devant un bâtiment"
             title="Camion MC Montage"
-            width={450}
+            width={462}
             height={280}
             className={styles.image}
           />
