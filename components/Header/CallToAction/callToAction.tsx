@@ -11,7 +11,7 @@ const CallToAction = () => {
           src={logo}
           alt="logo MC Montage"
           title="Logo MC Montage"
-          width={500}
+          width={495}
           height={250}
         />
       </div>
