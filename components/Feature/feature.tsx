@@ -25,9 +25,7 @@ const Feature: React.FC<FeatureProps> = ({
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
-        <div className={styles.description}>
-          <p>{parse(text)}</p>
-        </div>
+        <div className={styles.description}>{parse(text)}</div>
         <div className={styles.imageWrapper}>
           <Image
             src={imgSrc}

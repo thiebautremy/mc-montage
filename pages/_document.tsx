@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="fr">
       <Head>
+        <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
