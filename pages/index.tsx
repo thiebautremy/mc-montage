@@ -16,7 +16,7 @@ export default function Home() {
         <meta
           name="og:image"
           property="og:image"
-          content="../assets/images/logoPhotoshop.png"
+          content="https://mcmontage.netlify.app/assets/images/logoPhotoshop.png"
         />
         <meta
           name="keywords"

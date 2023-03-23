@@ -59,9 +59,9 @@ const Agencement = () => {
               ? featureIntro[0].title
               : urlWithFirstLetterCapitalize(slug)}
           </h1>
-          <p className={styles.headerFeature__description}>
+          <div className={styles.headerFeature__description}>
             {featureIntro && parse(featureIntro[0].description)}
-          </p>
+          </div>
         </div>
         {featuresData?.map((feature) => (
           <Feature
