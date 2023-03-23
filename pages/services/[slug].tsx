@@ -44,7 +44,8 @@ const Services = () => {
           name="og:image"
           property="og:image"
           content="../../assets/images/logoPhotoshop.png"
-        ></meta>
+        />
+        <meta name="keywords" content="services, après-vente, devis, SAV" />
       </Head>
       <Layout>
         <div className={styles.headerFeature}>

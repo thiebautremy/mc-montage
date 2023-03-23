@@ -44,8 +44,12 @@ const Stockage = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="../../assets/images/logoPhotoshop.png"
-        ></meta>
+          content="../../assets/images/rayonnage-tablette.webp"
+        />
+        <meta
+          name="keywords"
+          content="stockage, rayonnage mobile archive, rayonnage cantilever, rayonnage métallique industriel, rayonnage palette, rayonnage tablette"
+        />
       </Head>
       <Layout>
         <div className={styles.headerFeature}>

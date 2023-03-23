@@ -12,6 +12,7 @@ import {
 import Feature from "@/components/Feature/feature";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
+import metaImage from "../../assets/images/plateforme-mezzanine.webp";
 
 const Agencement = () => {
   const router = useRouter();
@@ -44,8 +45,12 @@ const Agencement = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="../../assets/images/logoPhotoshop.png"
-        ></meta>
+          content="../../assets/images/plateforme-mezzanine.webp"
+        />
+        <meta
+          name="keywords"
+          content="agencement bureau, mezzanine, plateforme, pose de cloison, faux-plafond"
+        />
       </Head>
       <Layout>
         <div className={styles.headerFeature}>
