@@ -3,6 +3,7 @@ import styles from "./presentation.module.scss";
 import camion from "../../assets/images/camion-transformed.png";
 import DividerVertical from "../Dividers/dividerVertical";
 import DividerHorizontal from "../Dividers/dividerHorizontal";
+import Spacer from "../Spacer/spacer";
 import { motion } from "framer-motion";
 
 const Presentation = () => {
@@ -13,13 +14,44 @@ const Presentation = () => {
           <h1>MC Montage</h1>
           <div className={styles.subtitle}>
             <p>
-              MC Montage est une société spécialisée dans le montage de
-              rayonnages, pose de cloison, mezzanine, faux plafond et
-              d&apos;agencement de bureau depuis plus de 15 ans.
+              <span className="fontColorRed fontBold">MC Montage</span> offre
+              une gamme complète de services pour les entreprises de toutes
+              tailles et de tous secteurs d&apos;activité. Que vous souhaitiez
+              créer de nouveaux espaces de travail, augmenter votre surface de
+              stockage ou simplement optimiser l&apos;espace disponible, notre
+              équipe de professionnels expérimentés est là pour vous aider à
+              réaliser vos projets{" "}
+              <span className="fontColorRed fontBold">
+                depuis plus de 15 ans.
+              </span>
             </p>
+            <Spacer height={"small"} />
+            <p>
+              En outre, nous proposons des solutions de stockage et
+              d&apos;optimisation de l&apos;espace pour aider nos clients à
+              gagner de la place et à maximiser leur productivité. Nous
+              travaillons avec des matériaux de qualité supérieure pour garantir
+              une finition professionnelle et durable.
+            </p>
+            <Spacer height={"small"} />
+            <p>
+              Nous sommes passionnés par la création d&apos;espaces de travail
+              fonctionnels, esthétiques et optimisés. Nous sommes là pour vous
+              aider à réaliser votre vision, en fournissant des services
+              d&apos;agencement sur mesure et adaptés à vos besoins spécifiques.
+            </p>
+            <Spacer height={"small"} />
             <p>
               Les chantiers sont principalement dans la région du Grand EST mais
               également dans toute la France et même à l&apos;étranger.
+            </p>
+            <Spacer height={"medium"} />
+            <p>
+              N&apos;hésitez pas à nous contacter pour en savoir plus sur nos
+              services d&apos;agencement intérieur et pour obtenir un devis
+              personnalisé pour votre projet. Nous sommes impatients de
+              travailler avec vous pour créer un espace de travail idéal pour
+              votre entreprise.
             </p>
           </div>
           <div className={styles.servicesContainer}>
