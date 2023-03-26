@@ -151,6 +151,15 @@ p {
   }
 }
 
+.fontColorRed {
+  color: var.$rouge;
+}
+
+.fontBold {
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+
 //? ==== NAVBAR PRIME REACT ==== \\
 .p-menubar {
   justify-content: space-around;
