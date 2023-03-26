@@ -48,16 +48,14 @@ const Presentation = () => {
             <Spacer height={"medium"} />
             <p>
               N&apos;hésitez pas à nous contacter pour en savoir plus sur nos
-              services d&apos;agencement intérieur et pour obtenir un devis
+              services d&apos;agencement et de rangement et obtenir un devis
               personnalisé pour votre projet. Nous sommes impatients de
               travailler avec vous pour créer un espace de travail idéal pour
-              votre entreprise.
+              votre entreprise et améliorer votre espace de stockage.
             </p>
           </div>
           <div className={styles.servicesContainer}>
-            <p className={styles.servicesContainer__title}>
-              Nous proposons une large gamme de service
-            </p>
+            <p className={styles.servicesContainer__title}>Nos solutions :</p>
             <div className={styles.services}>
               <div className={styles.service}>
                 <h3>Magasinage</h3>
@@ -65,6 +63,7 @@ const Presentation = () => {
                   <li>Rayonnage industriel</li>
                   <li>Rayonnage d&apos;archive</li>
                   <li>Rayonnage métallique</li>
+                  <li>Rayonnage cantilever</li>
                 </ul>
               </div>
               <DividerVertical />
@@ -75,7 +74,7 @@ const Presentation = () => {
                   <li>Agencement bureau</li>
                   <li>Mezzanine</li>
                   <li>Faux plafond</li>
-                  <li>Plateforme</li>
+                  <li>Plateforme avec ou sans échelles</li>
                 </ul>
               </div>
               <DividerVertical />
@@ -84,6 +83,8 @@ const Presentation = () => {
                 <ul>
                   <li>Pose de rack à palettes</li>
                   <li>Pose d&apos;étagères sur rail</li>
+                  <li>Étagère modulable</li>
+                  <li>Tablettes</li>
                 </ul>
               </div>
             </div>
