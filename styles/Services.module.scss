@@ -1,0 +1,18 @@
+@use "styles/_variables.scss" as var;
+
+.services {
+  color: var.$blanc;
+  padding: var.$gap-medium;
+
+  .description {
+    padding: 1rem 3rem;
+  }
+
+  .subDescription {
+    padding: 1rem 4rem;
+  }
+
+  .h2 {
+    display: block;
+  }
+}

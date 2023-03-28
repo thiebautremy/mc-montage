@@ -13,6 +13,7 @@ import Feature from "@/components/Feature/feature";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
 import metaImage from "../../assets/images/plateforme-mezzanine.webp";
+import Spacer from "@/components/Spacer/spacer";
 
 const Agencement = () => {
   const router = useRouter();
@@ -73,6 +74,7 @@ const Agencement = () => {
             isInverted={feature.id % 2 === 0}
           />
         ))}
+        <Spacer height={"height"} />
         <ContactBanner />
       </Layout>
     </>

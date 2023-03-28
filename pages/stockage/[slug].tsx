@@ -12,6 +12,7 @@ import {
 import Feature from "@/components/Feature/feature";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
+import Spacer from "@/components/Spacer/spacer";
 
 const Stockage = () => {
   const router = useRouter();
@@ -73,6 +74,7 @@ const Stockage = () => {
             isInverted={feature.id % 2 === 0}
           />
         ))}
+        <Spacer height={"height"} />
         <ContactBanner />
       </Layout>
     </>
