@@ -38,10 +38,7 @@ export const urlWithFirstLetterCapitalize = (
   url: string | string[] | undefined
 ) => {
   if (typeof url === undefined) return "";
-
-  const capitalizeFirstLetter = (word: string) => {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  };
+  console.log(url);
 
   const urlInArray =
     typeof url === "string" ? url?.split("-") : !!url && url[0].split("-");
@@ -49,4 +46,8 @@ export const urlWithFirstLetterCapitalize = (
     return urlInArray
       ?.map((url: string) => capitalizeFirstLetter(url))
       .join(" ");
+};
+
+export const capitalizeFirstLetter = (word: string) => {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 };

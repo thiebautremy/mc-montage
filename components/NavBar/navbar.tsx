@@ -42,20 +42,7 @@ const NavBar = () => {
     },
     {
       label: "Services",
-      items: [
-        {
-          label: "Montage / Démontage",
-          url: "/services/montage-demontage",
-        },
-        {
-          label: "SAV / Maintenance",
-          url: "/services/sav-maintenance",
-        },
-        {
-          label: "Devis",
-          url: "/services/devis",
-        },
-      ],
+      url: "/services",
     },
     {
       url: "/contact",
