@@ -42,7 +42,10 @@ const Stockage = () => {
     <>
       <Head>
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure."
+        />
         <meta
           name="og:image"
           property="og:image"

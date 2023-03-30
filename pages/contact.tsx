@@ -15,6 +15,15 @@ const Contact = () => {
     <>
       <Head>
         <title>Mc Montage - Contact</title>
+        <meta
+          name="description"
+          content="Contactez MC Montage pour toutes vos demandes d'installation et de maintenance d'équipements industriels sur mesure. Notre équipe expérimentée est à votre disposition pour répondre à toutes vos demandes de renseignements et vous aider à trouver la meilleure solution pour votre entreprise. Contactez-nous dès maintenant pour une consultation personnalisée."
+        />
+        <meta
+          name="og:image"
+          property="og:image"
+          content="https://mcmontage.netlify.app/assets/images/logoPhotoshop.png"
+        />
       </Head>
       <NavBar />
       <div className={styles.contact}>

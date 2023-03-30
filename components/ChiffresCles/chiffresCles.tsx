@@ -1,5 +1,6 @@
 import styles from "./chiffresCles.module.scss";
 import { motion } from "framer-motion";
+import DividerVertical from "../Dividers/dividerVertical";
 
 const ChiffresCles = () => {
   return (
@@ -15,9 +16,11 @@ const ChiffresCles = () => {
           <p>
             <span>5</span>Salariés
           </p>
+          <DividerVertical />
           <p>
             <span>1530</span>Chantiers
           </p>
+          <DividerVertical />
           <p>
             <span>Plus de 30</span>entreprises qui nous ont fait confiance
           </p>

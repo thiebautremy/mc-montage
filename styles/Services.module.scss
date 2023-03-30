@@ -4,12 +4,24 @@
   color: var.$blanc;
   padding: var.$gap-medium;
 
+  @media screen and (max-width: var.$screen-tablet-portrait) {
+    padding: calc(var.$gap-small/2);
+  }
+
   .description {
     padding: 1rem 3rem;
+
+    @media screen and (max-width: var.$screen-tablet-portrait) {
+      padding: 0.5rem 1.5rem;
+    }
   }
 
   .subDescription {
     padding: 1rem 4rem;
+
+    @media screen and (max-width: var.$screen-tablet-portrait) {
+      padding: 0.5rem 2.5rem;
+    }
   }
 
   .h2 {

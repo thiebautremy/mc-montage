@@ -8,7 +8,10 @@ const Services = () => {
     <>
       <Head>
         <title>Mc Montage - Services</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Découvrez les services proposés par MC Montage pour l'installation de vos équipements : montage, démontage, devis, service après-vente et vente de matériel selon stock. Bénéficiez de notre expertise pour l'installation et l'entretien de vos équipements sur mesure. Nous sommes à votre disposition pour répondre à toutes vos demandes. "
+        />
         <meta
           name="og:image"
           property="og:image"
