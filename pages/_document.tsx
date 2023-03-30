@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="fr">
       <Head>
         <meta property="og:type" content="website" />
-        <meta name="google-site-verification" content="BtsxYzr55qR_rDWzFpdyFmlkQNc08p_dTkJd6lUZamQ" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
