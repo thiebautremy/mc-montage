@@ -42,7 +42,10 @@ const Agencement = () => {
     <>
       <Head>
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
-        <meta name="description" content="" />
+        <meta
+          name="description"
+          content="Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure."
+        />
         <meta
           name="og:image"
           property="og:image"

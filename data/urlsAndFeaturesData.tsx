@@ -120,7 +120,7 @@ const urlsAndFeaturesData = [
       {
         id: 0,
         slug: "mezzanine-plateforme",
-        text: "<p>A faire</p>",
+        text: "<p><span>Les mezzanines sont des plates-formes</span> ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.</p>",
         imgSrc: "cloison-nancy.webp",
         imgAlt:
           "Cloison avec mezzanine et fenêtres avec escalier et garde corps",
@@ -129,7 +129,7 @@ const urlsAndFeaturesData = [
       {
         id: 1,
         slug: "mezzanine-plateforme",
-        text: "<p>A faire</p>",
+        text: "<p>Une plateforme métallique est une structure surélevée en acier conçue pour maximiser l'espace de stockage. Elle est constituée d'une ossature métallique solide et d'une rampe ou d'un escalier pour accéder à la plateforme. Les plateformes métalliques permettent d'augmenter la capacité de stockage en créant des niveaux supplémentaires au-dessus du sol, tout en optimisant l'utilisation de l'espace disponible. Elles peuvent également être équipées de rayonnages, de cloisons et d'autres accessoires pour répondre aux besoins spécifiques de chaque entreprise.</p>",
         imgSrc: "plateforme-mezzanine.webp",
         imgAlt: "Plateforme mezzanine avec garde corps",
         imgTitle: "Plateforme mezzanine",
@@ -137,7 +137,7 @@ const urlsAndFeaturesData = [
       {
         id: 2,
         slug: "mezzanine-plateforme",
-        text: "<p>A faire</p>",
+        text: "<p>Un garde-corps est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.</p>",
         imgSrc: "mezzanine-avec-garde-corps.webp",
         imgAlt: "Mezzanine en aglos avec garde corps",
         imgTitle: "Mezzanine en aglos",
@@ -145,7 +145,7 @@ const urlsAndFeaturesData = [
       {
         id: 3,
         slug: "mezzanine-plateforme",
-        text: "<p>A faire</p>",
+        text: "<p>Une mezzanine en double étage avec garde-corps et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.</p>",
         imgSrc: "mezzanine-double-etage.webp",
         imgAlt: "Mezzanine en double étage avec garde corps et échelle",
         imgTitle: "Mezzanine en double étage",
@@ -153,7 +153,7 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "mezzanine-plateforme",
-        text: "<p>A faire</p>",
+        text: "<p>Une échelle en acier est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Les échelles en acier sont couramment utilisées dans les usines, les entrepôts et les chantiers de construction.</p>",
         imgSrc: "escaliers-acces.webp",
         imgAlt: "Escaliers en acier galvanisé pour accèder à une mezzanine",
         imgTitle: "Escaliers en acier galvanisé",
