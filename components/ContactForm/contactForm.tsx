@@ -56,7 +56,7 @@ const ContactForm = () => {
               <MdOutlineMarkEmailRead />
               En envoyant un mail à :
               <a
-                href="mailto: mcmontage54450@gmail.com"
+                href="mailto:mcmontage54450@gmail.com"
                 className={styles.contactForm__infos__info__mail}
               >
                 mcmontage54450@gmail.com

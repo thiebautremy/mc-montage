@@ -5,6 +5,7 @@ import parse from "html-react-parser";
 
 type FeatureProps = {
   text: string;
+  legend?: string | undefined;
   imgSrc: StaticImageData;
   imgAlt: string;
   imgTitle: string;
@@ -12,6 +13,7 @@ type FeatureProps = {
 };
 const Feature: React.FC<FeatureProps> = ({
   text,
+  legend,
   imgSrc,
   imgAlt,
   imgTitle,
@@ -25,7 +27,10 @@ const Feature: React.FC<FeatureProps> = ({
       transition={{ duration: 1, ease: "easeInOut" }}
     >
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
-        <div className={styles.description}>{parse(text)}</div>
+        <div className={styles.description}>
+          <p>{parse(text)}</p>
+          {legend && <p className={styles.legend}>{parse(legend)}</p>}
+        </div>
         <div className={styles.imageWrapper}>
           <Image
             src={imgSrc}

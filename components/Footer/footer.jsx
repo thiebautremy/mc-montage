@@ -65,7 +65,7 @@ const Footer = () => {
               </p>
               <p className={styles.footer__container__mailEtNumero__mail}>
                 <MdOutlineMarkEmailRead />
-                <a href="mailto: mcmontage54450@gmail.com">
+                <a href="mailto:mcmontage54450@gmail.com">
                   mcmontage54450@gmail.com
                 </a>
               </p>
@@ -78,7 +78,7 @@ const Footer = () => {
           </Link>
           <p className={styles.subFooter__mail}>
             Site internet réalisé par <MdOutlineMarkEmailRead />
-            <a href="mailto: remythiebaut52@gmail.com">Rémy THIEBAUT</a>
+            <a href="mailto:remythiebaut52@gmail.com">Rémy THIEBAUT</a>
           </p>
         </div>
       </motion.div>

@@ -26,12 +26,6 @@
   }
   .servicesContainer {
     margin-top: var.$gap-medium;
-    &__title {
-      margin-left: var.$gap-xlarge;
-      font-style: italic;
-      color: var.$rouge;
-      font-size: 1.3rem;
-    }
     .services {
       margin-top: var.$gap-medium;
       display: flex;

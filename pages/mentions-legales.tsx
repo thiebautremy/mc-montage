@@ -14,6 +14,27 @@ const MentionsLegales = () => {
     <>
       <Head>
         <title>Mc Montage - Mentions légales</title>
+        <meta
+          name="description"
+          content="Consultez la page de mentions légales de MC Montage pour en savoir plus sur notre société et nos obligations légales. Retrouvez toutes les informations sur nos coordonnées, nos conditions d'utilisation et notre politique de confidentialité. Nous nous engageons à respecter les normes et les lois en vigueur pour garantir une relation de confiance avec nos clients. Contactez-nous si vous avez des questions supplémentaires."
+        />
+        <meta
+          name="og:image"
+          property="og:image"
+          content="https://mcmontage.netlify.app/assets/images/logoPhotoshop.png"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Consultez la page de mentions légales de MC Montage pour en savoir plus sur notre société et nos obligations légales. Retrouvez toutes les informations sur nos coordonnées, nos conditions d'utilisation et notre politique de confidentialité. Nous nous engageons à respecter les normes et les lois en vigueur pour garantir une relation de confiance avec nos clients. Contactez-nous si vous avez des questions supplémentaires."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content="https://mcmontage.fr/mentions-legales"
+        />
+        <link rel="canonical" href="https://mcmontage.fr/mentions-legales" />
+        <meta name="keywords" content="mentions légales" />
       </Head>
       <NavBar />
       <div className={styles.mentionsLegales}>

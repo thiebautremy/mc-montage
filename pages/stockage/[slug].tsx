@@ -23,6 +23,7 @@ const Stockage = () => {
   >();
   const [featuresData, setFeaturesData] = useState<
     | {
+        legend?: string;
         id: number;
         slug: string;
         text: string;
@@ -52,6 +53,17 @@ const Stockage = () => {
           content="../../assets/images/rayonnage-tablette.webp"
         />
         <meta
+          name="og:description"
+          property="og:description"
+          content="Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content={`https://mcmontage.fr/stockage/${slug}`}
+        />
+        <link rel="canonical" href={`https://mcmontage.fr/stockage/${slug}`} />
+        <meta
           name="keywords"
           content="stockage, rayonnage mobile archive, rayonnage cantilever, rayonnage métallique industriel, rayonnage palette, rayonnage tablette"
         />
@@ -64,13 +76,14 @@ const Stockage = () => {
               : urlWithFirstLetterCapitalize(slug)}
           </h1>
           <div className={styles.headerFeature__description}>
-            {featureIntro && parse(featureIntro[0].description)}
+            <p>{featureIntro && parse(featureIntro[0].description)}</p>
           </div>
         </div>
         {featuresData?.map((feature) => (
           <Feature
             key={feature.id}
             text={feature.text}
+            legend={feature.legend}
             imgSrc={require(`../../assets/images/${feature.imgSrc}`)}
             imgAlt={feature.imgAlt}
             imgTitle={feature.imgTitle}
