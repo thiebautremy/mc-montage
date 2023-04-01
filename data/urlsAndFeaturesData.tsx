@@ -34,14 +34,7 @@ const urlsAndFeaturesData = [
         imgAlt: "Rayonnage mobile fermée",
         imgTitle: "Rayonnage mobile manuel",
       },
-      {
-        id: 2,
-        slug: "rayonnage-mobile-archives",
-        text: "Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les rayonnages tablettes sont des rayonnages avec des plateaux pour stocker des objets légers.",
-        imgSrc: "rayonnage-tablette.webp",
-        imgAlt: "Rayonnage tablette",
-        imgTitle: "Rayonnage tablette",
-      },
+
       {
         id: 0,
         slug: "rayonnage-metallique-industriel",
@@ -78,10 +71,18 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "rayonnage-metallique-industriel",
-        text: "<strong><span>STOCKAGE GRILLAGÉ : </span></strong>Le stockage grillagé est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Il est souvent utilisé dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.",
+        text: "<strong><span>CLOISON GRILLAGÉE INDUSTRIELLE : </span></strong>La cloison grillagée est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Elle est souvent utilisée dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Elles permettent également de créer un espace protégé. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.",
         imgSrc: "stockage-grillage-exterieur.webp",
         imgAlt: "Stockage grillagé exterieur acier galvanisé gris",
         imgTitle: "Stockage grillagé",
+      },
+      {
+        id: 5,
+        slug: "rayonnage-metallique-industriel",
+        text: "<strong><span>RAYONNAGES TABLETTES : </span></strong>Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les <span>rayonnages tablettes</span> sont des rayonnages avec des plateaux pour stocker des objets légers.",
+        imgSrc: "rayonnage-tablette.webp",
+        imgAlt: "Rayonnage tablette",
+        imgTitle: "Rayonnage tablette",
       },
     ],
   },
@@ -120,7 +121,7 @@ const urlsAndFeaturesData = [
       {
         id: 0,
         slug: "mezzanine-plateforme",
-        text: "<span>Les mezzanines sont des plates-formes</span> ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.",
+        text: "<span>Les mezzanines</span> sont des plates-formes ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.",
         legend: "legend",
         imgSrc: "cloison-nancy.webp",
         imgAlt:
@@ -139,7 +140,7 @@ const urlsAndFeaturesData = [
       {
         id: 2,
         slug: "mezzanine-plateforme",
-        text: "Un garde-corps est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.",
+        text: "<span>Un garde-corps</span> est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.",
         imgSrc: "mezzanine-avec-garde-corps.webp",
         imgAlt: "Mezzanine en aglos avec garde corps",
         imgTitle: "Mezzanine en aglos",
@@ -147,7 +148,7 @@ const urlsAndFeaturesData = [
       {
         id: 3,
         slug: "mezzanine-plateforme",
-        text: "Une mezzanine en double étage avec garde-corps et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.",
+        text: "<span>Une mezzanine en double étage avec garde-corps</span> et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.",
         imgSrc: "mezzanine-double-etage.webp",
         imgAlt: "Mezzanine en double étage avec garde corps et échelle",
         imgTitle: "Mezzanine en double étage",
@@ -155,7 +156,7 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "mezzanine-plateforme",
-        text: "<p>Une échelle en acier est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Les échelles en acier sont couramment utilisées dans les usines, les entrepôts et les chantiers de construction.</p>",
+        text: "<span>Un escalier en acier</span> est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Ils sont couramment utilisés dans les usines, les entrepôts et les chantiers de construction.",
         imgSrc: "escaliers-acces.webp",
         imgAlt: "Escaliers en acier galvanisé pour accèder à une mezzanine",
         imgTitle: "Escaliers en acier galvanisé",

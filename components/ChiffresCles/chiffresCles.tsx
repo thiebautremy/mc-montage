@@ -14,15 +14,15 @@ const ChiffresCles = () => {
         <h2 className={styles.chiffresClesTitle}>Chiffres clés</h2>
         <div className={styles.chiffres}>
           <p>
-            <span>5</span>Salariés
+            <span>6</span>Salariés
           </p>
           <DividerVertical />
           <p>
-            <span>1530</span>Chantiers
+            <span>3360</span>Chantiers
           </p>
           <DividerVertical />
           <p>
-            <span>Plus de 30</span>entreprises qui nous ont fait confiance
+            <span>Plus de 100</span>entreprises qui nous ont fait confiance
           </p>
         </div>
       </section>
