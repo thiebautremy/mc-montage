@@ -24,6 +24,21 @@ const Contact = () => {
           property="og:image"
           content="https://mcmontage.netlify.app/assets/images/logoPhotoshop.png"
         />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Contactez MC Montage pour toutes vos demandes d'installation et de maintenance d'équipements industriels sur mesure. Notre équipe expérimentée est à votre disposition pour répondre à toutes vos demandes de renseignements et vous aider à trouver la meilleure solution pour votre entreprise. Contactez-nous dès maintenant pour une consultation personnalisée."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content="https://mcmontage.fr/contact"
+        />
+        <link rel="canonical" href="https://mcmontage.fr/contact" />
+        <meta
+          name="keywords"
+          content="contact, formulaire, email, telephone, adresse"
+        />
       </Head>
       <NavBar />
       <div className={styles.contact}>

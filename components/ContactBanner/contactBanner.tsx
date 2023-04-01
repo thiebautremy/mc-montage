@@ -17,7 +17,7 @@ const ContactBanner = () => {
           <p className={styles.contactInfo}>
             <MdOutlineMarkEmailRead />
             <a
-              href="mailto: mcmontage54450@gmail.com"
+              href="mailto:mcmontage54450@gmail.com"
               className={styles.footer__container__mailEtNumero__mail}
             >
               mcmontage54450@gmail.com

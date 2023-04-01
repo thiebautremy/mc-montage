@@ -18,6 +18,12 @@
     span {
       color: var.$rouge;
     }
+
+    .legend {
+      font-style: italic;
+      font-size: 0.9rem;
+      text-align: end;
+    }
   }
   .imageWrapper {
     position: relative;

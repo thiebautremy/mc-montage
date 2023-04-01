@@ -10,13 +10,24 @@ const Services = () => {
         <title>Mc Montage - Services</title>
         <meta
           name="description"
-          content="Découvrez les services proposés par MC Montage pour l'installation de vos équipements : montage, démontage, devis, service après-vente et vente de matériel selon stock. Bénéficiez de notre expertise pour l'installation et l'entretien de vos équipements sur mesure. Nous sommes à votre disposition pour répondre à toutes vos demandes. "
+          content="Découvrez les services proposés par MC Montage pour l'installation de vos équipements : montage, démontage, devis, service après-vente et vente de matériel selon stock. Bénéficiez de notre expertise pour l'installation et l'entretien de vos équipements sur mesure. Nous sommes à votre disposition pour répondre à toutes vos demandes."
         />
         <meta
           name="og:image"
           property="og:image"
           content="../../assets/images/logoPhotoshop.png"
         />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Découvrez les services proposés par MC Montage pour l'installation de vos équipements : montage, démontage, devis, service après-vente et vente de matériel selon stock. Bénéficiez de notre expertise pour l'installation et l'entretien de vos équipements sur mesure. Nous sommes à votre disposition pour répondre à toutes vos demandes."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content="https://mcmontage.fr/services"
+        />
+        <link rel="canonical" href="https://mcmontage.fr/services" />
         <meta name="keywords" content="services, après-vente, devis, SAV" />
       </Head>
       <Layout>

@@ -12,7 +12,6 @@ import {
 import Feature from "@/components/Feature/feature";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
-import metaImage from "../../assets/images/plateforme-mezzanine.webp";
 import Spacer from "@/components/Spacer/spacer";
 
 const Agencement = () => {
@@ -26,6 +25,7 @@ const Agencement = () => {
         id: number;
         slug: string;
         text: string;
+        legend?: string;
         imgSrc: string;
         imgAlt: string;
         imgTitle: string;
@@ -43,6 +43,11 @@ const Agencement = () => {
       <Head>
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
         <meta
+          name="og:title"
+          property="og:title"
+          content={`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}
+        />
+        <meta
           name="description"
           content="Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure."
         />
@@ -50,6 +55,20 @@ const Agencement = () => {
           name="og:image"
           property="og:image"
           content="../../assets/images/plateforme-mezzanine.webp"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure."
+        />
+        <meta
+          name="og:url"
+          property="og:url"
+          content={`https://mcmontage.fr/agencement/${slug}`}
+        />
+        <link
+          rel="canonical"
+          href={`https://mcmontage.fr/agencement/${slug}`}
         />
         <meta
           name="keywords"
@@ -64,13 +83,14 @@ const Agencement = () => {
               : urlWithFirstLetterCapitalize(slug)}
           </h1>
           <div className={styles.headerFeature__description}>
-            {featureIntro && parse(featureIntro[0].description)}
+            <p>{featureIntro && parse(featureIntro[0].description)}</p>
           </div>
         </div>
         {featuresData?.map((feature) => (
           <Feature
             key={feature.id}
             text={feature.text}
+            legend={feature.legend}
             imgSrc={require(`../../assets/images/${feature.imgSrc}`)}
             imgAlt={feature.imgAlt}
             imgTitle={feature.imgTitle}

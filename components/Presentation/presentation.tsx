@@ -27,18 +27,23 @@ const Presentation = () => {
             </p>
             <Spacer height={"small"} />
             <p>
-              En outre, nous proposons des solutions de stockage et
-              d&apos;optimisation de l&apos;espace pour aider nos clients à
-              gagner de la place et à maximiser leur productivité. Nous
-              travaillons avec des matériaux de qualité supérieure pour garantir
-              une finition professionnelle et durable.
+              En outre, nous proposons des solutions de stockage et{" "}
+              <span className="fontColorRed fontBold">
+                d&apos;optimisation de l&apos;espace
+              </span>{" "}
+              pour aider nos clients à gagner de la place et à maximiser leur
+              productivité. Nous travaillons avec des matériaux de qualité
+              supérieure pour garantir une finition professionnelle et durable.
             </p>
             <Spacer height={"small"} />
             <p>
               Nous sommes passionnés par la création d&apos;espaces de travail
               fonctionnels, esthétiques et optimisés. Nous sommes là pour vous
-              aider à réaliser votre vision, en fournissant des services
-              d&apos;agencement sur mesure et adaptés à vos besoins spécifiques.
+              aider à réaliser votre vision, en fournissant des{" "}
+              <span className="fontColorRed fontBold">
+                services d&apos;agencement sur mesure
+              </span>{" "}
+              et adaptés à vos besoins spécifiques.
             </p>
             <Spacer height={"small"} />
             <p>
@@ -50,12 +55,15 @@ const Presentation = () => {
               N&apos;hésitez pas à nous contacter pour en savoir plus sur nos
               services d&apos;agencement et de rangement et obtenir un devis
               personnalisé pour votre projet. Nous sommes impatients de
-              travailler avec vous pour créer un espace de travail idéal pour
-              votre entreprise et améliorer votre espace de stockage.
+              travailler avec vous pour{" "}
+              <span className="fontColorRed fontBold">
+                créer un espace de travail idéal pour votre entreprise
+              </span>{" "}
+              et améliorer votre espace de stockage.
             </p>
           </div>
           <div className={styles.servicesContainer}>
-            <p className={styles.servicesContainer__title}>Nos solutions :</p>
+            <h2>Nos solutions :</h2>
             <div className={styles.services}>
               <div className={styles.service}>
                 <h3>Magasinage</h3>
@@ -64,6 +72,7 @@ const Presentation = () => {
                   <li>Rayonnage d&apos;archive</li>
                   <li>Rayonnage métallique</li>
                   <li>Rayonnage cantilever</li>
+                  <li>Rayonnage dynamique</li>
                 </ul>
               </div>
               <DividerVertical />
