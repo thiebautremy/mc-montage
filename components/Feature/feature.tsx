@@ -29,7 +29,15 @@ const Feature: React.FC<FeatureProps> = ({
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
         <div className={styles.description}>
           <p>{parse(text)}</p>
-          {legend && <p className={styles.legend}>{parse(legend)}</p>}
+          {legend && (
+            <p
+              className={`${styles.legend} ${
+                isInverted && styles.isLegendInverted
+              }`}
+            >
+              {parse(legend)}
+            </p>
+          )}
         </div>
         <div className={styles.imageWrapper}>
           <Image
@@ -38,9 +46,6 @@ const Feature: React.FC<FeatureProps> = ({
             title={imgTitle}
             fill
             className={styles.image}
-            sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
             style={{ objectFit: "cover" }}
           />
         </div>

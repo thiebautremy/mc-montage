@@ -1,0 +1,20 @@
+@use "styles/_variables.scss" as var;
+
+.slider {
+  padding: var.$gap-medium 0;
+}
+
+.partner {
+  padding: var.$gap-small var.$gap-xlarge;
+}
+.marquee {
+  margin: var.$gap-medium auto;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 13rem;
+  height: 5rem;
+  margin-right: var.$gap-xlarge;
+  object-fit: cover;
+}
