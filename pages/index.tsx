@@ -3,6 +3,7 @@ import Layout from "@/components/Layout/layout";
 import ChiffresCles from "@/components/ChiffresCles/chiffresCles";
 import Presentation from "@/components/Presentation/presentation";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
+import Slider from "@/components/Slider/slider";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
       <Layout>
         <Presentation />
         <ChiffresCles />
+        <Slider />
         <ContactBanner />
       </Layout>
     </>

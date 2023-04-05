@@ -62,42 +62,6 @@ const Presentation = () => {
               et améliorer votre espace de stockage.
             </p>
           </div>
-          <div className={styles.servicesContainer}>
-            <h2>Nos solutions :</h2>
-            <div className={styles.services}>
-              <div className={styles.service}>
-                <h3>Magasinage</h3>
-                <ul>
-                  <li>Rayonnage industriel</li>
-                  <li>Rayonnage d&apos;archive</li>
-                  <li>Rayonnage métallique</li>
-                  <li>Rayonnage cantilever</li>
-                  <li>Rayonnage dynamique</li>
-                </ul>
-              </div>
-              <DividerVertical />
-              <div className={styles.service}>
-                <h3>Agencement</h3>
-                <ul>
-                  <li>Pose de cloison amovible en aluminium</li>
-                  <li>Agencement bureau</li>
-                  <li>Mezzanine</li>
-                  <li>Faux plafond</li>
-                  <li>Plateforme avec ou sans échelles</li>
-                </ul>
-              </div>
-              <DividerVertical />
-              <div className={styles.service}>
-                <h3>Stockage</h3>
-                <ul>
-                  <li>Pose de rack à palettes</li>
-                  <li>Pose d&apos;étagères sur rail</li>
-                  <li>Étagère modulable</li>
-                  <li>Tablettes</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
         <motion.div
           animate={{ x: [250, -10] }}
@@ -116,6 +80,42 @@ const Presentation = () => {
           />
         </motion.div>
       </section>
+      <div className={styles.servicesContainer}>
+        <h2>Nos solutions :</h2>
+        <div className={styles.services}>
+          <div className={styles.service}>
+            <h3>Magasinage</h3>
+            <ul>
+              <li>Rayonnage industriel</li>
+              <li>Rayonnage d&apos;archive</li>
+              <li>Rayonnage métallique</li>
+              <li>Rayonnage cantilever</li>
+              <li>Rayonnage dynamique</li>
+            </ul>
+          </div>
+          <DividerVertical />
+          <div className={styles.service}>
+            <h3>Agencement</h3>
+            <ul>
+              <li>Pose de cloison amovible en aluminium</li>
+              <li>Agencement bureau</li>
+              <li>Mezzanine</li>
+              <li>Faux plafond</li>
+              <li>Plateforme avec ou sans échelles</li>
+            </ul>
+          </div>
+          <DividerVertical />
+          <div className={styles.service}>
+            <h3>Stockage</h3>
+            <ul>
+              <li>Pose de rack à palettes</li>
+              <li>Pose d&apos;étagères sur rail</li>
+              <li>Étagère modulable</li>
+              <li>Tablettes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <DividerHorizontal />
     </>
   );
