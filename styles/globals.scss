@@ -175,7 +175,8 @@ p {
   > .p-menuitem.p-menuitem-active
   > .p-menuitem-link,
 .p-menubar .p-submenu-list,
-.p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+.p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link,
+.p-menubar.p-menubar-mobile-active .p-menubar-root-list {
   background: rgba(var.$noir, $alpha: 0.9) !important;
 }
 
