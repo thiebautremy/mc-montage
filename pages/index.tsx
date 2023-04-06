@@ -17,7 +17,7 @@ export default function Home() {
         <meta
           name="og:image"
           property="og:image"
-          content={require("../assets/images/logoPhotoshop.png")}
+          content="https://mcmontage.fr/thumbnails/logoPhotoshop.png"
         />
         <meta name="og:title" property="og:title" content="MC Montage" />
         <meta

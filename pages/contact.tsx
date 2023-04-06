@@ -22,7 +22,7 @@ const Contact = () => {
         <meta
           name="og:image"
           property="og:image"
-          content={require("../assets/images/logoPhotoshop.png")}
+          content="https://mcmontage.fr/thumbnails/logoPhotoshop.png"
         />
         <meta
           name="og:description"
