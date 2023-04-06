@@ -122,7 +122,7 @@ const urlsAndFeaturesData = [
         id: 0,
         slug: "mezzanine-plateforme",
         text: "<span>Les mezzanines</span> sont des plates-formes ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.",
-        legend: "legend",
+        legend: "",
         imgSrc: "cloison-nancy.webp",
         imgAlt:
           "Cloison avec mezzanine et fenêtres avec escalier et garde corps",
@@ -132,7 +132,7 @@ const urlsAndFeaturesData = [
         id: 1,
         slug: "mezzanine-plateforme",
         text: "<span>Une plateforme métallique</span> est une structure surélevée en acier conçue pour maximiser l'espace de stockage. Elle est constituée d'une ossature métallique solide et d'une rampe ou d'un escalier pour accéder à la plateforme. Les plateformes métalliques permettent d'augmenter la capacité de stockage en créant des <span>niveaux supplémentaires</span> au-dessus du sol, tout en optimisant l'utilisation de l'espace disponible. Elles peuvent également être équipées de rayonnages, de cloisons et d'autres accessoires pour répondre aux besoins spécifiques de chaque entreprise.",
-        legend: "legend 2",
+        legend: "",
         imgSrc: "plateforme-mezzanine.webp",
         imgAlt: "Plateforme mezzanine avec garde corps",
         imgTitle: "Plateforme mezzanine",
