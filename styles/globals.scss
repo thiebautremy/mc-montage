@@ -85,6 +85,7 @@ h1 {
   }
 
   @media screen and (max-width: var.$screen-phone) {
+    margin: var.$gap-small 0;
     font-size: 2rem;
   }
 }
@@ -187,7 +188,8 @@ p {
 .p-menubar
   .p-menubar-root-list
   > .p-menuitem
-  > .p-menuitem-link:not(.p-disabled):hover {
+  > .p-menuitem-link:not(.p-disabled):hover,
+.p-menubar .p-menubar-button:hover {
   background: none !important;
 }
 
