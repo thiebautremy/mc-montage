@@ -17,7 +17,7 @@ export default function Home() {
         <meta
           name="og:image"
           property="og:image"
-          content="https://mcmontage.netlify.app/assets/images/logoPhotoshop.png"
+          content={require("../assets/images/logoPhotoshop.png")}
         />
         <meta name="og:title" property="og:title" content="MC Montage" />
         <meta
