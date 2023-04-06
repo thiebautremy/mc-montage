@@ -54,7 +54,7 @@ const Agencement = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="../../assets/images/plateforme-mezzanine.webp"
+          content="https://mcmontage.fr/thumbnails/plateforme-mezzanine.webp"
         />
         <meta
           name="og:description"

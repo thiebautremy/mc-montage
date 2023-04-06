@@ -50,7 +50,7 @@ const Stockage = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="../../assets/images/rayonnage-tablette.webp"
+          content="https://mcmontage.fr/thumbnails/dynamique-palette.webp"
         />
         <meta
           name="og:description"
