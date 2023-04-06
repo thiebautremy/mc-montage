@@ -23,6 +23,10 @@
 
   .subtitle {
     margin: var.$gap-medium var.$gap-large;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      margin: var.$gap-medium 0;
+    }
   }
 }
 

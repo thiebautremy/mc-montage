@@ -4,9 +4,21 @@
   display: flex;
   padding: var.$gap-medium;
   align-items: center;
+
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    flex-direction: column-reverse;
+  }
   .description {
     width: 60%;
     padding: var.$gap-small var.$gap-medium;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      width: 100%;
+    }
+    @media screen and (max-width: var.$screen-tablet-portrait) {
+      padding: var.$gap-small 0;
+    }
+
     p {
       line-height: 2rem;
     }
@@ -18,15 +30,6 @@
     span {
       color: var.$rouge;
     }
-
-    .legend {
-      font-style: italic;
-      font-size: 0.9rem;
-      text-align: end;
-    }
-    .isLegendInverted {
-      text-align: start;
-    }
   }
   .imageWrapper {
     position: relative;
@@ -34,9 +37,36 @@
     width: 40%;
     border-radius: var.$radius;
     overflow: hidden;
+
+    @media screen and (max-width: var.$screen-tablet-landscape) {
+      width: 80%;
+      height: 30rem;
+    }
+
+    @media screen and (max-width: var.$screen-phone) {
+      width: 90%;
+      height: 20rem;
+    }
+
+    .legend {
+      font-style: italic;
+      font-size: 0.9rem;
+      padding: 0 var.$gap-small;
+      background: rgba(0, 0, 0, 0.85);
+      position: relative;
+      z-index: 10;
+
+      @media screen and (max-width: var.$screen-phone) {
+        font-size: 0.8rem;
+      }
+    }
   }
 }
 
 .isInverted {
   flex-direction: row-reverse;
+
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    flex-direction: column-reverse;
+  }
 }

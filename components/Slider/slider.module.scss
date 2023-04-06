@@ -14,7 +14,12 @@
 .imageWrapper {
   position: relative;
   width: 13rem;
-  height: 5rem;
+  height: 6rem;
   margin-right: var.$gap-xlarge;
   object-fit: cover;
+
+  @media screen and (max-width: var.$screen-tablet-landscape) {
+    width: 6.5rem;
+    height: 3rem;
+  }
 }
