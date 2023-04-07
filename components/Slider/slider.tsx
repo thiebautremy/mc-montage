@@ -58,7 +58,7 @@ const SliderParterns = () => {
       <>
         {images.map((image) => (
           <div className={styles.imageWrapper} key={image.id}>
-            <a href={image.src}>
+            <a href={image.src} target="_blank" rel="noopener noreferrer">
               <Image src={image.filename} alt={image.alt} fill loading="lazy" />
             </a>
           </div>
