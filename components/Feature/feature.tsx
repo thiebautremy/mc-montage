@@ -31,15 +31,19 @@ const Feature: React.FC<FeatureProps> = ({
           <p>{parse(text)}</p>
         </div>
         <div className={styles.imageWrapper}>
-          <Image
-            src={imgSrc}
-            alt={imgAlt}
-            title={imgTitle}
-            fill
-            className={styles.image}
-            style={{ objectFit: "cover" }}
-          />
-          {legend && <p className={styles.legend}>{parse(legend)}</p>}
+          <figure>
+            <Image
+              src={imgSrc}
+              alt={imgAlt}
+              title={imgTitle}
+              fill
+              className={styles.image}
+              style={{ objectFit: "cover" }}
+            />
+            {legend && (
+              <figcaption className={styles.legend}>{parse(legend)}</figcaption>
+            )}
+          </figure>
         </div>
       </div>
     </motion.div>

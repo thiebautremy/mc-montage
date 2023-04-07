@@ -22,6 +22,7 @@ const urlsAndFeaturesData = [
         id: 0,
         slug: "rayonnage-mobile-archives",
         text: "Système de rayonnages montés sur <strong>bases mobiles</strong> se déplaçant sur rails, Le coulissement des armoires peut se faire selon deux types de mécanismes d'actionnement : <span>mécanique</span> ou <span>électrique</span> . Double la capacité d’entreposage tout en économisant l’espace",
+        legend: "",
         imgSrc: "rayonnage-mobile.webp",
         imgAlt: "Rayonnage mobile ouvert",
         imgTitle: "Rayonnage mobile manuel",
