@@ -51,9 +51,13 @@
     .legend {
       font-style: italic;
       font-size: 0.9rem;
-      padding: 0 var.$gap-small;
+      padding: calc(var.$gap-small / 2) var.$gap-small;
       background: rgba(0, 0, 0, 0.85);
-      position: relative;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: var.$radius;
+
       z-index: 10;
 
       @media screen and (max-width: var.$screen-phone) {
