@@ -45,7 +45,9 @@ const Stockage = () => {
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
         <meta
           name="description"
-          content="Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure."
+          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+            slug
+          )}`}
         />
         <meta
           name="og:image"
@@ -55,7 +57,9 @@ const Stockage = () => {
         <meta
           name="og:description"
           property="og:description"
-          content="Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure."
+          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+            slug
+          )}`}
         />
         <meta
           name="og:url"

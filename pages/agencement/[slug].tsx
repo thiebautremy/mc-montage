@@ -49,7 +49,9 @@ const Agencement = () => {
         />
         <meta
           name="description"
-          content="Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure."
+          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+            slug
+          )}`}
         />
         <meta
           name="og:image"
@@ -59,7 +61,9 @@ const Agencement = () => {
         <meta
           name="og:description"
           property="og:description"
-          content="Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure."
+          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+            slug
+          )}`}
         />
         <meta
           name="og:url"
