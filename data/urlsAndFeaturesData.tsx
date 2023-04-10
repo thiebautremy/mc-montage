@@ -107,7 +107,7 @@ const urlsAndFeaturesData = [
         slug: "cloison-faux-plafond",
         title: "Pose de cloison et de faux-plafond",
         description:
-          "Les poses de cloisons et de faux-plafonds permettent de <span>délimiter les zones</span> de travail ou de vie, <span>d'améliorer l'isolation phonique et thermique</span>, de masquer des câbles ou des conduits disgracieux, d'apporter une touche esthétique à la décoration intérieure, tout en offrant une solution rapide et économique pour rénover ou optimiser un espace existant.",
+          "Les poses de cloisons et de faux-plafonds permettent de <span>délimiter les zones</span> de travail ou de vie, <span>d'améliorer l'isolation phonique et thermique</span>, de masquer des câbles ou des conduits disgracieux, d'apporter une touche esthétique à la décoration intérieure, tout en offrant une solution rapide, amovible et économique pour rénover ou optimiser un espace existant.",
       },
     ],
     features: [

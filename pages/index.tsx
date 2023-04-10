@@ -19,7 +19,11 @@ export default function Home() {
           property="og:image"
           content="https://mcmontage.fr/thumbnails/logoPhotoshop.png"
         />
-        <meta name="og:title" property="og:title" content="MC Montage" />
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Société MC Montage, spécialisée dans le montage, démontage de rayonnage industriel, mezzanine, plateforme, pose de cloison et de faux plafond."
+        />
         <meta
           name="og:description"
           property="og:description"
