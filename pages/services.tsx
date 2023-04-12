@@ -18,6 +18,11 @@ const Services = () => {
           content="https://mcmontage.fr/thumbnails/logoPhotoshop.png"
         />
         <meta
+          name="og:title"
+          property="og:title"
+          content="Société MC Montage propose plusieurs services: montage, démontage, devis, service après-vente et vente de matériel selon stock."
+        />
+        <meta
           name="og:description"
           property="og:description"
           content="Découvrez les services proposés par MC Montage pour l'installation de vos équipements : montage, démontage, devis, service après-vente et vente de matériel selon stock. Bénéficiez de notre expertise pour l'installation et l'entretien de vos équipements sur mesure. Nous sommes à votre disposition pour répondre à toutes vos demandes."

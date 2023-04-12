@@ -49,9 +49,14 @@ const Agencement = () => {
         />
         <meta
           name="description"
-          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier : ${urlWithFirstLetterCapitalize(
             slug
           )}`}
+        />
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Société MC Montage, spécialisée dans le montage, démontage de mezzanines, plateformes. Ainsi que la pose de cloisons et de faux plafonds et l'agencement de bureau."
         />
         <meta
           name="og:image"
@@ -61,7 +66,7 @@ const Agencement = () => {
         <meta
           name="og:description"
           property="og:description"
-          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+          content={`Découvrez les solutions d'agencement proposées par MC Montage pour votre entreprise : bureaux, mezzanines, plateformes, poses de cloisons et de faux plafonds. Maximisez votre espace de travail et créez un environnement confortable et fonctionnel pour votre personnel avec notre expertise en installation sur mesure. En particulier : ${urlWithFirstLetterCapitalize(
             slug
           )}`}
         />
