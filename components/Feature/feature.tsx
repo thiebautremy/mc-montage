@@ -36,6 +36,7 @@ const Feature: React.FC<FeatureProps> = ({
               src={imgSrc}
               alt={imgAlt}
               title={imgTitle}
+              loading="eager"
               fill
               className={styles.image}
               style={{ objectFit: "cover" }}
