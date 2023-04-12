@@ -45,7 +45,7 @@ const Stockage = () => {
         <title>{`Mc Montage - ${urlWithFirstLetterCapitalize(slug)}`}</title>
         <meta
           name="description"
-          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier : ${urlWithFirstLetterCapitalize(
             slug
           )}`}
         />
@@ -55,9 +55,14 @@ const Stockage = () => {
           content="https://mcmontage.fr/thumbnails/dynamique-palette.webp"
         />
         <meta
+          name="og:title"
+          property="og:title"
+          content="Société MC Montage, spécialisée dans le montage, démontage de rayonnage industriel, rayonnage cantilever, rack à palettes, rayonnage dynamique et grillagé."
+        />
+        <meta
           name="og:description"
           property="og:description"
-          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier ${urlWithFirstLetterCapitalize(
+          content={`Découvrez les solutions de stockage proposées par MC Montage pour optimiser votre espace de stockage : rayonnage mobile, cantilever, à palette, dynamique et grillagé. Maximisez la capacité de stockage et améliorez l'efficacité de votre entrepôt ou de votre espace de rangement grâce à notre expertise en installation sur mesure. En particulier : ${urlWithFirstLetterCapitalize(
             slug
           )}`}
         />

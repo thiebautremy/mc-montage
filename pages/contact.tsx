@@ -25,6 +25,11 @@ const Contact = () => {
           content="https://mcmontage.fr/thumbnails/logoPhotoshop.png"
         />
         <meta
+          name="og:title"
+          property="og:title"
+          content="Formulaire et informations de contact pour la société MC Montage."
+        />
+        <meta
           name="og:description"
           property="og:description"
           content="Contactez MC Montage pour toutes vos demandes d'installation et de maintenance d'équipements industriels sur mesure. Notre équipe expérimentée est à votre disposition pour répondre à toutes vos demandes de renseignements et vous aider à trouver la meilleure solution pour votre entreprise. Contactez-nous dès maintenant pour une consultation personnalisée."
