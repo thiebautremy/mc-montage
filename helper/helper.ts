@@ -38,8 +38,6 @@ export const urlWithFirstLetterCapitalize = (
   url: string | string[] | undefined
 ) => {
   if (typeof url === undefined) return "";
-  console.log(url);
-
   const urlInArray =
     typeof url === "string" ? url?.split("-") : !!url && url[0].split("-");
   if (urlInArray !== false)
