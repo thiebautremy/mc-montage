@@ -14,30 +14,40 @@ import ContactBanner from "@/components/ContactBanner/contactBanner";
 import parse from "html-react-parser";
 import Spacer from "@/components/Spacer/spacer";
 
-const Stockage = () => {
-  const router = useRouter();
+type SlugType = {
+  introData: [{ title: string; description: string }];
+  featuresData: {
+    legend?: string;
+    id: number;
+    slug: string;
+    text: string;
+    imgSrc: string;
+    imgAlt: string;
+    imgTitle: string;
+  }[];
+};
 
+const Stockage: React.FC<SlugType> = ({ introData, featuresData }) => {
+  const router = useRouter();
   const { slug } = router.query;
-  const [featureIntro, setFeatureInto] = useState<
-    { slug: string; title: string; description: string }[] | undefined
-  >();
-  const [featuresData, setFeaturesData] = useState<
-    | {
-        legend?: string;
-        id: number;
-        slug: string;
-        text: string;
-        imgSrc: string;
-        imgAlt: string;
-        imgTitle: string;
-      }[]
-    | undefined
+  const [intro, setIntro] =
+    useState<[{ title: string; description: string }]>();
+  const [features, setFeatures] = useState<
+    {
+      legend?: string;
+      id: number;
+      slug: string;
+      text: string;
+      imgSrc: string;
+      imgAlt: string;
+      imgTitle: string;
+    }[]
   >();
 
   useEffect(() => {
-    setFeaturesData(findDataFromSlug("stockage", slug));
-    setFeatureInto(findFeatureIntroFromSlug("stockage", slug));
-  }, [slug]);
+    setIntro(introData);
+    setFeatures(featuresData);
+  }, [featuresData, introData]);
 
   return (
     <>
@@ -79,16 +89,12 @@ const Stockage = () => {
       </Head>
       <Layout>
         <div className={styles.headerFeature}>
-          <h1>
-            {featureIntro
-              ? featureIntro[0].title
-              : urlWithFirstLetterCapitalize(slug)}
-          </h1>
+          <h1>{intro ? intro[0].title : urlWithFirstLetterCapitalize(slug)}</h1>
           <div className={styles.headerFeature__description}>
-            <p>{featureIntro && parse(featureIntro[0].description)}</p>
+            <p>{intro && parse(intro[0].description)}</p>
           </div>
         </div>
-        {featuresData?.map((feature) => (
+        {features?.map((feature) => (
           <Feature
             key={feature.id}
             text={feature.text}
@@ -97,6 +103,7 @@ const Stockage = () => {
             imgAlt={feature.imgAlt}
             imgTitle={feature.imgTitle}
             isInverted={feature.id % 2 === 0}
+            id={0}
           />
         ))}
         <Spacer height={"height"} />
@@ -115,8 +122,11 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context: { params: { slug: string } }) {
+  const slug = context.params.slug;
+  const introData = findFeatureIntroFromSlug("stockage", slug);
+  const featuresData = findDataFromSlug("stockage", slug);
   return {
-    props: {},
+    props: { introData, featuresData },
   };
 }

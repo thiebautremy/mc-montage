@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 import parse from "html-react-parser";
 
 type FeatureProps = {
+  id: number;
   text: string;
-  legend?: string | undefined;
+  legend: string | undefined;
   imgSrc: StaticImageData;
   imgAlt: string;
   imgTitle: string;
