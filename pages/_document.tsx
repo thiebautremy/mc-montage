@@ -2,6 +2,35 @@ import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 
 export default function Document() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "MC Montage",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "16 rue de Chenevières  ",
+      addressLocality: "Bénaménil",
+      addressRegion: "",
+      postalCode: "54450 ",
+    },
+    email: "mcmontage54450@gmail.com",
+    telePhone: "06 81 21 38 73",
+    url: "https://mcmontage.fr",
+    openingHours: "Mo,Tu,We,Th,Fr 20:00-20:00",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "20:00",
+        closes: "20:00",
+      },
+    ],
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "48.566720",
+      longitude: "6.671920",
+    },
+  };
   return (
     <Html lang="fr">
       <Head>
@@ -13,6 +42,10 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KFRFT38');`}</Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <meta property="og:type" content="website" />
         <meta
           name="google-site-verification"
