@@ -18,9 +18,20 @@
     @media screen and (max-width: var.$screen-tablet-portrait) {
       padding: var.$gap-small 0;
     }
-
+    h4 {
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        margin-top: 1rem;
+      }
+    }
     p {
       line-height: 2rem;
+      margin: 1rem 0 0 1rem;
+
+      @media screen and (max-width: var.$screen-tablet-landscape) {
+        line-height: 1.5rem;
+      }
     }
 
     strong {

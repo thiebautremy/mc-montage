@@ -29,7 +29,7 @@ const Feature: React.FC<FeatureProps> = ({
     >
       <div className={`${styles.feature} ${isInverted && styles.isInverted}`}>
         <div className={styles.description}>
-          <p>{parse(text)}</p>
+          <div>{parse(text)}</div>
         </div>
         <div className={styles.imageWrapper}>
           <figure>

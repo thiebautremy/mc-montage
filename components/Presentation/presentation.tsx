@@ -86,32 +86,60 @@ const Presentation = () => {
           <div className={styles.service}>
             <h3>Magasinage</h3>
             <ul>
-              <li>Rayonnage industriel</li>
-              <li>Rayonnage d&apos;archive</li>
-              <li>Rayonnage métallique</li>
-              <li>Rayonnage cantilever</li>
-              <li>Rayonnage dynamique</li>
+              <li>
+                <h4>Rayonnage industriel</h4>
+              </li>
+              <li>
+                <h4>Rayonnage d&apos;archive</h4>
+              </li>
+              <li>
+                <h4>Rayonnage métallique</h4>
+              </li>
+              <li>
+                <h4>Rayonnage cantilever</h4>
+              </li>
+              <li>
+                <h4>Rayonnage dynamique</h4>
+              </li>
             </ul>
           </div>
           <DividerVertical />
           <div className={styles.service}>
             <h3>Agencement</h3>
             <ul>
-              <li>Pose de cloison amovible en aluminium</li>
-              <li>Agencement bureau</li>
-              <li>Mezzanine</li>
-              <li>Faux plafond</li>
-              <li>Plateforme avec ou sans échelles</li>
+              <li>
+                <h4>Pose de cloison amovible en aluminium</h4>
+              </li>
+              <li>
+                <h4>Agencement bureau</h4>
+              </li>
+              <li>
+                <h4>Mezzanine</h4>
+              </li>
+              <li>
+                <h4>Faux plafond</h4>
+              </li>
+              <li>
+                <h4>Plateforme avec ou sans échelles</h4>
+              </li>
             </ul>
           </div>
           <DividerVertical />
           <div className={styles.service}>
             <h3>Stockage</h3>
             <ul>
-              <li>Pose de rack à palettes</li>
-              <li>Pose d&apos;étagères sur rail</li>
-              <li>Étagère modulable</li>
-              <li>Tablettes</li>
+              <li>
+                <h4>Pose de rack à palettes</h4>
+              </li>
+              <li>
+                <h4>Pose d&apos;étagères sur rail</h4>
+              </li>
+              <li>
+                <h4>Étagère modulable</h4>
+              </li>
+              <li>
+                <h4>Tablettes</h4>
+              </li>
             </ul>
           </div>
         </div>
