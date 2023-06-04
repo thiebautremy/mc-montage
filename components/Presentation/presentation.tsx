@@ -12,6 +12,10 @@ const Presentation = () => {
       <section className={styles.presentation}>
         <div className={styles.text}>
           <h1>MC Montage</h1>
+          <h2>
+            Société spécialisée dans le rayonnage industriel de stockage dans le
+            Grand Est.
+          </h2>
           <div className={styles.subtitle}>
             <p>
               <span className="fontColorRed fontBold">MC Montage</span> offre
