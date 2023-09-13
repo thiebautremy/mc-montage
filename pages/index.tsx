@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Société MC Montage</title>
+        <title>
+          Société MC Montage: Entreprise de rayonnage dans le Grand Est
+        </title>
         <meta
           name="description"
           content="Société spécialisée dans le rayonnage industriel dans le Grand Est. Pose de rack à palettes, rayonnage métallique, stockage, rayonnage d'archive, cloison, mezzanine, faux plafond et d'étagères sur rails."
