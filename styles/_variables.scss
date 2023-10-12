@@ -42,21 +42,3 @@ $screen-desktop: 1200px;
     @content;
   }
 }
-// usage
-// .my-box {
-//   padding: 10px;
-
-//   @include for-desktop-up {
-//     padding: 20px;
-//   }
-// }
-
-@font-face {
-  font-family: "font-regular";
-  src: url(../assets/font/Lato/Lato-Regular.ttf);
-}
-
-@font-face {
-  font-family: "font-bold";
-  src: url(../assets/font/Lato/Lato-Bold.ttf);
-}
