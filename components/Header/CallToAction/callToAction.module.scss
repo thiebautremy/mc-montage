@@ -57,6 +57,7 @@
 .container__text__second {
   margin: var.$gap-small auto var.$gap-medium;
   strong {
-    font-family: font-bold, Courier, monospace;
+    font-family: "Gabarito", Courier, monospace;
+    font-weight: 700;
   }
 }
