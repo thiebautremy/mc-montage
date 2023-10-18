@@ -123,21 +123,21 @@
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
-  &__mail {
+  &__achievement {
     display: flex;
     align-items: center;
 
     a {
       color: var.$rouge;
+      font-size: 1rem;
     }
   }
 
-  svg {
+  a {
     color: var.$rouge;
     margin: 0 calc(var.$gap-small/2) 0 var.$gap-small;
-    font-size: 1.2rem;
   }
 }

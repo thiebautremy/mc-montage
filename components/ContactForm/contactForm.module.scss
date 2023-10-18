@@ -75,6 +75,7 @@
 
     &::placeholder {
       color: var.$noir;
+      font-family: "Gabarito", Arial, Helvetica, sans-serif;
     }
     @media screen and (max-width: 700px) {
       min-width: 15rem;
