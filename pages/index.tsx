@@ -4,6 +4,7 @@ import ChiffresCles from "@/components/ChiffresCles/chiffresCles";
 import Presentation from "@/components/Presentation/presentation";
 import ContactBanner from "@/components/ContactBanner/contactBanner";
 import Slider from "@/components/Slider/slider";
+import Faq from "@/components/Faq/Faq";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
         <Presentation />
         <ChiffresCles />
         <Slider />
+        <Faq />
         <ContactBanner />
       </Layout>
     </>

@@ -1,0 +1,43 @@
+@use "styles/_variables.scss" as var;
+
+.faqContainer {
+  .accordionContainer {
+    padding: var.$gap-medium;
+
+    .paragraph {
+      font-size: 1rem;
+      margin-bottom: var.$gap-small;
+    }
+
+    .list {
+      margin: calc(var.$gap-small / 2);
+      .item {
+        font-size: 1rem;
+        list-style: disc;
+        margin: calc(var.$gap-small / 2) 0;
+
+        strong {
+          font-size: 1rem;
+          display: block;
+          font-weight: bold;
+        }
+        p {
+          margin: calc(var.$gap-small / 2) 0 0 calc(var.$gap-small / 2);
+        }
+      }
+    }
+
+    .link {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: calc(var.$gap-small / 2);
+      transition: all 0.3s ease-in-out;
+      color: var.$rouge;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}

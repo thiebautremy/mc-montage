@@ -182,3 +182,21 @@ p {
 .p-menubar .p-menubar-button {
   color: var.$blanc !important;
 }
+
+//Accordion
+.p-accordion-header-link {
+  background-color: var.$background-dark-medium !important;
+  color: var.$blanc !important;
+  border: 1px solid var.$blanc !important;
+
+  &:focus {
+    outline: unset !important;
+    outline-offset: unset !important;
+    box-shadow: unset !important;
+  }
+}
+
+.p-accordion-content {
+  color: var.$blanc !important;
+  background-color: var.$background-dark-medium !important;
+}
