@@ -8,7 +8,7 @@ const Faq = () => {
     <div className={styles.faqContainer}>
       <h2>Questions fréquentes</h2>
       <div className={styles.accordionContainer}>
-        <Accordion activeIndex={0}>
+        <Accordion>
           <AccordionTab header="Comment choisir son rayonnage industriel ?">
             <p className={styles.paragraph}>
               Vous pourrez choisir le rayonnage industriel qui répond le mieux à
