@@ -91,7 +91,7 @@ const Presentation = () => {
             <h3>Magasinage</h3>
             <ul>
               <li>
-                <h4>Rayonnage industriel</h4>
+                <h4>Rayonnage industriel neuf ou d&apos;occasion</h4>
               </li>
               <li>
                 <h4>Rayonnage d&apos;archive</h4>

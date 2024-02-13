@@ -40,7 +40,7 @@ const urlsAndFeaturesData = [
       {
         id: 0,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>RAYONNAGE À PALETTE : </span></strong></h4><p>Prévu pour les entrepôts de stockage (palette, bacs, conteneurs, etc... ) en intérieur comme en extérieur. Ils sont disponibles en différentes hauteurs, profondeurs et tailles de traverses, qui permettent de stocker les palettes de manière efficace et organisée. Les racks à palettes peuvent être démontables ou non, selon vos besoins de stockage. Les tablettes et les tiroirs des rayonnages peuvent également être réglables pour optimiser l'espace de stockage et faciliter la manutention des produits.</p>",
+        text: "<h2><strong><span>RAYONNAGE À PALETTES : </span></strong></h2><p>Prévu pour les entrepôts de stockage (palette, bacs, conteneurs, etc... ) en intérieur comme en extérieur. Ils sont disponibles en différentes hauteurs, profondeurs et tailles de traverses, qui permettent de stocker les palettes de manière efficace et organisée. Les racks à palettes peuvent être démontables ou non, selon vos besoins de stockage. Les tablettes et les tiroirs des rayonnages peuvent également être réglables pour optimiser l'espace de stockage et faciliter la manutention des produits.</p>",
         legend: "Cryostar, Hésingue",
         imgSrc: "rack-palette-1.webp",
         imgAlt: "Rack à palettes en intérieur en acier galvanisé",
@@ -49,7 +49,7 @@ const urlsAndFeaturesData = [
       {
         id: 1,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>RAYONNAGE À PALETTE : </span></strong></h4><p>Les racks à palettes sont utilisés pour le stockage de charges lourdes et volumineuses. Les dimensions sont ajustables afin d'optimiser au maximum l'espace disponible. L'installation d'un rayonnage industriel nécessite une planification minutieuse des besoins de stockage, et des solutions de stockage requises.</p>",
+        text: "<h2><strong><span>RACKS À PALETTES : </span></strong></h2><p>Les racks à palettes sont utilisés pour le stockage de charges lourdes et volumineuses. Les dimensions sont ajustables afin d'optimiser au maximum l'espace disponible. L'installation d'un rayonnage industriel nécessite une planification minutieuse des besoins de stockage, et des solutions de stockage requises.</p>",
         legend: "Maroquinerie de Mâcon, Mâcon",
         imgSrc: "rack-palette.webp",
         imgAlt:
@@ -59,34 +59,44 @@ const urlsAndFeaturesData = [
       {
         id: 2,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>RAYONNAGE CANTILEVER : </span></strong></h4><p>Aménagement spécifique de vos entrepôts de stockage. Le système de cantilever convient à une utilisation à l'intérieur ou en extérieur. Permet le stockage des articles longs et charges lourdes. La plupart des rayonnages industriels sont disponibles en différentes sections modulables pour permettre un agencement personnalisé et s'adapter aux besoins de stockage spécifiques. Les structures de stockage peuvent être en acier galvanisé ou revêtues d'une peinture époxy pour une meilleure résistance à la corrosion.</p>",
+        text: "<h2><strong><span>RAYONNAGES INDUSTRIELS D'OCCASION : </span></strong></h2><p>MC Montage est votre spécialiste en rayonnage industriel, neuf et d'occasion. Nous offrons un service d'installation complet de votre rayonnage industriel d'occasion pour vous garantir un résultat optimal. Nous vous proposons également une large sélection de rayonnages d'occasion à des prix attractifs.</p>",
+        legend: "Usine CLAAS, Woippy",
+        imgSrc: "rayonnage-industriel-occasion.webp",
+        imgAlt:
+          "Rayonnage industriel d'occasion en acier galvanisé avec du bois",
+        imgTitle: "Rayonnage industriel d'occasion",
+      },
+      {
+        id: 3,
+        slug: "rayonnage-metallique-industriel",
+        text: "<h2><strong><span>RAYONNAGE CANTILEVER : </span></strong></h2><p>Aménagement spécifique de vos entrepôts de stockage. Le système de cantilever convient à une utilisation à l'intérieur ou en extérieur. Permet le stockage des articles longs et charges lourdes. La plupart des rayonnages industriels sont disponibles en différentes sections modulables pour permettre un agencement personnalisé et s'adapter aux besoins de stockage spécifiques. Les structures de stockage peuvent être en acier galvanisé ou revêtues d'une peinture époxy pour une meilleure résistance à la corrosion.</p>",
         legend: "Base aérienne 133, Nancy-Ochey",
         imgSrc: "rayonnage-cantilever.webp",
         imgAlt: "Rayonnage cantilever en acier galvanisé",
         imgTitle: "Rayonnage cantilever",
       },
       {
-        id: 3,
+        id: 4,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>RAYONNAGE DYNAMIQUE : </span></strong></h4><p>Les rayonnages dynamiques à palette offrent de nombreux avantages pour le stockage et la gestion des palettes. Ils permettent d'optimiser l'espace de stockage, d'améliorer la rotation des stocks et de réduire les temps de manutention. Ils permettent également une meilleure traçabilité des produits et une réduction des risques d'erreurs de stockage. Les rayonnages dynamiques à palette sont particulièrement adaptés aux entreprises ayant des volumes de stockage importants et des contraintes logistiques importantes.</p>",
+        text: "<h2><strong><span>RAYONNAGE DYNAMIQUE : </span></strong></h2><p>Les rayonnages dynamiques à palette offrent de nombreux avantages pour le stockage et la gestion des palettes. Ils permettent d'optimiser l'espace de stockage, d'améliorer la rotation des stocks et de réduire les temps de manutention. Ils permettent également une meilleure traçabilité des produits et une réduction des risques d'erreurs de stockage. Les rayonnages dynamiques à palette sont particulièrement adaptés aux entreprises ayant des volumes de stockage importants et des contraintes logistiques importantes.</p>",
         legend: "Mulhouse",
         imgSrc: "dynamique-palette.webp",
         imgAlt: "Rayonnage dynamique à palette",
         imgTitle: "Rayonnage dynamique à palette",
       },
       {
-        id: 4,
+        id: 5,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>CLOISON GRILLAGÉE INDUSTRIELLE : </span></strong></h4><p>La cloison grillagée est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Elle est souvent utilisée dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Elles permettent également de créer un espace protégé. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.</p>",
+        text: "<h2><strong><span>CLOISON GRILLAGÉE INDUSTRIELLE : </span></strong></h2><p>La cloison grillagée est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Elle est souvent utilisée dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Elles permettent également de créer un espace protégé. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.</p>",
         legend: "Cryostar, Hésingue",
         imgSrc: "stockage-grillage-exterieur.webp",
         imgAlt: "Stockage grillagé exterieur acier galvanisé gris",
         imgTitle: "Stockage grillagé",
       },
       {
-        id: 5,
+        id: 6,
         slug: "rayonnage-metallique-industriel",
-        text: "<h4><strong><span>RAYONNAGES TABLETTES : </span></strong></h4><p>Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les <span>rayonnages tablettes</span> sont des rayonnages avec des plateaux pour stocker des objets légers.</p>",
+        text: "<h2><strong><span>RAYONNAGES TABLETTES : </span></strong></h2><p>Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les <span>rayonnages tablettes</span> sont des rayonnages avec des plateaux pour stocker des objets légers.</p>",
         legend: "Air+, Reims",
         imgSrc: "rayonnage-tablette.webp",
         imgAlt: "Rayonnage tablette",
@@ -130,7 +140,7 @@ const urlsAndFeaturesData = [
       {
         id: 0,
         slug: "mezzanine-plateforme",
-        text: "<h4><strong><span>Les mezzanines</span></h4></strong> <p>Les mezzanines sont des plates-formes ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.</p>",
+        text: "<h2><strong><span>Les mezzanines</span></h2></strong> <p>Les mezzanines sont des plates-formes ou des niveaux supplémentaires qui peuvent être installés dans un entrepôt pour augmenter sa capacité de stockage. Les mezzanines sont généralement construites à partir de poteaux et de poutres métalliques qui supportent des planchers en aggloméré, en tôle ou en caillebotis.</p>",
         legend: "Air+, Maxéville",
         imgSrc: "cloison-nancy.webp",
         imgAlt:
@@ -140,7 +150,7 @@ const urlsAndFeaturesData = [
       {
         id: 1,
         slug: "mezzanine-plateforme",
-        text: "<h4><strong><span>Une plateforme métallique</span></strong></h4> <p>Une plateforme métallique est une structure surélevée en acier conçue pour maximiser l'espace de stockage. Elle est constituée d'une ossature métallique solide et d'une rampe ou d'un escalier pour accéder à la plateforme. Les plateformes métalliques permettent d'augmenter la capacité de stockage en créant des <span>niveaux supplémentaires</span> au-dessus du sol, tout en optimisant l'utilisation de l'espace disponible. Elles peuvent également être équipées de rayonnages, de cloisons et d'autres accessoires pour répondre aux besoins spécifiques de chaque entreprise.</p>",
+        text: "<h2><strong><span>Une plateforme métallique</span></strong></h2> <p>Une plateforme métallique est une structure surélevée en acier conçue pour maximiser l'espace de stockage. Elle est constituée d'une ossature métallique solide et d'une rampe ou d'un escalier pour accéder à la plateforme. Les plateformes métalliques permettent d'augmenter la capacité de stockage en créant des <span>niveaux supplémentaires</span> au-dessus du sol, tout en optimisant l'utilisation de l'espace disponible. Elles peuvent également être équipées de rayonnages, de cloisons et d'autres accessoires pour répondre aux besoins spécifiques de chaque entreprise.</p>",
         legend: "INRS, Nancy",
         imgSrc: "plateforme-mezzanine.webp",
         imgAlt: "Plateforme mezzanine avec garde corps",
@@ -149,7 +159,7 @@ const urlsAndFeaturesData = [
       {
         id: 2,
         slug: "mezzanine-plateforme",
-        text: "<h4><strong><span>Un garde-corps</span></strong></h4> <p>Un garde-corps est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.</p>",
+        text: "<h2><strong><span>Un garde-corps</span></strong></h2> <p>Un garde-corps est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.</p>",
         legend: "EGB, Geispolsheim",
         imgSrc: "mezzanine-avec-garde-corps.webp",
         imgAlt: "Mezzanine en aglos avec garde corps",
@@ -158,7 +168,7 @@ const urlsAndFeaturesData = [
       {
         id: 3,
         slug: "mezzanine-plateforme",
-        text: "<h4><strong><span>Une mezzanine en double étage avec garde-corps</span> </strong></h4><p>Une mezzanine en double étage avec garde-corps et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.</p>",
+        text: "<h2><strong><span>Une mezzanine en double étage avec garde-corps</span> </strong></h2><p>Une mezzanine en double étage avec garde-corps et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.</p>",
         legend: "Heiss Demeco, Bois-en-Haye",
         imgSrc: "mezzanine-double-etage.webp",
         imgAlt: "Mezzanine en double étage avec garde corps et échelle",
@@ -167,7 +177,7 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "mezzanine-plateforme",
-        text: "<h4><strong><span>Un escalier en acier</span></strong></h4> <p>Un escalier en acier est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Ils sont couramment utilisés dans les usines, les entrepôts et les chantiers de construction.</p>",
+        text: "<h2><strong><span>Un escalier en acier</span></strong></h2> <p>Un escalier en acier est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Ils sont couramment utilisés dans les usines, les entrepôts et les chantiers de construction.</p>",
         legend: "EGB, Geispolsheim",
         imgSrc: "escaliers-acces.webp",
         imgAlt: "Escaliers en acier galvanisé pour accèder à une mezzanine",

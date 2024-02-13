@@ -68,6 +68,18 @@ const Services = () => {
             individuelle. Ils bénéficient d&apos;une formation indispensable à
             leur utilisation.
           </p>
+          <h2 className={styles.h2}>Maintenance</h2>
+          <p className={styles.subDescription}>
+            Notre expertise s&apos;étend également à la{" "}
+            <span className="fontColorRed">
+              maintenance de vos racks à palettes
+            </span>
+            {", "}pour garantir leur sécurité et leur durabilité. Nous
+            intervenons rapidement sur site pour diagnostiquer les problèmes et
+            effectuer les réparations nécessaires. Nous effectuons également des
+            contrôles rigoureux de vos racks à palettes conformément aux normes
+            en vigueur.
+          </p>
           <h2 className={styles.h2}>Devis</h2>
           <p className={styles.subDescription}>
             Nous proposons également des{" "}
