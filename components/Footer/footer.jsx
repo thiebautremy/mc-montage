@@ -78,13 +78,7 @@ const Footer = () => {
           </Link>
           <p className={styles.subFooter__achievement}>
             Site internet réalisé par :
-            <a
-              target="_blank"
-              href="https://www.webosaurus.fr"
-              rel="noopener noreferrer"
-            >
-              Webosaurus.fr
-            </a>
+            <a href="mailto:remythiebaut52@gmail.com">Rémy THIEBAUT</a>
           </p>
         </div>
       </motion.div>
