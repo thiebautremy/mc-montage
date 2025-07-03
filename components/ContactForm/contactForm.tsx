@@ -21,7 +21,7 @@ const ContactForm = () => {
     form.current &&
       emailjs
         .sendForm(
-          "service_5h5mqn9",
+          "remythiebaut52",
           emailJSPIdTemplate,
           form.current,
           emailJSPublicKey
