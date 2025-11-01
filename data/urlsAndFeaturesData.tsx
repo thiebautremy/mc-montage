@@ -24,8 +24,8 @@ const urlsAndFeaturesData = [
         text: "<p>Système de rayonnages montés sur <strong>bases mobiles</strong> se déplaçant sur rails, Le coulissement des armoires peut se faire selon deux types de mécanismes d'actionnement : <span>mécanique</span> ou <span>électrique</span> . Double la capacité d’entreposage tout en économisant l’espace</p>",
         legend: "Maison de l'archéologie, Metz",
         imgSrc: "rayonnage-mobile.webp",
-        imgAlt: "Rayonnage mobile ouvert",
-        imgTitle: "Rayonnage mobile manuel",
+        imgAlt: "Rayonnage mobile ouvert à Metz, Moselle",
+        imgTitle: "Rayonnage mobile manuel à Metz, Moselle",
       },
       {
         id: 1,
@@ -33,8 +33,8 @@ const urlsAndFeaturesData = [
         text: "<p>Sécurité totale du matériel archivé. Système compact d’entreposage et d’archivage conçu pour une répartition et un rangement parfait.</p>",
         legend: "Maison de l'archéologie, Metz",
         imgSrc: "rayonnage-mobile-2.webp",
-        imgAlt: "Rayonnage mobile fermée",
-        imgTitle: "Rayonnage mobile manuel",
+        imgAlt: "Rayonnage mobile fermée à Metz, Moselle",
+        imgTitle: "Rayonnage mobile manuel à Metz, Moselle",
       },
 
       {
@@ -43,8 +43,9 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>RAYONNAGE À PALETTES : </span></strong></h2><p>Prévu pour les entrepôts de stockage (palette, bacs, conteneurs, etc... ) en intérieur comme en extérieur. Ils sont disponibles en différentes hauteurs, profondeurs et tailles de traverses, qui permettent de stocker les palettes de manière efficace et organisée. Les racks à palettes peuvent être démontables ou non, selon vos besoins de stockage. Les tablettes et les tiroirs des rayonnages peuvent également être réglables pour optimiser l'espace de stockage et faciliter la manutention des produits.</p>",
         legend: "Cryostar, Hésingue",
         imgSrc: "rack-palette-1.webp",
-        imgAlt: "Rack à palettes en intérieur en acier galvanisé",
-        imgTitle: "Rack à palettes",
+        imgAlt:
+          "Rack à palettes en intérieur en acier galvanisé à Hésingue, Haut-rhin, Alsace",
+        imgTitle: "Rack à palettes à Hésingue, Haut-rhin, Alsace",
       },
       {
         id: 1,
@@ -53,8 +54,9 @@ const urlsAndFeaturesData = [
         legend: "Maroquinerie de Mâcon, Mâcon",
         imgSrc: "rack-palette.webp",
         imgAlt:
-          "Rack à palettes en intérieur en acier galvanisé de grande hauteur",
-        imgTitle: "Rack à palettes",
+          "Rack à palettes en intérieur en acier galvanisé de grande hauteur à Macon, Saône-et-Loire, Bourgogne-Franche-Comté",
+        imgTitle:
+          "Rack à palettes à Macon, Saône-et-Loire, Bourgogne-Franche-Comté",
       },
       {
         id: 2,
@@ -63,8 +65,9 @@ const urlsAndFeaturesData = [
         legend: "Usine CLAAS, Woippy",
         imgSrc: "rayonnage-industriel-occasion.webp",
         imgAlt:
-          "Rayonnage industriel d'occasion en acier galvanisé avec du bois",
-        imgTitle: "Rayonnage industriel d'occasion",
+          "Rayonnage industriel d'occasion en acier galvanisé avec du bois à Woippy, Moselle, Grand Est",
+        imgTitle:
+          "Rayonnage industriel d'occasion à Woippy, Moselle, Grand Est",
       },
       {
         id: 3,
@@ -72,8 +75,10 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>RAYONNAGE CANTILEVER INTÉRIEUR: </span></strong></h2><p>Aménagement spécifique de vos entrepôts de stockage. Le système de cantilever convient à une utilisation à l'intérieur ou en extérieur. Permet le stockage des articles longs et charges lourdes. La plupart des rayonnages industriels sont disponibles en différentes sections modulables pour permettre un agencement personnalisé et s'adapter aux besoins de stockage spécifiques. Les structures de stockage peuvent être en acier galvanisé ou revêtues d'une peinture époxy pour une meilleure résistance à la corrosion.</p>",
         legend: "Base aérienne 133, Nancy-Ochey",
         imgSrc: "rayonnage-cantilever.webp",
-        imgAlt: "Rayonnage cantilever en acier galvanisé",
-        imgTitle: "Rayonnage cantilever",
+        imgAlt:
+          "Rayonnage cantilever en acier galvanisé à Nancy-Ochey, Meurthe-et-Moselle, Lorraine",
+        imgTitle:
+          "Rayonnage cantilever à Nancy-Ochey, Meurthe-et-Moselle, Lorraine",
       },
       {
         id: 4,
@@ -81,8 +86,10 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>RAYONNAGE CANTILEVER EXTÉRIEUR: </span></strong></h2><p>En Lorraine, nous accompagnons les entreprises industrielles, artisanales et logistiques dans la mise en place de solutions de stockage sur-mesure. Le rayonnage industriel cantilever se distingue par sa capacité à accueillir des produits longs et encombrants : poutrelles métalliques, panneaux de bois, tuyaux, profilés ou encore plaques de verre.</p><p>Conçu pour optimiser vos flux, ce système permet :</p><ul><li>Un accès rapide et sécurisé aux marchandises grâce à une structure ouverte et modulable.</li><li>Une adaptabilité totale : hauteur, profondeur et capacité de charge ajustables selon vos besoins.</li></ul>",
         legend: "Société Rochling, Maxéville ",
         imgSrc: "rayonnage-cantilever-2.webp",
-        imgAlt: "Rayonnage cantilever en acier galvanisé extérieur",
-        imgTitle: "Rayonnage cantilever exterieur maxéville",
+        imgAlt:
+          "Rayonnage cantilever en acier galvanisé extérieur à Maxéville, Meurthe-et-Moselle, Lorraine",
+        imgTitle:
+          "Rayonnage cantilever exterieur à Maxéville, Meurthe-et-Moselle, Lorraine",
       },
       {
         id: 5,
@@ -90,8 +97,8 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>RAYONNAGE DYNAMIQUE : </span></strong></h2><p>Les rayonnages dynamiques à palette offrent de nombreux avantages pour le stockage et la gestion des palettes. Ils permettent d'optimiser l'espace de stockage, d'améliorer la rotation des stocks et de réduire les temps de manutention. Ils permettent également une meilleure traçabilité des produits et une réduction des risques d'erreurs de stockage. Les rayonnages dynamiques à palette sont particulièrement adaptés aux entreprises ayant des volumes de stockage importants et des contraintes logistiques importantes.</p>",
         legend: "Mulhouse",
         imgSrc: "dynamique-palette.webp",
-        imgAlt: "Rayonnage dynamique à palette",
-        imgTitle: "Rayonnage dynamique à palette",
+        imgAlt: "Rayonnage dynamique à palette à Mulhouse, Haut-rhin, Alsace",
+        imgTitle: "Rayonnage dynamique à palette à Mulhouse, Haut-rhin, Alsace",
       },
       {
         id: 6,
@@ -99,8 +106,9 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>CLOISON GRILLAGÉE INDUSTRIELLE : </span></strong></h2><p>La cloison grillagée est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Elle est souvent utilisée dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Elles permettent également de créer un espace protégé. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.</p>",
         legend: "Cryostar, Hésingue",
         imgSrc: "stockage-grillage-exterieur.webp",
-        imgAlt: "Stockage grillagé exterieur acier galvanisé gris",
-        imgTitle: "Stockage grillagé",
+        imgAlt:
+          "Stockage grillagé exterieur acier galvanisé gris à Hésingue, Haut-rhin, Alsace",
+        imgTitle: "Stockage grillagé à Hésingue, Haut-rhin, Alsace",
       },
       {
         id: 7,
@@ -108,8 +116,8 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>RAYONNAGES TABLETTES : </span></strong></h2><p>Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les <span>rayonnages tablettes</span> sont des rayonnages avec des plateaux pour stocker des objets légers.</p>",
         legend: "Air+, Reims",
         imgSrc: "rayonnage-tablette.webp",
-        imgAlt: "Rayonnage tablette",
-        imgTitle: "Rayonnage tablette",
+        imgAlt: "Rayonnage tablette à Reims, Marne, Grand Est",
+        imgTitle: "Rayonnage tablette à Reims, Marne, Grand Est",
       },
     ],
   },
@@ -143,8 +151,8 @@ const urlsAndFeaturesData = [
         text: "<p>Installations de mobilier de bureau ( bureaux, caissons mobiles, chaises de bureaux, chaises visiteurs …) montage des mobiliers conformément aux plans d’aménagement et aux consignes données, mise en place selon le plan d'implantation du client.</p>",
         legend: "Mulhouse",
         imgSrc: "cloison-bureau.webp",
-        imgAlt: "Cloison de bureau avec fenêtre",
-        imgTitle: "Cloison de bureau",
+        imgAlt: "Cloison de bureau avec fenêtre à Mulhouse, Haut-rhin, Alsace",
+        imgTitle: "Cloison de bureau à Mulhouse, Haut-rhin, Alsace",
       },
       {
         id: 0,
@@ -153,8 +161,8 @@ const urlsAndFeaturesData = [
         legend: "Air+, Maxéville",
         imgSrc: "cloison-nancy.webp",
         imgAlt:
-          "Cloison avec mezzanine et fenêtres avec escalier et garde corps",
-        imgTitle: "Cloison de bureau",
+          "Cloison avec mezzanine et fenêtres avec escalier et garde corps à Maxéville, Meurthe-et-Moselle, Lorraine",
+        imgTitle: "Cloison de bureau à Maxéville, Meurthe-et-Moselle, Lorraine",
       },
       {
         id: 1,
@@ -162,8 +170,9 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>Une plateforme métallique</span></strong></h2> <p>Une plateforme métallique est une structure surélevée en acier conçue pour maximiser l'espace de stockage. Elle est constituée d'une ossature métallique solide et d'une rampe ou d'un escalier pour accéder à la plateforme. Les plateformes métalliques permettent d'augmenter la capacité de stockage en créant des <span>niveaux supplémentaires</span> au-dessus du sol, tout en optimisant l'utilisation de l'espace disponible. Elles peuvent également être équipées de rayonnages, de cloisons et d'autres accessoires pour répondre aux besoins spécifiques de chaque entreprise.</p>",
         legend: "INRS, Nancy",
         imgSrc: "plateforme-mezzanine.webp",
-        imgAlt: "Plateforme mezzanine avec garde corps",
-        imgTitle: "Plateforme mezzanine",
+        imgAlt:
+          "Plateforme mezzanine avec garde corps à Nancy, Meurthe-et-Moselle, Lorraine",
+        imgTitle: "Plateforme mezzanine à Nancy, Meurthe-et-Moselle, Lorraine",
       },
       {
         id: 2,
@@ -171,8 +180,9 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>Un garde-corps</span></strong></h2> <p>Un garde-corps est un dispositif de sécurité essentiels pour garantir la sécurité des personnes contre les chutes dans les zones à risque telles que les balcons, les escaliers, les mezzanines ou les passerelles. Il s'agit d'une barrière de protection fixée à une certaine hauteur au-dessus du sol.</p>",
         legend: "EGB, Geispolsheim",
         imgSrc: "mezzanine-avec-garde-corps.webp",
-        imgAlt: "Mezzanine en aglos avec garde corps",
-        imgTitle: "Mezzanine en aglos",
+        imgAlt:
+          "Mezzanine en aglos avec garde corps à Geispolsheim, Bas-rhin, Alsace",
+        imgTitle: "Mezzanine en aglos à Geispolsheim, Bas-rhin, Alsace",
       },
       {
         id: 3,
@@ -180,8 +190,10 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>Une mezzanine en double étage avec garde-corps</span> </strong></h2><p>Une mezzanine en double étage avec garde-corps et échelle est une plateforme d'acier surélevée, installée dans un espace de stockage ou une structure commerciale, conçue pour maximiser l'espace disponible. Elle est équipée d'un garde-corps surélevé pour garantir la sécurité des travailleurs, ainsi que d'une échelle ou d'un escalier pour faciliter l'accès à la mezzanine. Cette configuration permet d'optimiser la hauteur de stockage en créant deux niveaux supplémentaires pour ranger les produits. Les mezzanines en double étage sont souvent personnalisées pour répondre aux besoins spécifiques de chaque entreprise en matière de capacité de charge, de surface de plancher, de hauteur et de matériaux de construction.</p>",
         legend: "Heiss Demeco, Bois-en-Haye",
         imgSrc: "mezzanine-double-etage.webp",
-        imgAlt: "Mezzanine en double étage avec garde corps et échelle",
-        imgTitle: "Mezzanine en double étage",
+        imgAlt:
+          "Mezzanine en double étage avec garde corps et échelle à Bois-en-Haye, Meurthe-et-Moselle, Lorraine",
+        imgTitle:
+          "Mezzanine en double étage à Bois-en-Haye, Meurthe-et-Moselle, Lorraine",
       },
       {
         id: 4,
@@ -189,8 +201,10 @@ const urlsAndFeaturesData = [
         text: "<h2><strong><span>Un escalier en acier</span></strong></h2> <p>Un escalier en acier est une structure de sécurité utilisée pour accéder à des hauteurs élevées. Elle est fabriquée en acier pour garantir sa solidité et sa durabilité. Ils sont couramment utilisés dans les usines, les entrepôts et les chantiers de construction.</p>",
         legend: "EGB, Geispolsheim",
         imgSrc: "escaliers-acces.webp",
-        imgAlt: "Escaliers en acier galvanisé pour accèder à une mezzanine",
-        imgTitle: "Escaliers en acier galvanisé",
+        imgAlt:
+          "Escaliers en acier galvanisé pour accèder à une mezzanine à Geispolsheim, Bas-rhin, Alsace",
+        imgTitle:
+          "Escaliers en acier galvanisé à Geispolsheim, Bas-rhin, Alsace",
       },
       {
         id: 0,
@@ -198,8 +212,8 @@ const urlsAndFeaturesData = [
         text: "<p>Ces aménagements peuvent également contribuer à améliorer le confort et le bien-être des occupants en réduisant les nuisances sonores et en créant une ambiance plus agréable.</p>",
         legend: "Air+, Reims",
         imgSrc: "cloison-bureau2.webp",
-        imgAlt: "Cloison semi vitrée intérieure ",
-        imgTitle: "Cloison de bureau",
+        imgAlt: "Cloison semi vitrée intérieure à Reims, Marne, Grand Est",
+        imgTitle: "Cloison de bureau à Reims, Marne, Grand Est",
       },
       {
         id: 1,
@@ -207,8 +221,9 @@ const urlsAndFeaturesData = [
         text: "<p>Plusieurs types de modules sont disponibles pour les espaces intérieurs (vitrés, semi vitrés, melaminés, pleins …)</p>",
         legend: "Mulhouse",
         imgSrc: "cloison-bureau.webp",
-        imgAlt: "Cloison de bureau semi vitrée intérieure",
-        imgTitle: "Cloison de bureau",
+        imgAlt:
+          "Cloison de bureau semi vitrée intérieure à Mulhouse, Haut-rhin, Alsace",
+        imgTitle: "Cloison de bureau à Mulhouse, Haut-rhin, Alsace",
       },
     ],
   },
