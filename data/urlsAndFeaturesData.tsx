@@ -69,7 +69,7 @@ const urlsAndFeaturesData = [
       {
         id: 3,
         slug: "rayonnage-metallique-industriel",
-        text: "<h2><strong><span>RAYONNAGE CANTILEVER : </span></strong></h2><p>Aménagement spécifique de vos entrepôts de stockage. Le système de cantilever convient à une utilisation à l'intérieur ou en extérieur. Permet le stockage des articles longs et charges lourdes. La plupart des rayonnages industriels sont disponibles en différentes sections modulables pour permettre un agencement personnalisé et s'adapter aux besoins de stockage spécifiques. Les structures de stockage peuvent être en acier galvanisé ou revêtues d'une peinture époxy pour une meilleure résistance à la corrosion.</p>",
+        text: "<h2><strong><span>RAYONNAGE CANTILEVER INTÉRIEUR: </span></strong></h2><p>Aménagement spécifique de vos entrepôts de stockage. Le système de cantilever convient à une utilisation à l'intérieur ou en extérieur. Permet le stockage des articles longs et charges lourdes. La plupart des rayonnages industriels sont disponibles en différentes sections modulables pour permettre un agencement personnalisé et s'adapter aux besoins de stockage spécifiques. Les structures de stockage peuvent être en acier galvanisé ou revêtues d'une peinture époxy pour une meilleure résistance à la corrosion.</p>",
         legend: "Base aérienne 133, Nancy-Ochey",
         imgSrc: "rayonnage-cantilever.webp",
         imgAlt: "Rayonnage cantilever en acier galvanisé",
@@ -78,7 +78,7 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "rayonnage-metallique-industriel",
-        text: "<h2><strong><span>RAYONNAGE CANTILEVER : </span></strong></h2><p>En Lorraine, nous accompagnons les entreprises industrielles, artisanales et logistiques dans la mise en place de solutions de stockage sur-mesure. Le rayonnage industriel cantilever se distingue par sa capacité à accueillir des produits longs et encombrants : poutrelles métalliques, panneaux de bois, tuyaux, profilés ou encore plaques de verre.</p><p>Conçu pour optimiser vos flux, ce système permet :</p><ul><li>Un accès rapide et sécurisé aux marchandises grâce à une structure ouverte et modulable.</li><li>Une adaptabilité totale : hauteur, profondeur et capacité de charge ajustables selon vos besoins.</li></ul>",
+        text: "<h2><strong><span>RAYONNAGE CANTILEVER EXTÉRIEUR: </span></strong></h2><p>En Lorraine, nous accompagnons les entreprises industrielles, artisanales et logistiques dans la mise en place de solutions de stockage sur-mesure. Le rayonnage industriel cantilever se distingue par sa capacité à accueillir des produits longs et encombrants : poutrelles métalliques, panneaux de bois, tuyaux, profilés ou encore plaques de verre.</p><p>Conçu pour optimiser vos flux, ce système permet :</p><ul><li>Un accès rapide et sécurisé aux marchandises grâce à une structure ouverte et modulable.</li><li>Une adaptabilité totale : hauteur, profondeur et capacité de charge ajustables selon vos besoins.</li></ul>",
         legend: "Société Rochling, Maxéville ",
         imgSrc: "rayonnage-cantilever-2.webp",
         imgAlt: "Rayonnage cantilever en acier galvanisé extérieur",
