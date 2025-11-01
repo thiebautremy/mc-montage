@@ -15,7 +15,7 @@ export default function Home() {
         </title>
         <meta
           name="description"
-          content="Société spécialisée dans le rayonnage industriel dans le Grand Est. Pose de rack à palettes, rayonnage métallique, stockage, rayonnage d'archive, cloison, mezzanine, faux plafond et d'étagères sur rails."
+          content="Société spécialisée dans le rayonnage industriel en Lorraine et Meurthe-et-Moselle. Installation de racks à palettes, rayonnages métalliques, solutions de stockage, rayonnages d’archives, cloisons, mezzanines, faux plafonds et étagères sur rails dans tout le Grand Est."
         />
         <meta
           name="og:image"
@@ -31,13 +31,13 @@ export default function Home() {
         <meta
           name="og:description"
           property="og:description"
-          content="Société spécialisée dans le rayonnage industriel dans le Grand Est. Pose de rack à palettes, rayonnage métallique, stockage, rayonnage d'archive, cloison, mezzanine, faux plafond et d'étagères sur rails."
+          content="Société spécialisée dans le rayonnage industriel en Lorraine et Meurthe-et-Moselle. Installation de racks à palettes, rayonnages métalliques, solutions de stockage, rayonnages d’archives, cloisons, mezzanines, faux plafonds et étagères sur rails dans tout le Grand Est."
         />
         <meta name="og:url" property="og:url" content="https://mcmontage.fr" />
         <link rel="canonical" href="https://mcmontage.fr" />
         <meta
           name="keywords"
-          content="rayonnage industriel, agencement bureau, mezzanine, plateforme, pose de cloison, rayonnage archive"
+          content="rayonnage industriel, agencement bureau, mezzanine, plateforme, pose de cloison, rayonnage archive, grand est, Lorraine, Alsace, meurthe et moselle, 54, 57, 88, 55,67, 68, montage rayonnage, démontage rayonnage, installation rayonnage"
         />
       </Head>
       <Layout>

@@ -84,10 +84,6 @@ const Faq = () => {
                 traditionnels.
               </li>
               <li className={styles.item}>
-                Les racks de stockage sont une alternative aux rayonnages
-                traditionnels.
-              </li>
-              <li className={styles.item}>
                 Les rayonnages cantilever sont conçus pour le stockage de
                 charges longues et volumineuses.
               </li>
@@ -141,6 +137,19 @@ const Faq = () => {
               2 mètres de haut coûterait environ 1 000 €. Il est important de
               demander plusieurs devis à des sociétés spécialisées pour obtenir
               le meilleur prix.
+            </p>
+          </AccordionTab>
+          <AccordionTab header="Proposez-vous l’installation de rayonnages industriels en Lorraine et en Meurthe-et-Moselle ?">
+            <p className={styles.paragraph}>
+              Oui, nous intervenons dans toute la Lorraine, notamment en
+              Meurthe-et-Moselle (Nancy, Metz, Pont-à-Mousson, etc.), pour
+              installer et entretenir vos rayonnages industriels, racks à
+              palettes et solutions de stockage.
+            </p>
+            <p className={styles.paragraph}>
+              Nous intervenons également dans tout le Grand Est selon les
+              projets mais également partout en France et même à
+              l&apos;étranger.
             </p>
           </AccordionTab>
         </Accordion>

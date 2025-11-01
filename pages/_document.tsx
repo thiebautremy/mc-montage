@@ -31,9 +31,55 @@ export default function Document() {
       longitude: "6.671920",
     },
   };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Quels types de rayonnages industriels installez-vous en Meurthe-et-Moselle ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Nous proposons des rayonnages métalliques, racks à palettes, rayonnages d’archives, étagères sur rails, mezzanines et cloisons, adaptés aux besoins des entreprises locales.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Comment choisir son rayonnage industriel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Vous pourrez choisir le rayonnage industriel qui répond le mieux à vos besoins en prenant en compte les critères suivants : Le type de marchandises à stocker, la charge maximale à supporter, la dimension des marchandises, l'espace disponible. Dans tous les cas, il est préférable de demander conseil à un professionnel qui saura vous guider pour trouver la meilleure solution pour vos besoin.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quels sont les différents types de rayonnage industriel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Les rayonnages industriels sont classés en fonction de la charge qu'ils peuvent supporter, de la nature des marchandises à stocker et de leur mode de construction.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Quel est le prix d'un montage de rayonnage industriel ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Le prix d'un montage de rayonnage industriel varie en fonction de plusieurs facteurs, notamment : le type de rayonnage, la taille et la complexité de l'installation, la localisation du site, les services supplémentaires requis. Pour obtenir un devis précis, il est recommandé de contacter directement notre entreprise avec les détails spécifiques de votre projet. En général, le prix du montage d'un rayonnage industriel oscille entre 50 et 150 € par mètre linéaire. Par exemple, le montage d'un rayonnage à palettes de 10 mètres de long et de 2 mètres de haut coûterait environ 1 000 €.",
+        },
+      },
+    ],
+  };
+
   return (
     <Html lang="fr">
       <Head>
+        <Script
+          id="faq-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
         <Script
           id="google-tag-manager"
           strategy="afterInteractive"
