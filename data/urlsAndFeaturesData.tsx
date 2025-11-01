@@ -78,6 +78,15 @@ const urlsAndFeaturesData = [
       {
         id: 4,
         slug: "rayonnage-metallique-industriel",
+        text: "<h2><strong><span>RAYONNAGE CANTILEVER : </span></strong></h2><p>En Lorraine, nous accompagnons les entreprises industrielles, artisanales et logistiques dans la mise en place de solutions de stockage sur-mesure. Le rayonnage industriel cantilever se distingue par sa capacité à accueillir des produits longs et encombrants : poutrelles métalliques, panneaux de bois, tuyaux, profilés ou encore plaques de verre.</p><p>Conçu pour optimiser vos flux, ce système permet :</p><ul><li>Un accès rapide et sécurisé aux marchandises grâce à une structure ouverte et modulable.</li><li>Une adaptabilité totale : hauteur, profondeur et capacité de charge ajustables selon vos besoins.</li></ul>",
+        legend: "Société Rochling, Maxéville ",
+        imgSrc: "rayonnage-cantilever-2.webp",
+        imgAlt: "Rayonnage cantilever en acier galvanisé extérieur",
+        imgTitle: "Rayonnage cantilever exterieur maxéville",
+      },
+      {
+        id: 5,
+        slug: "rayonnage-metallique-industriel",
         text: "<h2><strong><span>RAYONNAGE DYNAMIQUE : </span></strong></h2><p>Les rayonnages dynamiques à palette offrent de nombreux avantages pour le stockage et la gestion des palettes. Ils permettent d'optimiser l'espace de stockage, d'améliorer la rotation des stocks et de réduire les temps de manutention. Ils permettent également une meilleure traçabilité des produits et une réduction des risques d'erreurs de stockage. Les rayonnages dynamiques à palette sont particulièrement adaptés aux entreprises ayant des volumes de stockage importants et des contraintes logistiques importantes.</p>",
         legend: "Mulhouse",
         imgSrc: "dynamique-palette.webp",
@@ -85,7 +94,7 @@ const urlsAndFeaturesData = [
         imgTitle: "Rayonnage dynamique à palette",
       },
       {
-        id: 5,
+        id: 6,
         slug: "rayonnage-metallique-industriel",
         text: "<h2><strong><span>CLOISON GRILLAGÉE INDUSTRIELLE : </span></strong></h2><p>La cloison grillagée est une méthode de stockage utilisée pour les articles qui nécessitent une ventilation ou une visibilité. Elle est souvent utilisée dans les entrepôts, les usines et les commerces pour stocker des produits tels que les produits alimentaires, les pièces détachées, les produits chimiques et les équipements de bureau. Elles permettent également de créer un espace protégé. Les panneaux grillagés sont fabriqués à partir de fils d'acier soudés ou de mailles pour créer une surface résistante et durable qui permet une circulation d'air libre.</p>",
         legend: "Cryostar, Hésingue",
@@ -94,7 +103,7 @@ const urlsAndFeaturesData = [
         imgTitle: "Stockage grillagé",
       },
       {
-        id: 6,
+        id: 7,
         slug: "rayonnage-metallique-industriel",
         text: "<h2><strong><span>RAYONNAGES TABLETTES : </span></strong></h2><p>Conserver et archiver vos dossiers dans un minimum de place. Stocker des articles en vrac, des unités de charge non palettisées ou des petites pièces dans des bacs. Les <span>rayonnages tablettes</span> sont des rayonnages avec des plateaux pour stocker des objets légers.</p>",
         legend: "Air+, Reims",
